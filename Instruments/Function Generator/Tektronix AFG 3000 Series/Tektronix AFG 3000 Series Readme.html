@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Tektronix AFG 3000 Series Instrument Driver Readme</title>
+</head>
+<body>
+<pre>
+<font face = "Times New Roman", size = 3>
+<h2>Tektronix AFG 3000 Series Instrument Driver Readme</h2>
+To rate this driver, go to the Tektronix AFG 3000 Series driver download page on the <a href = http://www.ni.com/idnet>Instrument Driver Network</a>.
+
+<h4>1. Overview</h4>
+Instrument Driver Technology:  Plug and Play (Project Style)
+Supported Language(s):  LabVIEW
+
+Supported Model(s):  AFG3021, AFG3022, AFG3101, AFG3102, AFG3251, AFG3252, AFG3021B, AFG3022B,AFG3011
+Model(s) Tested:  AFG3252, AFG3022B, AFG3011
+Interface(s):  GPIB, Ethernet, USB
+Firmware Revision Tested:  1.0.4, 3.0.0
+Certified:  Yes
+NI Supported:  Yes
+Source Code Available:  Yes
+
+Driver Revision:  2.0
+Original Release Date:  11/21/2006
+Current Revision Date:  07/14/2009
+
+<h4>2. Required Software</h4>
+Some software components need to be installed before using this instrument driver. The minimum versions of 
+these components are listed below, and can be downloaded from the Download Site.
+
+VISA 3.2, LabVIEW 8.2 or later
+
+Note: VISA has additional software requirements. For example, unless you are using a serial interface, 
+NI-VISA requires that NI-488.2 and/or NI-VXI be installed on your system. Check with VISA help for additional 
+support software and hardware requirements.
+
+<h4>3. Installation Instructions</h4>
+LabVIEW:
+Instrument drivers should be installed as a subdirectory of the labview\instr.lib. For example, the HP34401A 
+instrument driver, which is included with LabVIEW, is installed in the following directory: 
+
+labview\instr.lib\hp34401a
+
+Within this directory you can find the menu files and VI libraries that make up an instrument driver. The 
+menu files allow you to view the instrument driver VIs from the Functions palette. The VI libraries contain 
+the instrument driver VIs.
+
+<h4>4. Using the Instrument Driver</h4>
+LabVIEW:
+To verify communication with your instrument and test a typical programmatic instrument operation, you should 
+first open the Getting Started or Example VIs the instrument driver. Look over each of the controls and set 
+them appropriately. Generally, with the exception of the address field, the defaults for most controls will 
+be sufficient for your first run. You will need to set the instrument resource name appropriately. After 
+running the VI, check to see that reasonable data was returned and an error was not reported in the error 
+cluster.
+
+After you have verified basic communication with your instrument, you might want to customize instrument 
+control for your needs. If your application needs are similar to the Getting Started or Example VI, the 
+simplest means of creating a customized VI is to save a copy of the Getting Started or Example VI by 
+selecting Save As from the File menu. You can then modify this example to meet your specific needs.
+
+For more details, reference the <i>LabVIEW Help</i> under <i>Help &#0187; VI, Function, &amp; How-To Help</i>.
+
+<h4>5. Known Issues</h4>
+To report issues or provide feedback about this instrument driver, please send an email to <a 
+href="mailto:instrument.drivers@ni.com">instrument.drivers@ni.com</a>.
+<!-- Add known issues here as necessary. -->
+There are currently no known issues with this instrument driver.
+
+<h4>6. Revision History</h4>
+The latest version of this and other LabVIEW and LabWindows/CVI instrument drivers can be downloaded at the 
+<a href = http://www.ni.com/idnet>Instrument Driver Network</a>.
+<!-- add additional Revision Information here if necessary.-->
+REV 1.0, LV 7.1, 11/21/2006
+Original Release.
+
+REV 1.1, LV 7.1, 03/10/2007
+Added: Waveform Burst Example.vi
+Modified: Configure Trigger.vi added spaces to Trigger Source Pick Line function and modified documentation to fully support trigger interval.
+
+REV 1.2, LV 7.1, 10/05/2007
+Added support for two new models AFG3021B and AFG3022B 
+
+REV 1.3, LV 7.1, 04/29/2008
+Added support new model AFG3011
+Formulas for Leading and Trailing Edge Time maximum values are revised.
+
+REV 1.3.1, LV 7.1, 10/13/2008
+Modified: Configure Trigger.vi added missing colon to command TRIG:SLOP %s 
+Modified: Configure Burst.vi corrected index for Burst Mode.
+
+REV 4.0, 07/14/2009
+Modified by: Alvin Tang, Austin, Texas.
+- Original Release for LabVIEW 8.2. Driver created based on version 1.3.1 of LabVIEW 7.1 tkafg3k Plug and Play Driver.
+
+</font>
+</pre>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
