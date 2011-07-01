@@ -134,7 +134,7 @@
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082143248</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342972432</Property>
 	</Item>
 	<Item Name="initialize multimeter.vi" Type="VI" URL="../initialize multimeter.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'7!!!!$Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!$E!Q`````Q2V&lt;GFU!!!21!I!#WVF98.V=G6N:7ZU!$J!=!!/"5FO=X2S!!!*!)!!!!!!!1!%!!!!!1!!!!!!!":736.")(*F=W^V=G.F)'ZB&lt;75A&lt;X6U!!!%!!!!(U!'!"FU=GFH:W6S)'VP:'5A+$![;7ZU:8*O97QJ!"N!"A!6:H6O9X2J&lt;WYA+$![&gt;G^M&gt;(-A2%-J!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!%U!'!!VS982F)#AQ/H.M&lt;X=J!"6!"A!/=G&amp;O:W5A+$![986U&lt;SE!!$:!=!!/"5FO=X2S!!!*!)!!!!!!!1!%!!!!!1!!!!!!!"*736.")(*F=W^V=G.F)'ZB&lt;75!!$Q!]!!-!!-!"!!&amp;!!9!"Q!(!!A!#1!+!!M!$!!.!Q!!?!U)#1!*!!U,!!!!!"!!%!!+!"!!%!!3!!!!!!%!$A!!!!!</Property>
@@ -281,12 +281,21 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
 	</Item>
 	<Item Name="Calibrate Varian.vi" Type="VI" URL="../Calibrate Varian.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$8!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!"V!'A!$!!)!!A!%``]!"1!"!!F7,V1A=G&amp;U;7]!&amp;E"1!!-!!!!"!!)):8*S&lt;X)A;7Y!!"^!'A!$!!)!!A!%``]!"1!"!!J4&gt;W6F=#"3982F!!!]!0!!$!!$!!1!"1!%!!1!"!!%!!1!"A!%!!1!"Q-!!(A.#!!!#1!!!!!!!!!!!!!!#A!!!!!!#A!!!!!"!!A!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$4!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!"F!'A!#!!,``Q!$!!)!#69P6#"S982J&lt;Q!71&amp;!!!Q!!!!%!!ABF=H*P=C"J&lt;A!!(U!;!!-!!P`^!!1!!1!&amp;``]!#F.X:76Q)&amp;*B&gt;'5!!$Q!]!!-!!-!"!!&amp;!!1!"!!%!!1!"!!'!!1!"!!(!Q!!?!U)!!!*!!!!!!!!!!!!!!!+!!!!!!!+!!!!!!%!#!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
+	</Item>
+	<Item Name="Maintain Field.vi" Type="VI" URL="../Maintain Field.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!=!!!!!A!%!!!!%!$Q!!%!!!!!!!!!!!!!!!%!!1!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130944</Property>
 	</Item>
 </LVClass>
