@@ -436,7 +436,6 @@
 			<Item Name="lvsound.dll" Type="Document" URL="../../Program Files/National Instruments/LabVIEW 2009/resource/lvsound.dll"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="../../Program Files/National Instruments/LabVIEW 2009/resource/lvsound2.dll"/>
 			<Item Name="wlmData.dll" Type="Document" URL="../../WINDOWS/system32/wlmData.dll"/>
-			<Item Name="daqmx.rc" Type="Document" URL="../../Program Files/National Instruments/LabVIEW 2009/resource/objmgr/daqmx.rc"/>
 			<Item Name="NIMS_Get Row Vector - Matrix.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Row Vector - Matrix.vi"/>
 			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
 			<Item Name="Translate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Translate Error.vi"/>
