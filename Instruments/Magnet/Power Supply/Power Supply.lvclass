@@ -134,13 +134,13 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1107821074</Property>
 	</Item>
 	<Item Name="Enter Field.vi" Type="VI" URL="../LLB Glue/Enter Field.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;]!!!!$A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$*!=!!?!!!7&amp;&amp;"P&gt;W6S)&amp;.V=("M?3ZM&gt;G.M98.T!!!15'^X:8)A5X6Q='RZ)'^V&gt;!!!'E"Q!!A!!!!3!!!-=G&amp;U:3"N&lt;WZJ&gt;'^S!!!;1(!!#!!!!")!!!V';76M:#"N&lt;WZJ&gt;'^S!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!"!!B!"R!=!!)!!%!#1!)!!!-17*P=H1A9H6U&gt;'^O!!!B1"I!!Q!#``Y!"!!"!!8``Q!-6'&amp;S:W6U)':J:7RE!!!Q1(!!(A!!&amp;B21&lt;X&gt;F=C"4&gt;8"Q&lt;(EO&lt;(:D&lt;'&amp;T=Q!!$V"P&gt;W6S)&amp;.V=("M?3"J&lt;A!]!0!!$!!$!!1!"!!&amp;!!1!"!!'!!=!#!!+!!M!$!-!!(A.#!!!!!#.#Q!!!!!+!!I!#A!+!")!EA!!!!!"!!U!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">1074037056</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;#!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$*!=!!?!!!7&amp;&amp;"P&gt;W6S)&amp;.V=("M?3ZM&gt;G.M98.T!!!15'^X:8)A5X6Q='RZ)'^V&gt;!!!'E"Q!!A!!!!3!!!.2GFF&lt;'1A&lt;7^O;82P=A!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!#&amp;!'A!$!!,``A!%!!%!"@``!!R598*H:81A:GFF&lt;'1!!$"!=!!?!!!7&amp;&amp;"P&gt;W6S)&amp;.V=("M?3ZM&gt;G.M98.T!!!05'^X:8)A5X6Q='RZ)'FO!$Q!]!!-!!-!"!!%!!5!"!!%!!1!"A!(!!1!#!!*!Q!!?!U)!!!!!)U,!!!!!!!!#A!+!!!!%A#3!!!!!!%!#A!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">262400</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342972432</Property>
 	</Item>
 	<Item Name="Convert Amps-Tesla.vi" Type="VI" URL="../LLB Glue/Convert Amps-Tesla.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"C!!!!"A!.1!I!"W&amp;N=(.0661!"!!!!!^!#A!)&gt;'6T&lt;'&amp;0661!!!N!#A!&amp;&gt;'6T&lt;'%!#U!+!!2B&lt;8"T!!!E!0!!"A!!!!%!!A!$!!%!"!)!!&amp;!.!Q!!$15+!!!!#A!!!!!"!!5!!!!!</Property>
@@ -230,11 +230,11 @@
 	<Item Name="Control Panel.vi" Type="VI" URL="../Control Panel.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%6!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$J!=!!?!!!7&amp;&amp;"P&gt;W6S)&amp;.V=("M?3ZM&gt;G.M98.T!!!95'^X:8)A5X6Q='RZ,GRW9WRB=X-A&lt;X6U!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!$:!=!!?!!!7&amp;&amp;"P&gt;W6S)&amp;.V=("M?3ZM&gt;G.M98.T!!!55'^X:8)A5X6Q='RZ,GRW9WRB=X-!!$Q!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"!!(!Q!!?!U)!!!!!)U,!!!!!!!!!!!)!!!!!!#1!!!!!!%!#!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">537166144</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">1107591488</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342972432</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342976528</Property>
 	</Item>
 	<Item Name="Switch Heater Status.ctl" Type="VI" URL="../Switch Heater Status.ctl">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#&amp;!!!!!1"^!0(*0GA%!!!!!B21&lt;X&gt;F=C"4&gt;8"Q&lt;(EO&lt;(:D&lt;'&amp;T=RB4&gt;WFU9WAA3'6B&gt;'6S)&amp;.U982V=SZD&gt;'Q!2U!7!!1.4W:G)#BB&gt;#"[:8*P+1*0&lt;AZ0:G9A+'&amp;U)':J:7RE+160&gt;'BF=A!55X&gt;J&gt;'.I)%BF982F=C"4&gt;'&amp;U&gt;8-!!!%!!!!!!!!</Property>
