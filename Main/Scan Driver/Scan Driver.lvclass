@@ -223,21 +223,30 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 		<Property Name="NI.LibItem.Scope" Type="Int">3</Property>
 	</Item>
 	<Item Name="Get Total Column Number.vi" Type="VI" URL="../Get Total Column Number.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!=!!!!!A!%!!!!%!$Q!!%!!!-!!!!!!!!!!!%!!1!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$X!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!".!!Q!-)S"P:C"$&lt;WRV&lt;7ZT!!!S1(!!(A!!&amp;2.49W&amp;O)%2S;8:F=CZM&gt;G.M98.T!".49W&amp;O)%2S;8:F=CZM&gt;G.M98.T!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!31$Q!!Q!!Q!%!!5!"A!%!!1!"!!%!!=!"!!%!!9$!!"Y$1A!!!E!$1M!!!!!!!!!!!I!!!!!!!A!!!U!!!!-!!!!!!!!!!!!!!%!#!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">1073741824</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
 	</Item>
 	<Item Name="Average Data.vi" Type="VI" URL="../Average Data.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%/!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$2!=!!?!!!6%V.D97YA2(*J&gt;G6S,GRW9WRB=X-!&amp;6.D97YA2(*J&gt;G6S,GRW9WRB=X-A-A!71&amp;!!!Q!!!!%!!ABF=H*P=C"J&lt;A!!-E"Q!"Y!!"545W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=Q!45W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=Q"*!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!1!"Q)!!(A.#!!!!!!.#Q!!!!!!!!!!#!!!!!!!#!!!$1!!!!Q!!!!!!!!!!!!!!1!)!!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%/!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$2!=!!?!!!6%V.D97YA2(*J&gt;G6S,GRW9WRB=X-!&amp;6.D97YA2(*J&gt;G6S,GRW9WRB=X-A-A!71&amp;!!!Q!!!!%!!ABF=H*P=C"J&lt;A!!-E"Q!"Y!!"545W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=Q!45W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=Q"*!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!1!"Q-!!(A.#!!!!!!.#Q!!!!!!!!!!#A!!!!!!#A!!$1!!!!Q!!!!!!!!!!!!!!1!)!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1074266624</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
+	</Item>
+	<Item Name="Average Realtime.vi" Type="VI" URL="../Average Realtime.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%$!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$:!=!!?!!!6%V.D97YA2(*J&gt;G6S,GRW9WRB=X-!&amp;V.D97YA2(*J&gt;G6S,GRW9WRB=X-A&lt;X6U!":!5!!$!!!!!1!##'6S=G^S)'FO!!!S1(!!(A!!&amp;2.49W&amp;O)%2S;8:F=CZM&gt;G.M98.T!".49W&amp;O)%2S;8:F=CZM&gt;G.M98.T!$Q!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"!!(!A!!?!U)!!!!!)U,!!!!!!!!!!!)!!!!!!#1!!!!!!%!#!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130944</Property>
 	</Item>
 </LVClass>
