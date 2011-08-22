@@ -87,4 +87,13 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
 	</Item>
+	<Item Name="Read Continuous.vi" Type="VI" URL="../Read Continuous.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$X!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#Z!=!!?!!!6%V"P&gt;W6S)%VF&gt;'6S,GRW9WRB=X-!$V"P&gt;W6S)%VF&gt;'6S)'^V&gt;!!71&amp;!!!Q!!!!%!!ABF=H*P=C"*&lt;A!!,E"Q!"Y!!"545'^X:8)A476U:8)O&lt;(:D&lt;'&amp;T=Q!/5'^X:8)A476U:8)A37Y!!$Q!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"!!(!Q!!?!E!!!!!!!E!!!!!!!!!!!!+!!!!!!!+!!!!!!%!#!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">32832</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1107821074</Property>
+	</Item>
 </LVClass>
