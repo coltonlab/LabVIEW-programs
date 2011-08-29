@@ -416,6 +416,7 @@
 				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
 				<Item Name="ex_Modify Signals Names.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signals Names.vi"/>
 				<Item Name="subFilter.vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/FilterBlock.llb/subFilter.vi"/>
+				<Item Name="NI_XML.lvlib" Type="Library" URL="/&lt;vilib&gt;/xml/NI_XML.lvlib"/>
 				<Item Name="NIMS_And Generic Elements.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_And Generic Elements.vi"/>
 				<Item Name="NIMS_Check Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_Check Index.vi"/>
 				<Item Name="NIMS_Grow Vector.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Grow Vector.vi"/>
@@ -436,6 +437,9 @@
 			<Item Name="lvsound.dll" Type="Document" URL="../../Program Files/National Instruments/LabVIEW 2009/resource/lvsound.dll"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="../../Program Files/National Instruments/LabVIEW 2009/resource/lvsound2.dll"/>
 			<Item Name="wlmData.dll" Type="Document" URL="../../WINDOWS/system32/wlmData.dll"/>
+			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="NIMS_Get Row Vector - Matrix.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Row Vector - Matrix.vi"/>
 			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
 			<Item Name="Translate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Translate Error.vi"/>
@@ -585,8 +589,6 @@
 			<Item Name="NIMS_num_to_str(GRowV,I32)_52FF5984ECAE430BAA47FE5E9FC630B0_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_num_to_str(GRowV,I32)_52FF5984ECAE430BAA47FE5E9FC630B0.lvgen/NIMS_num_to_str(GRowV,I32)_52FF5984ECAE430BAA47FE5E9FC630B0_000.vi"/>
 			<Item Name="NIMS_CH_String CV to Character 2D_A8457589C506491A87E921C75CEE07B3_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_CH_String CV to Character 2D_A8457589C506491A87E921C75CEE07B3.lvgen/NIMS_CH_String CV to Character 2D_A8457589C506491A87E921C75CEE07B3_000.vi"/>
 			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_000.vi"/>
-			<Item Name="visarc" Type="Document" URL="../../Program Files/National Instruments/LabVIEW 2009/resource/visarc"/>
-			<Item Name="daqmx.rc" Type="Document" URL="../../Program Files/National Instruments/LabVIEW 2009/resource/objmgr/daqmx.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Driver" Type="EXE">
