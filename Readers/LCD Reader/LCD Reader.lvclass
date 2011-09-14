@@ -55,4 +55,13 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
 	</Item>
+	<Item Name="Read Dwell Time.vi" Type="VI" URL="../Read Dwell Time.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;'!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!)%!Q`````R&gt;.&lt;X.U)&amp;.Q:7.J:GFD)%.M98.T&lt;G&amp;N:1!81"I!!1!#!!%!#E2X:7RM)&amp;2J&lt;75!!$:!=!!?!!!5%ER$2#"3:7&amp;E:8)O&lt;(:D&lt;'&amp;T=Q!!&amp;ER$2#"3:7&amp;E:8)O&lt;(:D&lt;'&amp;T=S"P&gt;81!!!1!!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!$2!=!!?!!!5%ER$2#"3:7&amp;E:8)O&lt;(:D&lt;'&amp;T=Q!!&amp;5R$2#"3:7&amp;E:8)O&lt;(:D&lt;'&amp;T=S"J&lt;A!]!0!!$!!$!!1!"1!'!!=!"Q!(!!=!#!!(!!=!#1-!!(A.#!E!#1#.#Q!!!!!!!!!!#A!!!!!!EA!!!!!"!!I!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">33554432</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
+	</Item>
 </LVClass>
