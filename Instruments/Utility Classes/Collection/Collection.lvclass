@@ -83,4 +83,13 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1350574608</Property>
 	</Item>
+	<Item Name="WPGraph.vi" Type="VI" URL="../WPGraph.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$`!!!!#Q!%!!!!"U!+!!&amp;Y!#"!1!!#``````````]!!1Z);8.U&lt;X*Z)%*V:G:F=A!!(%"!!!,``````````Q!"#V*J&lt;G=A1H6G:G6S!!B!6!!'!81!&amp;E"1!!)!"!!"#E2B&gt;'%A5'^J&lt;H1!!"B!1!!"`````Q!&amp;#U2B&gt;'%A5'^J&lt;H2T!!A!5!!"!!9!(%"!!!(`````!!=03'FT&gt;'^S?3"#&gt;7:G:8*T!"J!1!!"`````Q!($&amp;*J&lt;G=A1H6G:G6S=Q!!0!$Q!!Q!!!!#!!-!!!!!!!!!!!!!!!!!#!!*!!!$!!"Y!!!*!!E!!!!!!!!!!!!!!!!!#!!)!!!!!!!!!1!+!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
+	</Item>
 </LVClass>
