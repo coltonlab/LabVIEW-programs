@@ -217,4 +217,13 @@ This interface class is not necessarily independent of Scannable.lvclass - it mi
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1107821056</Property>
 	</Item>
+	<Item Name="Flatten Readable.vi" Type="VI" URL="../Flatten Readable.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"W!!!!!Q!%!!!!,E"Q!"Y!!")15G6B:'&amp;C&lt;'5O&lt;(:D&lt;'&amp;T=Q!!%&amp;*F972B9GRF,GRW9WRB=X-!!$Q!]!!-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"!Q!!?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!%!!A!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342972432</Property>
+	</Item>
 </LVClass>
