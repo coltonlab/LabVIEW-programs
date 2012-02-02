@@ -84,12 +84,12 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1350574608</Property>
 	</Item>
 	<Item Name="WPGraph.vi" Type="VI" URL="../WPGraph.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%2!!!!$1!%!!!!"U!+!!&amp;Y!#"!1!!#``````````]!!1Z);8.U&lt;X*Z)%*V:G:F=A!!$!"!!!(`````!!%!#A"1!!)!!Q!$!"B!1!!"`````Q!%#V*J&lt;G=A1H6G:G6S!!B!6!!'!81!&amp;E"1!!)!"A!"#E2B&gt;'%A5'^J&lt;H1!!"B!1!!"`````Q!(#U2B&gt;'%A5'^J&lt;H2T!!A!5!!"!!A!(%"!!!(`````!!E03'FT&gt;'^S?3"#&gt;7:G:8*T!"J!1!!"`````Q!*$&amp;*J&lt;G=A1H6G:G6S=Q!!0!$Q!!Q!!!!#!!5!!!!!!!!!!!!!!!!!#A!,!!!$!!"Y!!!*!!E!!!!!!!!!!!!!!!!!#!!)!!!!!!!!!1!-!!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;`!!!!$A!(1!I!!8A!$!"!!!(`````!!!!#A"1!!)!!1!"!"J!1!!"`````Q!#$5RB&gt;'6T&gt;#"1&lt;WFO&gt;(-!)%"!!!,``````````Q!!$EBJ=X2P=HEA1H6G:G6S!!!91%!!!@````]!!AN3;7ZH)%*V:G:F=A!%!!!!#%"5!!9"&gt;!!71&amp;!!!A!(!!!+2'&amp;U93"1&lt;WFO&gt;!!!'%"!!!(`````!!A,2'&amp;U93"1&lt;WFO&gt;(-!#!"1!!%!#1"'!0(*158X!!!!!B"3:7&amp;E97*M:3ZM&gt;G.M98.T$&amp;29)%&gt;S98"I,G.U&lt;!!A1%!!!@````]!#A^);8.U&lt;X*Z)%*V:G:F=H-!2!$RS5&amp;&amp;^Q!!!!)15G6B:'&amp;C&lt;'5O&lt;(:D&lt;'&amp;T=QR57#"(=G&amp;Q;#ZD&gt;'Q!(E"!!!(`````!!I-5GFO:S"#&gt;7:G:8*T!!!]!0!!$!!$!!1!"1!'!!9!"A!'!!9!"A!,!!Q!"A-!!(A*!!E!#1!!!!!!!!!!!!!!!!!)!!A!!!!!!!!"!!U!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342972432</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
 	</Item>
 </LVClass>
