@@ -9,7 +9,8 @@
 	<Item Name="PID function.vi" Type="VI" URL="../PID function.vi"/>
 	<Item Name="last 20 array elements.vi" Type="VI" URL="../last 20 array elements.vi"/>
 	<Item Name="initialize multimeter.vi" Type="VI" URL="../initialize multimeter.vi"/>
-	<Item Name="Go to field based on control voltage.vi" Type="VI" URL="../Go to field based on control voltage.vi"/>
+	<Item Name="Set Control Voltage.vi" Type="VI" URL="../Set Control Voltage.vi"/>
 	<Item Name="Fixed PID.vi" Type="VI" URL="../Fixed PID.vi"/>
 	<Item Name="At field and stable.vi" Type="VI" URL="../At field and stable.vi"/>
+	<Item Name="Read Control Voltage.vi" Type="VI" URL="../Read Control Voltage.vi"/>
 </Library>
