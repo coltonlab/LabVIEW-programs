@@ -13,4 +13,5 @@
 	<Item Name="Fixed PID.vi" Type="VI" URL="../Fixed PID.vi"/>
 	<Item Name="At field and stable.vi" Type="VI" URL="../At field and stable.vi"/>
 	<Item Name="Read Control Voltage.vi" Type="VI" URL="../Read Control Voltage.vi"/>
+	<Item Name="Plot Field Calibration.vi" Type="VI" URL="../Plot Field Calibration.vi"/>
 </Library>
