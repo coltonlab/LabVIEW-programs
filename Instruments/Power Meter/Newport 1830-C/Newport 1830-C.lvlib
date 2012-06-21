@@ -4,6 +4,9 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="Private" Type="Folder">
 		<Item Name="Default Instrument Setup.vi" Type="VI" URL="../Private/Default Instrument Setup.vi"/>
+		<Item Name="Send Command.vi" Type="VI" URL="../Private/Send Command.vi"/>
+		<Item Name="Read Float.vi" Type="VI" URL="../Private/Read Float.vi"/>
+		<Item Name="Read Int.vi" Type="VI" URL="../Private/Read Int.vi"/>
 	</Item>
 	<Item Name="Public" Type="Folder">
 		<Item Name="Action-Status" Type="Folder"/>
