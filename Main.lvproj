@@ -587,6 +587,7 @@
 			<Item Name="NIMS_num_to_str(GRowV,I32)_52FF5984ECAE430BAA47FE5E9FC630B0_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_num_to_str(GRowV,I32)_52FF5984ECAE430BAA47FE5E9FC630B0.lvgen/NIMS_num_to_str(GRowV,I32)_52FF5984ECAE430BAA47FE5E9FC630B0_000.vi"/>
 			<Item Name="NIMS_CH_String CV to Character 2D_A8457589C506491A87E921C75CEE07B3_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_CH_String CV to Character 2D_A8457589C506491A87E921C75CEE07B3.lvgen/NIMS_CH_String CV to Character 2D_A8457589C506491A87E921C75CEE07B3_000.vi"/>
 			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_000.vi"/>
+			<Item Name="visarc" Type="Document" URL="../../Program Files/National Instruments/LabVIEW 2009/resource/visarc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Driver" Type="EXE">
