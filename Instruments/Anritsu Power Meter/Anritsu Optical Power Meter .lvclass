@@ -34,7 +34,7 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">3</Property>
 	</Item>
 	<Item Name="Control Panel.vi" Type="VI" URL="../Control Panel.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;(!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!&amp;*!=!!?!!!G*%&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!O&lt;(:D&lt;'&amp;T=Q!!)%&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!A&lt;X6U!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!&amp;"!=!!?!!!G*%&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!O&lt;(:D&lt;'&amp;T=Q!!(U&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!A;7Y!0!$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!9!"!!%!!=$!!"Y#1!!!!!!D1M!!!!!!!!!!!I!!!!!!*)!!!!!!1!)!!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;(!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!&amp;*!=!!?!!!G*%&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!O&lt;(:D&lt;'&amp;T=Q!!)%&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!A&lt;X6U!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!&amp;"!=!!?!!!G*%&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!O&lt;(:D&lt;'&amp;T=Q!!(U&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!A;7Y!0!$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!9!"!!%!!=$!!"Y#1!!!!!!D1M!!!!!!!!!!!I!!!!!!*!!!!!!!1!)!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">1124073856</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>

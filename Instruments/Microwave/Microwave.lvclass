@@ -29,13 +29,17 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
 	</Item>
 	<Item Name="Control Panel.vi" Type="VI" URL="../Control Panel.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%$!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$"!=!!?!!!4%5VJ9X*P&gt;W&amp;W:3ZM&gt;G.M98.T!"*'97NF)%VJ9X*P&gt;W&amp;W:3"P&gt;81!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!,E"Q!"Y!!"-247FD=G^X98:F,GRW9WRB=X-!%5:B;W5A47FD=G^X98:F)'FO!$Q!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"!!(!Q!!?!E!!!!!!)U,!!!!!!!!!!!+!!!!!!#3!!!!!!%!#!!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%$!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$"!=!!?!!!4%5VJ9X*P&gt;W&amp;W:3ZM&gt;G.M98.T!"*'97NF)%VJ9X*P&gt;W&amp;W:3"P&gt;81!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!,E"Q!"Y!!"-247FD=G^X98:F,GRW9WRB=X-!%5:B;W5A47FD=G^X98:F)'FO!$Q!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"!!(!Q!!?!E!!!!!!)U,!!!!!!!!!!!+!!!!!!#1!!!!!!%!#!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">1124106696</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+<<<<<<< .mine
+		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
+=======
 		<Property Name="NI.ClassItem.State" Type="Int">1342714384</Property>
+>>>>>>> .r1232
 	</Item>
 	<Item Name="Get Scanner.vi" Type="VI" URL="../Get Scanner.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$^!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#Z!=!!?!!!2$V.D97ZO:8)O&lt;(:D&lt;'&amp;T=Q!42'6G986M&gt;#"49W&amp;O&lt;G6S)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!#J!=!!?!!!4%5VJ9X*P&gt;W&amp;W:3ZM&gt;G.M98.T!!R.;7.S&lt;X&gt;B&gt;G5A;7Y!!$Q!]!!-!!-!"!!&amp;!!1!"!!%!!1!"!!'!!1!"!!(!Q!!?!U)!!!*!!!!!!!!!!!!!!!+!!!!!!#3!!!!!!%!#!!!!!!</Property>

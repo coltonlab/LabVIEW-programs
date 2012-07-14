@@ -47,13 +47,17 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1117782544</Property>
 	</Item>
 	<Item Name="Control Panel.vi" Type="VI" URL="../Control Panel.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%J!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%*!=!!?!!!='E:V&lt;G.U;7^O)%&gt;F&lt;G6S982P=CZM&gt;G.M98.T!!!&lt;2G&amp;L:3"'&gt;7ZD&gt;'FP&lt;C"(:7ZF=G&amp;U&lt;X)A&lt;X6U!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!1E"Q!"Y!!"Q;2H6O9X2J&lt;WYA2W6O:8*B&gt;'^S,GRW9WRB=X-!!"J'97NF)%:V&lt;G.U;7^O)%&gt;F&lt;G6S982P=C"J&lt;A!!0!$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!9!"!!%!!=$!!"Y#1!!!!!!D1M!!!!!!!!!!!I!!!!!!*)!!!!!!1!)!!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%J!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%*!=!!?!!!='E:V&lt;G.U;7^O)%&gt;F&lt;G6S982P=CZM&gt;G.M98.T!!!&lt;2G&amp;L:3"'&gt;7ZD&gt;'FP&lt;C"(:7ZF=G&amp;U&lt;X)A&lt;X6U!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!1E"Q!"Y!!"Q;2H6O9X2J&lt;WYA2W6O:8*B&gt;'^S,GRW9WRB=X-!!"J'97NF)%:V&lt;G.U;7^O)%&gt;F&lt;G6S982P=C"J&lt;A!!0!$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!9!"!!%!!=$!!"Y#1!!!!!!D1M!!!!!!!!!!!I!!!!!!*!!!!!!!1!)!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">1124073864</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+<<<<<<< .mine
+		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
+=======
 		<Property Name="NI.ClassItem.State" Type="Int">1342714384</Property>
+>>>>>>> .r1232
 	</Item>
 	<Item Name="Read Frequencies and Voltages.vi" Type="VI" URL="../Read Frequencies and Voltages.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)R!!!!%1"%1(!!(A!!("J'&gt;7ZD&gt;'FP&lt;C"(:7ZF=G&amp;U&lt;X)O&lt;(:D&lt;'&amp;T=Q!!(5:V&lt;G.U;7^O)%&gt;F&lt;G6S982P=CZM&gt;G.M98.T)'FO!!1!!!!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!A1&amp;!!!Q!#!!-!"".F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!""!)1J0&gt;82Q&gt;81A&lt;WY`!!!A1%!!!@````]!"B.B=H*B?3"P:C"P&gt;82Q&gt;82T)'^O!"F!'A!"!!,``Q!.1WAR)%:S:8&amp;V:7ZD?1!@1"I!"!!#``U!!Q!#!!1!!1!&amp;``]!"U.I-C"-&lt;X=!2E"Q!"Y!!"Q;2H6O9X2J&lt;WYA2W6O:8*B&gt;'^S,GRW9WRB=X-!!"Z'&gt;7ZD&gt;'FP&lt;C"(:7ZF=G&amp;U&lt;X)O&lt;(:D&lt;'&amp;T=S"P&gt;81!!#&amp;!'A!%!!,``1!$!!)!"!!"!!8``Q!)1WAR)%BJ:WA!!"^!'A!%!!,``1!$!!)!"!!"!!8``Q!(1WAR)%RP&gt;Q!:1"I!!1!#``]!$5.I-C"'=G6R&gt;76O9XE!)5!;!!1!!P`^!!-!!A!%!!%!"@``!!B$;$)A3'FH;!!!&amp;E"1!!-!!A!$!!1*:8*S&lt;X)A&lt;X6U!&amp;Q!]!!5!!!!!1!"!!%!!1!&amp;!!%!!1!"!!%!!1!(!!A!#1!+!!M!$!!.!!Y!$Q)!!2#1!!!!!!!!!!!!#!!!!!!!!!!!!!!!#1!*!!E!D1!*!!E!#1!*!!U&amp;!!!!!1!1!!!!!!</Property>
