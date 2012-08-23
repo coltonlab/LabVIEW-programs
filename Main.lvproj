@@ -399,9 +399,6 @@
 				<Item Name="ex_Modify Signal Name.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signal Name.vi"/>
 				<Item Name="math.ctl" Type="VI" URL="/&lt;vilib&gt;/express/express shared/math.ctl"/>
 				<Item Name="ex_Math.vi" Type="VI" URL="/&lt;vilib&gt;/express/express arith-compare/TimeDomainMathBlock.llb/ex_Math.vi"/>
-				<Item Name="DAQmx Control Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Control Task.vi"/>
-				<Item Name="sub Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/sub Waveform Array To Dynamic.vi"/>
-				<Item Name="Convert 1DWfm to DDT.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/Convert 1DWfm to DDT.vi"/>
 				<Item Name="subBuildXYGraph.vi" Type="VI" URL="/&lt;vilib&gt;/express/express controls/BuildXYGraphBlock.llb/subBuildXYGraph.vi"/>
 				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
 				<Item Name="ex_GetAllExpressAttribs.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_GetAllExpressAttribs.vi"/>
@@ -587,7 +584,6 @@
 			<Item Name="NIMS_num_to_str(GRowV,I32)_52FF5984ECAE430BAA47FE5E9FC630B0_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_num_to_str(GRowV,I32)_52FF5984ECAE430BAA47FE5E9FC630B0.lvgen/NIMS_num_to_str(GRowV,I32)_52FF5984ECAE430BAA47FE5E9FC630B0_000.vi"/>
 			<Item Name="NIMS_CH_String CV to Character 2D_A8457589C506491A87E921C75CEE07B3_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_CH_String CV to Character 2D_A8457589C506491A87E921C75CEE07B3.lvgen/NIMS_CH_String CV to Character 2D_A8457589C506491A87E921C75CEE07B3_000.vi"/>
 			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_000.vi"/>
-			<Item Name="visarc" Type="Document" URL="../../Program Files/National Instruments/LabVIEW 2009/resource/visarc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Driver" Type="EXE">
