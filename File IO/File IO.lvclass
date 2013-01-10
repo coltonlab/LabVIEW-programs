@@ -203,4 +203,22 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1350574610</Property>
 	</Item>
+	<Item Name="Save Scan.vi" Type="VI" URL="../Save Scan.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'N!!!!$1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!,E"Q!"Y!!"%02GFM:3"*4SZM&gt;G.M98.T!".';7RF)%F0,GRW9WRB=X-A&lt;X6U!#Z!=!!?!!!1$F*F972F=CZM&gt;G.M98.T!!!35G6B:'6S,GRW9WRB=X-A&lt;X6U!!!O1(!!(A!!%1^49W&amp;O&lt;G6S,GRW9WRB=X-!%V.D97ZO:8)O&lt;(:D&lt;'&amp;T=S"P&gt;81!"!!!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!+E"Q!"Y!!"%02GFM:3"*4SZM&gt;G.M98.T!!^';7RF)%F0,GRW9WRB=X-!+E"Q!"Y!!"!/5G6B:'6S,GRW9WRB=X-!!!Z3:7&amp;E:8)O&lt;(:D&lt;'&amp;T=Q!!+E"Q!"Y!!"%05W.B&lt;GZF=CZM&gt;G.M98.T!!^49W&amp;O&lt;G6S,GRW9WRB=X-!0!$Q!!Q!!Q!%!!5!"A!(!!=!"Q!(!!A!#1!+!!M$!!"Y#1!.#1U+$1M!!!!!!!!!!!I!#A!+!!I!!!!!!1!-!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
+	</Item>
+	<Item Name="Load Scan.vi" Type="VI" URL="../Load Scan.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'N!!!!$1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!,E"Q!"Y!!"%02GFM:3"*4SZM&gt;G.M98.T!".';7RF)%F0,GRW9WRB=X-A&lt;X6U!#Z!=!!?!!!1$F*F972F=CZM&gt;G.M98.T!!!35G6B:'6S,GRW9WRB=X-A&lt;X6U!!!O1(!!(A!!%1^49W&amp;O&lt;G6S,GRW9WRB=X-!%V.D97ZO:8)O&lt;(:D&lt;'&amp;T=S"P&gt;81!"!!!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!+E"Q!"Y!!"%02GFM:3"*4SZM&gt;G.M98.T!!^';7RF)%F0,GRW9WRB=X-!+E"Q!"Y!!"!/5G6B:'6S,GRW9WRB=X-!!!Z3:7&amp;E:8)O&lt;(:D&lt;'&amp;T=Q!!+E"Q!"Y!!"%05W.B&lt;GZF=CZM&gt;G.M98.T!!^49W&amp;O&lt;G6S,GRW9WRB=X-!0!$Q!!Q!!Q!%!!5!"A!(!!=!"Q!(!!A!#1!+!!M$!!"Y#1!.#1U+$1M!!!!!!!!!!!I!#A!+!!I!!!!!!1!-!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
+	</Item>
 </LVClass>
