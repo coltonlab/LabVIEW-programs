@@ -19,6 +19,7 @@
 			<Item Name="Query Motor Position (TRIAX).vi" Type="VI" URL="../Public/Action-Status/Query Motor Position (TRIAX).vi"/>
 			<Item Name="Query Slit Position.vi" Type="VI" URL="../Public/Action-Status/Query Slit Position.vi"/>
 			<Item Name="Query Turret Position (TRIAX).vi" Type="VI" URL="../Public/Action-Status/Query Turret Position (TRIAX).vi"/>
+			<Item Name="Kyle&apos;s Move to Wavelength.vi" Type="VI" URL="../Public/Action-Status/Kyle&apos;s Move to Wavelength.vi"/>
 		</Item>
 		<Item Name="Configure" Type="Folder">
 			<Item Name="Configure.mnu" Type="Document" URL="../Public/Configure/Configure.mnu"/>
