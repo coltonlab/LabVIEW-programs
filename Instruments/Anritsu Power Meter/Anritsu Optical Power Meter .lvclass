@@ -45,11 +45,11 @@
 	<Item Name="Setup UI.vi" Type="VI" URL="../Setup UI.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;B!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!&amp;*!=!!?!!!G*%&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!O&lt;(:D&lt;'&amp;T=Q!!)%&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!A&lt;X6U!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!"J!)224:81A65EA&gt;']A;7ZQ&gt;81`)#B'+1!!5%"Q!"Y!!#9E17ZS;82T&gt;3"0=(2J9W&amp;M)&amp;"P&gt;W6S)%VF&gt;'6S)#ZM&gt;G.M98.T!!!@17ZS;82T&gt;3"0=(2J9W&amp;M)&amp;"P&gt;W6S)%VF&gt;'6S)#"J&lt;A!]!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!=!#!-!!(A.#!!!!!#.#Q!!!!!!!!!!#A!!!!I!EA!!!!!"!!E!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">1073741824</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1107821074</Property>
 	</Item>
 	<Item Name="Anritsu Optical Power Meter.vi" Type="VI" URL="../Anritsu Optical Power Meter.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;/!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!&amp;:!=!!?!!!G*%&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!O&lt;(:D&lt;'&amp;T=Q!!*%&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!O&lt;(:D&lt;'&amp;T=Q!!&amp;E"1!!-!!!!"!!)):8*S&lt;X)A;7Y!!&amp;"!=!!?!!!G*%&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!O&lt;(:D&lt;'&amp;T=Q!!(U&amp;O=GFU=X5A4X"U;7.B&lt;#"1&lt;X&gt;F=C".:82F=C!A;7Y!31$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!9!"!!%!!=$!!"Y$1A!!!!!$1M!!!!!!!!!!!I!!!!!!!I!!!U!!!!-!!!!!!!!!!!!!!%!#!!!!!!</Property>
