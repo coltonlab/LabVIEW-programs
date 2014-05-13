@@ -84,6 +84,15 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
 	</Item>
+	<Item Name="Set Current and Voltage.vi" Type="VI" URL="../Set Current and Voltage.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%A#!"!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;-!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#Z!=!!?!!!6%UVB:WZB)&amp;"P&gt;W6S,GRW9WRB=X-!$UVB:WZB)&amp;"P&gt;W6S)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!".!#A!.1X6S=G6O&gt;#"-;7VJ&gt;!!41!I!$6:P&lt;(2B:W5A4'FN;81!,E"Q!"Y!!"5447&amp;H&lt;G%A5'^X:8)O&lt;(:D&lt;'&amp;T=Q!/47&amp;H&lt;G%A5'^X:8)A;7Y!!'%!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!=!#!!*!Q!!?!!!$1A!!!!!!!!!!!!!$1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!#!!!!!A!!!!+!!!.!!!!$!!!!!!!!!!!!!!"!!I!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
+	</Item>
 	<Item Name="Test sweep.vi" Type="VI" URL="../Test sweep.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%A#!"!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%:!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#Z!=!!?!!!6%UVB:WZB)&amp;"P&gt;W6S,GRW9WRB=X-!$UVB:WZB)&amp;"P&gt;W6S)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!#Z!=!!?!!!6%UVB:WZB)&amp;"P&gt;W6S,GRW9WRB=X-!$EVB:WZB)&amp;"P&gt;W6S)'FO!!"5!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!1!"Q-!!(A!!!U)!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!!!!E!!!!!!"!!A!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
