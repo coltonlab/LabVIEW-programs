@@ -7,6 +7,9 @@ Solution: In LabVIEW, go to Tools->Options, then click Paths, select Default Dat
 ------------------ERROR "There is no disk in the drive. Please insert a disk into drive \Device\Harddisk3\DR3"
 after trying to run LabVIEW at all
 
-
 Solution:
 Open Disk Management and look at which disk is number 3. In my case, it was the removable drive mount, so I just moved that to a different mount letter using Disk Management (e.g. from drive K to drive L) and everything worked.
+
+
+------------------Error "Could not initialize port COM1"
+Solution: Go to Device Manager, go to ports, then right click "Communications Port (COM1)" and select uninstall. Then restart the computer.
