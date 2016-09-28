@@ -107,13 +107,13 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 		<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
 	</Item>
 	<Item Name="Convert Data For Intensity Graph.vi" Type="VI" URL="../Convert Data For Intensity Graph.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%A#!"!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;Y!!!!$!!S!0(*1J(&amp;!!!!!B"3:7&amp;E97*M:3ZM&gt;G.M98.T"6AO9X2M!".!#A!*&lt;7FO)(:B&lt;(6F!$)!]=F#E=5!!!!#%&amp;*F972B9GRF,GRW9WRB=X-&amp;7#ZD&gt;'Q!%U!+!!FN98AA&gt;G&amp;M&gt;75!+A$RS5+2R1!!!!)15G6B:'&amp;C&lt;'5O&lt;(:D&lt;'&amp;T=Q69,G.U&lt;!!,1!I!!8A!'E"!!!,``````````Q!##%2B&gt;'%A&lt;X6U!!!I!0(*1J(&amp;!!!!!B"3:7&amp;E97*M:3ZM&gt;G.M98.T"6AO9X2M!!E!#A!!&amp;E"1!!1!"!!%!!1!"!:C&lt;X6O:(-!!!1!!!!+!&amp;!!!A!#!!)!$!"!!!(`````!!=!#!"1!!%!#!!51%!!!@````]!#1&gt;%982B)%FO!&amp;1!]!!-!!!!!1!$!!5!"A!'!!9!"A!'!!9!#A!'!Q!!?!!!#1!!!!E!!!!*!!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!AA!!!!!!!!!!!%!#Q!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%A#!"!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!',!!!!$1!S!0(*1J(&amp;!!!!!B"3:7&amp;E97*M:3ZM&gt;G.M98.T"6AO9X2M!".!#A!*&lt;7FO)(:B&lt;(6F!$)!]=F#E=5!!!!#%&amp;*F972B9GRF,GRW9WRB=X-&amp;7#ZD&gt;'Q!%U!+!!FN98AA&gt;G&amp;M&gt;75!+A$RS5+2R1!!!!)15G6B:'&amp;C&lt;'5O&lt;(:D&lt;'&amp;T=Q69,G.U&lt;!!,1!I!!8A!'E"!!!,``````````Q!##%2B&gt;'%A&lt;X6U!!!I!0(*1J(&amp;!!!!!B"3:7&amp;E97*M:3ZM&gt;G.M98.T"6AO9X2M!!E!#A!!&amp;E"1!!1!"!!%!!1!"!:C&lt;X6O:(-!!!1!!!!41!-!$&amp;*F972F=C"J&lt;G2F?!!!#A"1!!)!!A!#!!Q!1!!"`````Q!)!!A!5!!"!!E!&amp;%"!!!(`````!!I(2'&amp;U93"*&lt;A"5!0!!$!!!!!%!!Q!&amp;!!9!"A!'!!9!"A!(!!M!"A-!!(A!!!E!!!!*!!!!#1!!!!E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!A!!!))!!!!!!!!!!!"!!Q!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1074266640</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710290</Property>
 	</Item>
 	<Item Name="Average Realtime.vi" Type="VI" URL="../Average Realtime.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%A#!"!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%O!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$:!=!!?!!!6%V.D97YA2(*J&gt;G6S,GRW9WRB=X-!&amp;V.D97YA2(*J&gt;G6S,GRW9WRB=X-A&lt;X6U!":!5!!$!!!!!1!##'6S=G^S)'FO!!!41!=!$%.V=H*F&lt;H1A5X2F=!!!-E"Q!"Y!!"545W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=Q!45W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=Q"5!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!=!#!-!!(A!!!U)!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#!!!!!!!!!!+!!!!EA!!!!!"!!E!!!!!</Property>
@@ -258,15 +258,6 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1350836752</Property>
 		<Property Name="NI.LibItem.Scope" Type="Int">3</Property>
-	</Item>
-	<Item Name="Scan Double.vi" Type="VI" URL="../Scan Double.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%A#!"!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%S!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!!R!)1:":W&amp;J&lt;D]!!#Z!=!!?!!!6%V.D97YA2(*J&gt;G6S,GRW9WRB=X-!$V.D97YA2(*J&gt;G6S)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!#Z!=!!?!!!6%V.D97YA2(*J&gt;G6S,GRW9WRB=X-!$F.D97YA2(*J&gt;G6S)'FO!!"B!0!!$!!$!!1!"1!'!!1!"!!%!!1!"Q!%!!1!#!-!!(A!!!U)!!!!!!!!#1!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!!!!%A!!$1!!!!Q!!!!!!!!!!!!!!1!*!!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">1074004233</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082917392</Property>
 	</Item>
 	<Item Name="Settings Panel.vi" Type="VI" URL="../Settings Panel.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%A#!"!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!?!!!!!A!%!!!!%A$Q!!%!!!-!!!!!!!!!!!!!!1!"!!!!!!</Property>
