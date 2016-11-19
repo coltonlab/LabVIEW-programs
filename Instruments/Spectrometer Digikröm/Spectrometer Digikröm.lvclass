@@ -16,7 +16,7 @@
 
 </Property>
 	<Property Name="NI.LVClass.IsTransferClass" Type="Bool">false</Property>
-	<Property Name="NI.LVClass.ParentClassLinkInfo" Type="Bin">%A#!"!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"1!!!!!2&amp;49W&amp;O&lt;G&amp;C&lt;'5O&lt;(:D&lt;'&amp;T=V"53$!!!!!S!!%!"1!!$V6U;7RJ&gt;(EA1WRB=X.F=QF49W&amp;O&lt;G&amp;C&lt;'525W.B&lt;GZB9GRF,GRW9WRB=X-!!!!!</Property>
+	<Property Name="NI.LVClass.ParentClassLinkInfo" Type="Bin">%A#!"!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"Q!!!!!2&amp;49W&amp;O&lt;G&amp;C&lt;'5O&lt;(:D&lt;'&amp;T=V"53$!!!!"3!!%!#A!!!!!!%%RB9F:*26=N=(*P:X*B&lt;8-,37ZT&gt;(*V&lt;76O&gt;(-0682J&lt;'FU?3"$&lt;'&amp;T=W6T#6.D97ZO97*M:2&amp;49W&amp;O&lt;G&amp;C&lt;'5O&lt;(:D&lt;'&amp;T=Q!!!!!</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Spectrometer Digikröm.ctl" Type="Class Private Data" URL="Spectrometer Digikröm.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
