@@ -1,10 +1,10 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Library LVVersion="15008000">
+<Library LVVersion="17008000">
 	<Property Name="Instrument Driver" Type="Str">True</Property>
 	<Property Name="NI.Lib.Description" Type="Str">This driver configures and takes measurements from the Tektronix AFG 3000 Series Oscilloscope.  For more information about this driver, please refer to Tektronix AFG 3000 Series Readme.html</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
-	<Property Name="NI.Lib.Icon" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*/!!!*Q(C=\&gt;1R4O.1%-&lt;RD^576'CT(2W+N"8FV(2J+8/&amp;O5*;SJQ!;8J#E1OYS!G12HO$8#(6^O&lt;PZX'!BD1AM2*W8H!_PT@PZW&gt;DK7XHUE`VJ\&lt;OX7XM1K@BUVJ^^=?M(@2&gt;.U6&gt;F2T#;8$&amp;U\"8AV`'4T.VRT)PY[=O9_WX]Z`Q[^XN_`TX_@`\`)G.0H=H/XXS*JUV+3VJ18/;N;PLETT*ETT*ETT*ATT)ATT)ATT)H&gt;T*H&gt;T*H&gt;T*D&gt;T)D&gt;T)D&gt;T)WUYO=J',H&amp;6**E]G3IIG":,/5*2]*:\%EXA3$T_6?"*0YEE]C9=O3DS**`%EHM4$-#7?R*.Y%E`CI634:.P*]31?SCPQ"*\!%XA#$V-K]!3!9,+A=&amp;!%BI+4Q5(A#4S"BU-&amp;HM!4?!*0Y/'U!E`A#4S"*`!QJ+V+.-WQE_/BD"S0YX%]DM@R5&amp;K/R`%Y(M@D?*B/DM@R/!BH1K=Y"$G$H!\/$]@D?0ADR_.Y()`D=4S=;H@)W]I-GG%HRW.Y$)`B-4S'BR)S0)&lt;(]"A?QU.:'2\$9XA-D_&amp;B+BE?QW.Y$)AR+&gt;0,+'9-.$I:A?(BUZY7;X=JGM4;8P_;YY/K?A"6$Z&lt;KA6%^#+I&lt;L,JRKBOC7GD6!KI72H8"KAN2!654KQKK/OL!^Z[WIWVJ;^K+NK1N;(0;&lt;"D[Q2U0BY0W_\VWOZWWW[X7[\67KZ77S[57CY8G]\FGM^HR&lt;88&amp;0GZHUXPJDO.`]@&gt;J=`HL_P(0`?XGZP@VQ_&lt;C;=A`MYXPJ;`Q&lt;N10^;^?][T2-[%BJB9!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">352354304</Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*/!!!*Q(C=\&gt;1R4O.1%-&lt;RD^576'CT(2W+N"8FV(2J+8/&amp;O5*;SJQ!;8J#E1OYS!G12HO$8#(6^O&lt;PZX'!BD1AM2*W8H!_PT@PZW&gt;DK7XHUE`VJ\&lt;OX7XM1K@BUVJ^^=?M(@2&gt;.U6&gt;F2T#;8$&amp;U\"8AV`'4T.VRT)PY[=O9_WX]Z`Q[^XN_`TX_@`\`)G.0H=H/XXS*JUV+3VJ18/;N;PLETT*ETT*ETT*ATT)ATT)ATT)H&gt;T*H&gt;T*H&gt;T*D&gt;T)D&gt;T)D&gt;T)WUYO=J',H&amp;6**E]G3IIG":,/5*2]*:\%EXA3$T_6?"*0YEE]C9=O3DS**`%EHM4$-#7?R*.Y%E`CI634:.P*]31?SCPQ"*\!%XA#$V-K]!3!9,+A=&amp;!%BI+4Q5(A#4S"BU-&amp;HM!4?!*0Y/'U!E`A#4S"*`!QJ+V+.-WQE_/BD"S0YX%]DM@R5&amp;K/R`%Y(M@D?*B/DM@R/!BH1K=Y"$G$H!\/$]@D?0ADR_.Y()`D=4S=;H@)W]I-GG%HRW.Y$)`B-4S'BR)S0)&lt;(]"A?QU.:'2\$9XA-D_&amp;B+BE?QW.Y$)AR+&gt;0,+'9-.$I:A?(BUZY7;X=JGM4;8P_;YY/K?A"6$Z&lt;KA6%^#+I&lt;L,JRKBOC7GD6!KI72H8"KAN2!654KQKK/OL!^Z[WIWVJ;^K+NK1N;(0;&lt;"D[Q2U0BY0W_\VWOZWWW[X7[\67KZ77S[57CY8G]\FGM^HR&lt;88&amp;0GZHUXPJDO.`]@&gt;J=`HL_P(0`?XGZP@VQ_&lt;C;=A`MYXPJ;`Q&lt;N10^;^?][T2-[%BJB9!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">385908736</Property>
 	<Property Name="NI.Lib.Version" Type="Str">2.0.0.0</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Examples" Type="Folder">
