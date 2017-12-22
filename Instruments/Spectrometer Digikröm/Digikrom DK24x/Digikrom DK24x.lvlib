@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Library LVVersion="15008000">
+<Library LVVersion="17008000">
 	<Property Name="Instrument Driver" Type="Str">True</Property>
 	<Property Name="NI.Lib.Description" Type="Str">Digikröm
 DK 240 ¼ Meter
@@ -12,8 +12,8 @@ Spectral Products
 200 Dorado Place SE Albuquerque, NM 87123
 Phone (877) 208-0245 Fax (505) 298-9908</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
-	<Property Name="NI.Lib.Icon" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!+!!!!*Q(C=\&gt;1^&lt;NN!%)&lt;BTY',J&amp;38)E7A%RC9+[BRG9*!$#4N8%'NCR4+%?9+KGB$H1SY3D?.#Z?[AK\!P&amp;QN;3?B&lt;3"+E1!BN2,V\&gt;`$Z9*3/6Z,J_J?/D&lt;0(N10T7L4LFZUB]`$XT%?+Q\B$`5083@LRS'[K@[$9"DJZ`EH&lt;G:S`-@"F']TX/WP`MUY^20X@[CJ`K@7LRN`8V\`9Q]^?RT:`@`R$RS8RW_C9`@#3&gt;FJF+1%R3GG@MAOS:-]S:-]S:-]S)-]S)-]S)0=S:X=S:X=S:X=S)X=S)X=S)W]H/1C&amp;\H))374*R-FAS9$*)WB+0F+0)EH]31?`CLR**\%EXA3$UW5?"*0YEE]C9&gt;O3DS**`%EHM4$5%73Z34(EXA98I%H]!3?Q".YG&amp;+"*Q!%EQ5$"Y0!5&amp;!:8!3?Q".YO&amp;4A#4S"*`!%(KI6?!*0Y!E]A9=O:67C;0K4(!`$S0%Y(M@D?"Q01]PR/"\(YXA=$^0*]4A?"_&amp;-[!Q/15YHJY(TR`%Y(H\E?"S0YX%]DI?K]I3]L%SP[5^S0)&lt;(]"A?QW.Y'%+'R`!9(M.D?"B7BM@Q'"\$9XC93I&lt;(]"A?!W*-SP1S"D-['IW-Q0$Q+&lt;P&amp;SF/+)L&amp;S3H8TKGZ+V=WGOIF5.Y@K1V&gt;^G+I0388R62&gt;6&gt;&lt;&amp;5&amp;U(VZF42KBD6361\^QWVZXN(W6,7F"6F37EI#]K=-OO\`O''_`V?O^V/W_V7[`6;K^6+S_634&gt;.IM6BI0J^L.JO.LY(XH/-,Y@"?OO4[^OTD?&gt;N_O7_PXD4N^?S_P8FXXN\IJ,V_?^&amp;?H8ZLW[`5@\C\0@PUO7]`P)_'[^^`,`U.\U;^UO0_L.&amp;X^!\OEQ!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">352354304</Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!+!!!!*Q(C=\&gt;1^&lt;NN!%)&lt;BTY',J&amp;38)E7A%RC9+[BRG9*!$#4N8%'NCR4+%?9+KGB$H1SY3D?.#Z?[AK\!P&amp;QN;3?B&lt;3"+E1!BN2,V\&gt;`$Z9*3/6Z,J_J?/D&lt;0(N10T7L4LFZUB]`$XT%?+Q\B$`5083@LRS'[K@[$9"DJZ`EH&lt;G:S`-@"F']TX/WP`MUY^20X@[CJ`K@7LRN`8V\`9Q]^?RT:`@`R$RS8RW_C9`@#3&gt;FJF+1%R3GG@MAOS:-]S:-]S:-]S)-]S)-]S)0=S:X=S:X=S:X=S)X=S)X=S)W]H/1C&amp;\H))374*R-FAS9$*)WB+0F+0)EH]31?`CLR**\%EXA3$UW5?"*0YEE]C9&gt;O3DS**`%EHM4$5%73Z34(EXA98I%H]!3?Q".YG&amp;+"*Q!%EQ5$"Y0!5&amp;!:8!3?Q".YO&amp;4A#4S"*`!%(KI6?!*0Y!E]A9=O:67C;0K4(!`$S0%Y(M@D?"Q01]PR/"\(YXA=$^0*]4A?"_&amp;-[!Q/15YHJY(TR`%Y(H\E?"S0YX%]DI?K]I3]L%SP[5^S0)&lt;(]"A?QW.Y'%+'R`!9(M.D?"B7BM@Q'"\$9XC93I&lt;(]"A?!W*-SP1S"D-['IW-Q0$Q+&lt;P&amp;SF/+)L&amp;S3H8TKGZ+V=WGOIF5.Y@K1V&gt;^G+I0388R62&gt;6&gt;&lt;&amp;5&amp;U(VZF42KBD6361\^QWVZXN(W6,7F"6F37EI#]K=-OO\`O''_`V?O^V/W_V7[`6;K^6+S_634&gt;.IM6BI0J^L.JO.LY(XH/-,Y@"?OO4[^OTD?&gt;N_O7_PXD4N^?S_P8FXXN\IJ,V_?^&amp;?H8ZLW[`5@\C\0@PUO7]`P)_'[^^`,`U.\U;^UO0_L.&amp;X^!\OEQ!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">385908736</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Public" Type="Folder">
