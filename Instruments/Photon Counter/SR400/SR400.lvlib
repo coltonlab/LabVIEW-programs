@@ -1,10 +1,10 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Library LVVersion="12008004">
+<Library LVVersion="17008000">
 	<Property Name="Instrument Driver" Type="Str">True</Property>
 	<Property Name="NI.Lib.Description" Type="Str">Gated Photon Counter</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
-	<Property Name="NI.Lib.Icon" Type="Bin">%A#!"!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*C!!!*Q(C=\&gt;1R&lt;B."&amp;-&lt;R$U2"[Q/MB(S&amp;&gt;Y6N+3B7X/"V#'XFAG*4_ALP#O[J,-1&amp;HO1+J&lt;*S!Z]AS@+@S7!-32#2,%'2'&lt;_.`=XOT#_TKZ6K?SW^UO[OD70Z\-&lt;3R\M[&lt;?/OD:XUXU_IVY_0D"_TB]&gt;`L,V\90XOZ0DT3X&gt;`P(PS?$NUR`(OF_SR]?[PROF&gt;L4]W0&lt;@H^G`&lt;R@T%&gt;H\##[H-/]^*"?75K3QV*XG3*XG3*XG3"XG1"XG1"XG1/\G4/\G4/\G4'\G2'\G2'\G2VUYO=J',(&amp;+S?,*1-GES18)S&amp;#7(R*.Y%E`CY;=34_**0)EH]8#+%E`C34S**`&amp;QG2*0YEE]C3@R-&amp;76:/XE?")0USPQ"*\!%XA#$UMK]!3!9,&amp;AYG!3'!I'AS_"*`!%(LYK]!3?Q".Y!A`$#DS"*`!%HM$$*868IGJ+*]@$.()]DM@R/"\(Q^2S0)\(]4A?R].S=DS/RU%Y#TK41Z"TE8/#]]0R/"\_S0%Y(M@D?"Q01`5/?&gt;W:ICG&gt;()`B-4S'R`!9(K;1Y4%]BM@Q'"[GF?%R0)&lt;(]"A?FJ,B-4S'RY!9C\+]D-G-#YW4D-$Q]+F0C^7\&amp;&amp;6CN5PNY66\+.5?.L7(3/XB5,PJ;D&gt;4\3;J&lt;&lt;\;JKJNFNIGK0VT;GAVD.IC;B?8%X8AO+?WV):;5SNKI(JK33X+J7=_]8!Y;,`@;\P&gt;;L0:;,V?;\6;;2A'^8WPZ8+JR7*R@!W]I2^@#,KY@&gt;N0.^_'[4;(;8Y`4.?8`81V@:WO0N&lt;[&gt;0HB#`7ZV,OTP)&lt;ON``AX;C8/JW80@I/^R(.H!!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">302022660</Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*C!!!*Q(C=\&gt;1R&lt;B."&amp;-&lt;R$U2"[Q/MB(S&amp;&gt;Y6N+3B7X/"V#'XFAG*4_ALP#O[J,-1&amp;HO1+J&lt;*S!Z]AS@+@S7!-32#2,%'2'&lt;_.`=XOT#_TKZ6K?SW^UO[OD70Z\-&lt;3R\M[&lt;?/OD:XUXU_IVY_0D"_TB]&gt;`L,V\90XOZ0DT3X&gt;`P(PS?$NUR`(OF_SR]?[PROF&gt;L4]W0&lt;@H^G`&lt;R@T%&gt;H\##[H-/]^*"?75K3QV*XG3*XG3*XG3"XG1"XG1"XG1/\G4/\G4/\G4'\G2'\G2'\G2VUYO=J',(&amp;+S?,*1-GES18)S&amp;#7(R*.Y%E`CY;=34_**0)EH]8#+%E`C34S**`&amp;QG2*0YEE]C3@R-&amp;76:/XE?")0USPQ"*\!%XA#$UMK]!3!9,&amp;AYG!3'!I'AS_"*`!%(LYK]!3?Q".Y!A`$#DS"*`!%HM$$*868IGJ+*]@$.()]DM@R/"\(Q^2S0)\(]4A?R].S=DS/RU%Y#TK41Z"TE8/#]]0R/"\_S0%Y(M@D?"Q01`5/?&gt;W:ICG&gt;()`B-4S'R`!9(K;1Y4%]BM@Q'"[GF?%R0)&lt;(]"A?FJ,B-4S'RY!9C\+]D-G-#YW4D-$Q]+F0C^7\&amp;&amp;6CN5PNY66\+.5?.L7(3/XB5,PJ;D&gt;4\3;J&lt;&lt;\;JKJNFNIGK0VT;GAVD.IC;B?8%X8AO+?WV):;5SNKI(JK33X+J7=_]8!Y;,`@;\P&gt;;L0:;,V?;\6;;2A'^8WPZ8+JR7*R@!W]I2^@#,KY@&gt;N0.^_'[4;(;8Y`4.?8`81V@:WO0N&lt;[&gt;0HB#`7ZV,OTP)&lt;ON``AX;C8/JW80@I/^R(.H!!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">385908736</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Public" Type="Folder">

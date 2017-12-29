@@ -1,10 +1,10 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Library LVVersion="12008004">
+<Library LVVersion="17008000">
 	<Property Name="Instrument Driver" Type="Str">True</Property>
 	<Property Name="NI.Lib.Description" Type="Str">LabVIEW Plug and Play instrument driver for Agilent PSG MXG Series RF signal generator. For more information about this driver, please refer to Agilent PSG MXG Series Readme.html.</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
-	<Property Name="NI.Lib.Icon" Type="Bin">%A#!"!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*/!!!*Q(C=\&gt;1R&lt;NN!%)8B:S/&amp;+Q'[1;!O^6R"KAUDU27G3[X7J7ZA4/=5;81#!TJ!CMQ66+@4&amp;:3@QZ&amp;"Q)$6R%!-G043YNP&gt;W5]E2;GW'_G44J?WW;M&lt;`?/9/A[(/KF^.MY`D?=6HW?=2UTHV\$HHD\NAL-O/JP7HSQY1&lt;R9`Y*@LWY@`2`^\\P`QM;9_YO$XHC4LEJ+3VL1H'&lt;V\5Z*HO2*HO2*HO2"(O2"(O2"(O2/\O2/\O2/\O2'&lt;O2'&lt;O2'&lt;O3VEYN=Z#,HKC3,*QMF2:-#S7!I3A[**`%EHM4$K2*0YEE]C3@R-%3**`%EHM34?*CGR*.Y%E`C34S5+EH74IYH]6"?A3@Q"*\!%XB95I%H!!3,"97$)D!5&gt;!9@!E`A#4R]6/!*0)%H]!1?OB6Y!E`A#4S"BSFV6;)UQU[/BT*S0)\(]4A?RU.J/2\(YXA=D_.B/4E?R_-AH!7&gt;YB$E4()'/#?/R`(Q4Y\(]4A?R_.Y[+I\Z(6F"MWQE_-R0)&lt;(]"A?QU-*'2\$9XA-D_'BL!S0Y4%]BM@QM*1-D_%R0!&lt;%7*4F:21T*BK$D-$Q]&amp;&gt;0C^6&gt;CJ*9\@X4("^5^1/I@L$5$YT[16$@907.5^]1^9678U$VB6&amp;`9@585106#[M,KA@KS0&amp;!W^.WN#VN1VP4FL1&amp;&lt;4Z-`==$D]?D$I?$^PO^&gt;LO&gt;NNON.JO.VOOVFMOF&amp;IO&amp;ZP0Z]^PK-`OY8:X@3`&gt;]@PKTOPVZ]`XO[@?XB]=PK[]`@KVOB`QNW`B?_B`?D&lt;L7;@+;ZRL^"1!V2`5!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">302022660</Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*/!!!*Q(C=\&gt;1R&lt;NN!%)8B:S/&amp;+Q'[1;!O^6R"KAUDU27G3[X7J7ZA4/=5;81#!TJ!CMQ66+@4&amp;:3@QZ&amp;"Q)$6R%!-G043YNP&gt;W5]E2;GW'_G44J?WW;M&lt;`?/9/A[(/KF^.MY`D?=6HW?=2UTHV\$HHD\NAL-O/JP7HSQY1&lt;R9`Y*@LWY@`2`^\\P`QM;9_YO$XHC4LEJ+3VL1H'&lt;V\5Z*HO2*HO2*HO2"(O2"(O2"(O2/\O2/\O2/\O2'&lt;O2'&lt;O2'&lt;O3VEYN=Z#,HKC3,*QMF2:-#S7!I3A[**`%EHM4$K2*0YEE]C3@R-%3**`%EHM34?*CGR*.Y%E`C34S5+EH74IYH]6"?A3@Q"*\!%XB95I%H!!3,"97$)D!5&gt;!9@!E`A#4R]6/!*0)%H]!1?OB6Y!E`A#4S"BSFV6;)UQU[/BT*S0)\(]4A?RU.J/2\(YXA=D_.B/4E?R_-AH!7&gt;YB$E4()'/#?/R`(Q4Y\(]4A?R_.Y[+I\Z(6F"MWQE_-R0)&lt;(]"A?QU-*'2\$9XA-D_'BL!S0Y4%]BM@QM*1-D_%R0!&lt;%7*4F:21T*BK$D-$Q]&amp;&gt;0C^6&gt;CJ*9\@X4("^5^1/I@L$5$YT[16$@907.5^]1^9678U$VB6&amp;`9@585106#[M,KA@KS0&amp;!W^.WN#VN1VP4FL1&amp;&lt;4Z-`==$D]?D$I?$^PO^&gt;LO&gt;NNON.JO.VOOVFMOF&amp;IO&amp;ZP0Z]^PK-`OY8:X@3`&gt;]@PKTOPVZ]`XO[@?XB]=PK[]`@KVOB`QNW`B?_B`?D&lt;L7;@+;ZRL^"1!V2`5!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">385908736</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.4.0.0</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Public" Type="Folder">
