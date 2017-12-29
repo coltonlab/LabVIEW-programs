@@ -1,1 +1,0 @@
-Double dummy scan 3x scan with a const multiple doesn't save the last two columns of real data. Same problem with averaged data.
