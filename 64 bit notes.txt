@@ -1,0 +1,16 @@
+LabVIEW 2017 64-bit installation notes
+These notes were from the Dell Precision T3400 we got from the department CSRs. They did a clean install of Windows 10, 64 bit, and then installed the minimum possible version of Labview 2015 Sp 1. They unselected all of the defaults and then selected just the basic Labview 2015 (see the “LabVIEW 2015 SP1 installatio notes” file for details). Then they installed LabVIEW 2017 and then uninstalled LabVIEW 2015.
+
+There were a few errors that had to be resolved:
+•	Missing lvsound.dll
+o	This is because the 64-bit versions upgraded the sound api. If it calls for this reference, point it to C:\Program Files\National Instruments\LabVIEW 2017\resource\lvsound2.dll
+•	Snd Play Wave File.dll
+o	This had a bad reference to lvsound2.dll. In the 32-bit version, lvsound.dll has a function called SOPlayFromFile. However this doesn’t exist in lvsound2.dll. I had to change the library path, and use the PlaySoundFile function.
+o	This VI had a few other errors in subVIs, but they all corrected when I pointed the problematic functions to use the lvsound2.dll library. I had to change the function SOConfig to SOConfigure in one of them as well.
+•	Wavelength meter .dll file
+o	The wavelength meter VIs had an error; they said that one of their libraries was missing or not working. It was wlmData.dll, which is located in the wavelength meter instrument folder, as well as installed on the computer. When I tried to select the driver in the instrument folder (which the VI was already supposed to read), it complained that it might be a 32-bit .dll (and therefore 64-bit LabVIEW can’t read it).
+o	I talked to the company (Christ Haimberger at Toptica Photonics) and he found a 64-bit wlmData.dll and sent it to me. So I renamed the old one wlmData-32bit.dll and put the new one in there (as well as making a copy called wlmData-64bit.dll). This made all the wavelength meter errors disappear.
+•	Meadowlark LCD
+o	Meadowlark sent me updated drivers (they too were very helpful). They are in diskback/Meadowlark LCD/Updated drivers Dec2017
+o	I followed the technician’s instructions of uninstalling the existing meadowlark software. Then I installed the USB driver from what he gave me (do autorun and then choose USB driver). I also copied usbdrvd.dll from the 64-bit directory into our LabVIEW software. I made a copy called usbdrvd-64bit.dll and renamed the old one to usbdrvd-32bit.dll.
+•	Synapse CCD
