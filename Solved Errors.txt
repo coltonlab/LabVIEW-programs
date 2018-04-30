@@ -1,7 +1,7 @@
 ------------------ERROR "LabVIEW failed to create directory for auto recovery vis"
 after clicking "run" on the main scan program
 
-Solution: In LabVIEW, go to Tools->Options, then click Paths, select Default Data Directory from the dropdown, and put it somewhere reasonable. On my computer, it was set to "LabVIEW:\" which weems like a ridiculous path. So I made a "LabVIEW Data" folder in C:\My Documents\ and directed it there.
+Solution: In LabVIEW, go to Tools->Options, then click Paths, select Default Data Directory from the dropdown, and put it somewhere reasonable. On my computer, it was set to "LabVIEW:\" which seems like a ridiculous path. So I made a "LabVIEW Data" folder in C:\My Documents\ and directed it there.
 
 
 ------------------ERROR "There is no disk in the drive. Please insert a disk into drive \Device\Harddisk3\DR3"
