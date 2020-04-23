@@ -27,6 +27,15 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
 	</Item>
+	<Item Name="Magnetic Field Lakeshore Scan.vi" Type="VI" URL="../Magnetic Field Lakeshore Scan.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'U!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!&amp;*!=!!?!!!H*5VB:WZF&gt;'FD)%:J:7RE)%RB;W6T;'^S:3"49W&amp;O,GRW9WRB=X-!)5VB:WZF&gt;'FD)%:J:7RE)%RB;W6T;'^S:3"49W&amp;O)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!%:!=!!?!!!?(%RB;W6T;'^S:3"(986T=WVF&gt;'6S,GRW9WRB=X-!!"R-97NF=WBP=G5A2W&amp;V=X.N:82F=CZM&gt;G.M98.T!!"31(!!(A!!*S6.97&gt;O:82J9S"';76M:#"-97NF=WBP=G5A5W.B&lt;CZM&gt;G.M98.T!#".97&gt;O:82J9S"';76M:#"-97NF=WBP=G5A5W.B&lt;C"J&lt;A!!91$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!9!"!!(!!A#!!"Y!!!.#!!!!!!!!!!!!!!.#Q!!!!!!!!!!!!!!!!!!!!!!!!A!!!!!!!!!#A!!!!)!!!U!!!!-!!!!!!!!!!!!!!%!#1!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+	</Item>
 	<Item Name="Next Step.vi" Type="VI" URL="../Next Step.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!',!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!%U!(!!R$&gt;8*S:7ZU)&amp;.U:8!!!"&gt;!#A!11X6S=G6O&gt;#"1&lt;X.J&gt;'FP&lt;A!!5E"Q!"Y!!#=F47&amp;H&lt;G6U;7-A2GFF&lt;'1A4'&amp;L:8.I&lt;X*F)&amp;.D97YO&lt;(:D&lt;'&amp;T=Q!B47&amp;H&lt;G6U;7-A2GFF&lt;'1A4'&amp;L:8.I&lt;X*F)&amp;.D97YA&lt;X6U!!1!!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!&amp;*!=!!?!!!H*5VB:WZF&gt;'FD)%:J:7RE)%RB;W6T;'^S:3"49W&amp;O,GRW9WRB=X-!)%VB:WZF&gt;'FD)%:J:7RE)%RB;W6T;'^S:3"49W&amp;O)'FO!!"5!0!!$!!$!!1!"1!'!!=!"Q!(!!=!#!!(!!=!#1-!!(A!!!E!!!!*!!!!#1!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!!!!EA!!!!!"!!I!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
