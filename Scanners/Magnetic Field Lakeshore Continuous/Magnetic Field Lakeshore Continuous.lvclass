@@ -94,4 +94,13 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1107821056</Property>
 	</Item>
+	<Item Name="x-axis.vi" Type="VI" URL="../x-axis.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'6!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!$E!Q`````Q6-97*F&lt;!!/1$$`````"&amp;6O;81!!&amp;Z!=!!?!!!N+UVB:WZF&gt;'FD)%:J:7RE)%RB;W6T;'^S:3"$&lt;WZU;7ZV&lt;X6T,GRW9WRB=X-!*UVB:WZF&gt;'FD)%:J:7RE)%RB;W6T;'^S:3"$&lt;WZU;7ZV&lt;X6T)'^V&gt;!!%!!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1"?1(!!(A!!,3N.97&gt;O:82J9S"';76M:#"-97NF=WBP=G5A1W^O&gt;'FO&gt;7^V=SZM&gt;G.M98.T!#:.97&gt;O:82J9S"';76M:#"-97NF=WBP=G5A1W^O&gt;'FO&gt;7^V=S"J&lt;A!!6!$Q!!Q!!Q!%!!5!"A!(!!=!"Q!(!!A!"Q!(!!E$!!"Y!!!.#!!!#1!!!!E!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!I!!!!!!!!!!!!!!*)!!!!!!1!+!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
+	</Item>
 </LVClass>
