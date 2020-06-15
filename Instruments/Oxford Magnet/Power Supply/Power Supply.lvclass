@@ -25,8 +25,8 @@
 
 </Property>
 	<Item Name="Friends List" Type="Friends List">
-		<Item Name="Magnetic Field.lvclass" Type="Friended Library" URL="../../../../Scanners/Magnetic Field Oxford/Magnetic Field.lvclass"/>
-		<Item Name="Continuous.lvclass" Type="Friended Library" URL="../../../../Scanners/Magnetic Field Oxford Continuous/Continuous.lvclass"/>
+		<Item Name="Magnetic Field Oxford.lvclass" Type="Friended Library" URL="../../../../Scanners/Magnetic Field Oxford/Magnetic Field Oxford.lvclass"/>
+		<Item Name="Magnetic Field Oxford Continuous.lvclass" Type="Friended Library" URL="../../../../Scanners/Magnetic Field Oxford Continuous/Magnetic Field Oxford Continuous.lvclass"/>
 	</Item>
 	<Item Name="Power Supply.ctl" Type="Class Private Data" URL="Power Supply.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -194,13 +194,13 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
 	</Item>
 	<Item Name="Get Scanner (Continuous).vi" Type="VI" URL="../Get Scanner (Continuous).vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%D!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$:!=!!?!!!5%E.P&lt;H2J&lt;H6P&gt;8-O&lt;(:D&lt;'&amp;T=Q!!&amp;E.P&lt;H2J&lt;H6P&gt;8-A5W.B&lt;GZF=C"P&gt;81!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!-%"Q!"Y!!"955'^X:8)A5X6Q='RZ,GRW9WRB=X-!!!^1&lt;X&gt;F=C"4&gt;8"Q&lt;(EA;7Y!6!$Q!!Q!!Q!%!!5!"!!%!!1!"!!%!!9!"!!%!!=#!!"Y!!!.#!!!!!!!!!E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!A!!!!!!!!!!!!!!")!!!!!!1!)!!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%Z!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%R!=!!?!!!K+%VB:WZF&gt;'FD)%:J:7RE)%^Y:G^S:#"$&lt;WZU;7ZV&lt;X6T,GRW9WRB=X-!!":$&lt;WZU;7ZV&lt;X6T)&amp;.D97ZO:8)A&lt;X6U!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!$"!=!!?!!!7&amp;&amp;"P&gt;W6S)&amp;.V=("M?3ZM&gt;G.M98.T!!!05'^X:8)A5X6Q='RZ)'FO!&amp;1!]!!-!!-!"!!&amp;!!1!"!!%!!1!"!!'!!1!"!!(!A!!?!!!$1A!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!!!!!!3!!!!!!%!#!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1350574592</Property>
 	</Item>
 	<Item Name="Get Scanner.vi" Type="VI" URL="../Get Scanner.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%&lt;!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#Z!=!!?!!!2$V.D97ZO:8)O&lt;(:D&lt;'&amp;T=Q!42'6G986M&gt;#"49W&amp;O&lt;G6S)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!$"!=!!?!!!7&amp;&amp;"P&gt;W6S)&amp;.V=("M?3ZM&gt;G.M98.T!!!05'^X:8)A5X6Q='RZ)'FO!&amp;1!]!!-!!-!"!!&amp;!!1!"!!%!!1!"!!'!!1!"!!(!A!!?!!!$1A!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!!!!!#3!!!!!!%!#!!!!!!</Property>
