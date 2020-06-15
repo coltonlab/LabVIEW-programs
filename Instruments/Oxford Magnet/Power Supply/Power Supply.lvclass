@@ -26,7 +26,7 @@
 </Property>
 	<Item Name="Friends List" Type="Friends List">
 		<Item Name="Magnetic Field.lvclass" Type="Friended Library" URL="../../../../Scanners/Magnetic Field Oxford/Magnetic Field.lvclass"/>
-		<Item Name="Continuous.lvclass" Type="Friended Library" URL="../../../../Scanners/Magnetic Field Oxford/Continuous/Continuous.lvclass"/>
+		<Item Name="Continuous.lvclass" Type="Friended Library" URL="../../../../Scanners/Magnetic Field Oxford Continuous/Continuous.lvclass"/>
 	</Item>
 	<Item Name="Power Supply.ctl" Type="Class Private Data" URL="Power Supply.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>

@@ -17,7 +17,7 @@
 </Property>
 	<Property Name="NI.LVClass.IsTransferClass" Type="Bool">false</Property>
 	<Property Name="NI.LVClass.LowestCompatibleVersion" Type="Str">1.0.0.10</Property>
-	<Property Name="NI.LVClass.ParentClassLinkInfo" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!\!!!!!1^49W&amp;O&lt;G6S,GRW9WRB=X.16%AQ!!!!(Q!"!!5!!!!(5W.B&lt;GZF=A^49W&amp;O&lt;G6S,GRW9WRB=X-!!!!!</Property>
+	<Property Name="NI.LVClass.ParentClassLinkInfo" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!![!!!!!1^49W&amp;O&lt;G6S,GRW9WRB=X.16%AQ!!!!(A!"!!1!!!&gt;49W&amp;O&lt;G6S$V.D97ZO:8)O&lt;(:D&lt;'&amp;T=Q!!!!!</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Continuous.ctl" Type="Class Private Data" URL="Continuous.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
