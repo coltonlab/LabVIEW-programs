@@ -433,11 +433,9 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="wlmData.dll" Type="Document" URL="../../WINDOWS/system32/wlmData.dll"/>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="wlmData.dll" Type="Document" URL="../../Program Files/HighFinesse/Wavelength Meter WS5 399/Com-Test/wlmData.dll"/>
 			<Item Name="Read Field Interpolate (N.O.).vi" Type="VI" URL="../Instruments/Magna-Power Power Supply/Read Field Interpolate (N.O.).vi"/>
 			<Item Name="lvsound.dll" Type="Document" URL="/&lt;resource&gt;/lvsound.dll"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="/&lt;resource&gt;/lvsound2.dll"/>
@@ -447,7 +445,6 @@
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="create_ramp.vi" Type="VI" URL="../../Program Files/National Instruments/LabVIEW 2012/examples/analysis/intpxmpl.llb/create_ramp.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Driver" Type="EXE">
