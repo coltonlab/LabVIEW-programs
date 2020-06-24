@@ -142,7 +142,7 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1351098896</Property>
 	</Item>
 	<Item Name="Construct Scanner.vi" Type="VI" URL="../Construct Scanner.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!+6!!!!#!!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#:!=!!?!!!2$V.D97ZO:8)O&lt;(:D&lt;'&amp;T=Q!,5W.B&lt;GZF=C"P&gt;81"UA$RWRB-%A!!!!)45W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=R"49W&amp;O&lt;G6S)%RJ=X1O9X2M!;6!&amp;A!4#E2V&lt;7VZ)&amp;.D97Y317ZB&lt;'^H)%^V&gt;("V&gt;#"49W&amp;O%5:V&lt;G.U;7^O)%&gt;F&lt;C"49W&amp;O%EVB:WZB)%.V=H*F&lt;H1A5W.B&lt;B*.97&gt;O93"7&lt;WRU97&gt;F)&amp;.D97Y947&amp;H&lt;G6U;7-A2GFF&lt;'1A4'&amp;L:8.I&lt;X*F)UVB:WZF&gt;'FD)%:J:7RE)%RB;W6T;'^S:3"$&lt;WZU;7ZV&lt;X6T&amp;5VB:WZF&gt;'FD)%:J:7RE)%^Y:G^S:#".97&gt;O:82J9S"';76M:#"0?':P=G1A1W^O&gt;'FO&gt;7^V=R..;7.S&lt;X&gt;B&gt;G5A2H*F=3"49W&amp;O&amp;&amp;"V&lt;(.F)%&gt;F&lt;C"#98.J9S"49W&amp;O$F"V&lt;(.F)%&gt;F&lt;C"49W&amp;O'&amp;2S97ZT&lt;'&amp;U;7^O)&amp;.U97&gt;F)%.P98*T:2:5=G&amp;O=WRB&gt;'FP&lt;C"4&gt;'&amp;H:3"%&gt;7&amp;M&amp;F2S97ZT&lt;'&amp;U;7^O)&amp;.U97&gt;F)%:J&lt;G536W&amp;W:7RF&lt;G&gt;U;#""9X2J&gt;G69%V&gt;B&gt;G6M:7ZH&gt;'AA2'FH;7NS^GU56W&amp;W:7RF&lt;G&gt;U;#"5=GFB?#!V.4!%4G^O:1!05W.B&lt;GZF=C"&amp;&lt;H6N)%FO!&amp;1!]!!-!!-!"!!%!!5!"!!%!!1!"!!%!!1!"!!'!Q!!?!!!#1!!!!!!!!!!!!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!%!"Q!!!!!</Property>
@@ -179,7 +179,7 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1351098896</Property>
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Finish Scan.vi" Type="VI" URL="../Finish Scan.vi">
