@@ -23,52 +23,21 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 </Property>
 	<Property Name="NI.LVClass.IsTransferClass" Type="Bool">false</Property>
 	<Property Name="NI.LVClass.LowestCompatibleVersion" Type="Str">1.0.0.34</Property>
-	<Property Name="NI.SortType" Type="Int">3</Property>
+	<Property Name="NI.SortType" Type="Int">1</Property>
 	<Item Name="Friends List" Type="Friends List">
 		<Item Name="File IO.lvclass" Type="Friended Library" URL="../../../File IO/File IO.lvclass"/>
 	</Item>
 	<Item Name="Scan Driver.ctl" Type="Class Private Data" URL="Scan Driver.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Reader List.ctl" Type="VI" URL="../Reader List.ctl">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"X!!!!!1"P!0()7]G:!!!!!B.49W&amp;O)%2S;8:F=CZM&gt;G.M98.T$V*F972F=C"-;8.U,G.U&lt;!"$1"9!"!R%16&amp;N?#""&lt;G&amp;M&lt;W=&amp;2(6N&lt;8E-4'^D;WFO)&amp;.3/$-Q$F"I&lt;X2P&lt;C"$&lt;X6O&gt;'6S!!!'5G6B:'6S!!!"!!!!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">3145728</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082130944</Property>
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Scan Graph.ctl" Type="VI" URL="../Scan Graph.ctl">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"=!!!!"A!81!I!%&amp;"S:8.F&lt;H1A5'^T;82J&lt;WY!!!5!#A!!#A"1!!)!!!!"!!Q!1!!"`````Q!#!!A!5!!"!!-!'E"!!!(`````!!1-=(*J&lt;7&amp;S?7&gt;S98"I!!!"!!5!!!!!</Property>
+	<Item Name="2D intensity data from scan columns.vi" Type="VI" URL="../2D intensity data from scan columns.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;W!!!!$Q!%!!!!$5!+!!:Y)'VV&lt;(1!!!V!#A!'?3"N&gt;7RU!!!01!I!#(AA&lt;W:G=W6U!!!01!I!#(EA&lt;W:G=W6U!!!,1!I!"8IA&lt;7&amp;Y!!N!#A!&amp;?C"N;7Y!'E"1!!9!!1!#!!-!"!!&amp;!!9'9G^V&lt;G2T!!!K!0(*1J(&amp;!!!!!B"3:7&amp;E97*M:3ZM&gt;G.M98.T"6AO9X2M!!N!#A!"?!!;1%!!!P``````````!!A)2'&amp;U93"P&gt;81!!"J!1!!"`````Q!)$8AA=W.B&lt;C"Q&lt;WFO&gt;(-!'E"!!!(`````!!A.?3"T9W&amp;O)("P;7ZU=Q!71%!!!@````]!#!B[)(:B&lt;(6F=Q!!)%"1!!-!#A!,!!Q32X*B='AA='^J&lt;H2T)(AM?3R[!!"5!0!!$!!!!!=!#1!!!!!!!!!!!!!!!!!!!!U!!!-!!(A!!!!!!!!*!!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!!"!!Y!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082130944</Property>
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Scan Setup Mode.ctl" Type="VI" URL="../Scan Setup Mode.ctl">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"T!!!!!1"L!0():4#G!!!!!B.49W&amp;O)%2S;8:F=CZM&gt;G.M98.T%V.D97YA5W6U&gt;8!A47^E:3ZD&gt;'Q!/U!8!!-)4G6X)&amp;.D97Y/4'^B:#"-98.U)&amp;.D97Y+4'^B:#"49W&amp;O/A!!#F.D97YA5W6U&gt;8!!!!%!!!!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">3145728</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1074266624</Property>
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Scanner List.ctl" Type="VI" URL="../Scanner List.ctl">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#[!!!!!1#S!0()7]I+!!!!!B.49W&amp;O)%2S;8:F=CZM&gt;G.M98.T%&amp;.D97ZO:8)A4'FT&gt;#ZD&gt;'Q!B5!7!!=+6W&amp;W:7RF&lt;G&gt;U;".898:F&lt;'6O:X2I)%2J:WFL=P:N$EVB:WZF&gt;'FD)%:J:7RE#E.P&lt;H2J&lt;H6P&gt;8-/5(6M=W5A2W6O)&amp;.D97Y76(*B&lt;H.M982J&lt;WYA5X2B:W5A5W.B&lt;B*798*J97YA47&amp;H&lt;G6U)&amp;.D97Y!"V.D97ZO:8)!!1!!!!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">3145728</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082130944</Property>
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710290</Property>
 	</Item>
 	<Item Name="_Destroy.vi" Type="VI" URL="../_Destroy.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$L!!!!#!!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!,E"Q!"Y!!"545W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=Q!/5W.B&lt;C"%=GFW:8)A;7Y!!&amp;1!]!!-!!-!"!!%!!1!"!!%!!1!"!!&amp;!!1!"!!'!Q!!?!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!!!!!#1!!!!!!%!"Q!!!!!</Property>
@@ -107,15 +76,6 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
 	</Item>
-	<Item Name="2D intensity data from scan columns.vi" Type="VI" URL="../2D intensity data from scan columns.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;W!!!!$Q!%!!!!$5!+!!:Y)'VV&lt;(1!!!V!#A!'?3"N&gt;7RU!!!01!I!#(AA&lt;W:G=W6U!!!01!I!#(EA&lt;W:G=W6U!!!,1!I!"8IA&lt;7&amp;Y!!N!#A!&amp;?C"N;7Y!'E"1!!9!!1!#!!-!"!!&amp;!!9'9G^V&lt;G2T!!!K!0(*1J(&amp;!!!!!B"3:7&amp;E97*M:3ZM&gt;G.M98.T"6AO9X2M!!N!#A!"?!!;1%!!!P``````````!!A)2'&amp;U93"P&gt;81!!"J!1!!"`````Q!)$8AA=W.B&lt;C"Q&lt;WFO&gt;(-!'E"!!!(`````!!A.?3"T9W&amp;O)("P;7ZU=Q!71%!!!@````]!#!B[)(:B&lt;(6F=Q!!)%"1!!-!#A!,!!Q32X*B='AA='^J&lt;H2T)(AM?3R[!!"5!0!!$!!!!!=!#1!!!!!!!!!!!!!!!!!!!!U!!!-!!(A!!!!!!!!*!!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!!"!!Y!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710290</Property>
-	</Item>
 	<Item Name="Average Realtime.vi" Type="VI" URL="../Average Realtime.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%O!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$:!=!!?!!!6%V.D97YA2(*J&gt;G6S,GRW9WRB=X-!&amp;V.D97YA2(*J&gt;G6S,GRW9WRB=X-A&lt;X6U!":!5!!$!!!!!1!##'6S=G^S)'FO!!!41!=!$%.V=H*F&lt;H1A5X2F=!!!-E"Q!"Y!!"545W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=Q!45W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=Q"5!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!=!#!-!!(A!!!U)!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#!!!!!!!!!!+!!!!EA!!!!!"!!E!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -134,6 +94,15 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
 		<Property Name="NI.LibItem.Scope" Type="Int">3</Property>
+	</Item>
+	<Item Name="Build Settings Box Text.vi" Type="VI" URL="../Build Settings Box Text.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;1!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!"J!-0````]2=W6U&gt;'FO:X-A9G^Y)(2F?(1!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!51$,`````#V"B&gt;'AA&gt;']A7%V-!'M!]&gt;MGXI!!!!!#%V.D97YA2(*J&gt;G6S,GRW9WRB=X-45W.B&lt;C"4:82V=#".&lt;W2F,G.U&lt;!!\1"=!!QB/:8=A5W.B&lt;AZ-&lt;W&amp;E)%RB=X1A5W.B&lt;AJ-&lt;W&amp;E)&amp;.D97Y[!!!+5W.B&lt;C"4:82V=!!!4A$Q!!M!!Q!%!!1!"1!%!!1!"!!'!!1!"Q!)!Q!![!!!$1=!!!!!!!!!!!!!#1!!!!!!!!!!!!!!!!!!!!A!!!!!!!!!#A!!!!A!!!!!!1!*!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
 	</Item>
 	<Item Name="Construct Reader.vi" Type="VI" URL="../Construct Reader.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!''!!!!#!!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#:!=!!?!!!1$F*F972F=CZM&gt;G.M98.T!!!+5G6B:'6S)'^V&gt;!!!QQ$RWRB-\!!!!!)45W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=Q^3:7&amp;E:8)A4'FT&gt;#ZD&gt;'Q!FU!7!!A&amp;2(6N&lt;8E51X*Z&lt;X.U981A6'6N='6S982V=G5-2%&amp;2&lt;8AA17ZB&lt;'^H$%RP9WNJ&lt;C"45DAT-""'&lt;(6L:3".&gt;7RU;7VF&gt;'6S&amp;6"I&lt;X2P&lt;C"$&lt;X6O&gt;'6S)&amp;*F972F=AN1&lt;X&gt;F=C".:82F=B.5:7VQ:8*B&gt;(6S:3"$&lt;WZU=G^M!!Z3:7&amp;E:8)A27ZV&lt;3"J&lt;A!!6!$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!1!"!!%!!9$!!"Y!!!*!!!!!!!!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!A!!!!!!1!(!!!!!!</Property>
@@ -191,6 +160,15 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="From Scanreader XML String.vi" Type="VI" URL="../From Scanreader XML String.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!4H!!!!"Q!/1#%)68.F)%R$2$]!!,M!]&gt;M94/Q!!!!#%V.D97YA2(*J&gt;G6S,GRW9WRB=X-05G6B:'6S)%RJ=X1O9X2M!)^!&amp;A!)"52V&lt;7VZ&amp;%.S?7^T&gt;'&amp;U)&amp;2F&lt;8"F=G&amp;U&gt;8*F$%2"57VY)%&amp;O97RP:QR-&lt;W.L;7YA5V)Y-T!12GRV;W5A486M&gt;'FN:82F=B61;'^U&lt;WYA1W^V&lt;H2F=C"3:7&amp;E:8),5'^X:8)A476U:8)46'6N='6S982V=G5A1W^O&gt;(*P&lt;!!'5G6B:'6S!!(A!0(&lt;'%Q3!!!!!B.49W&amp;O)%2S;8:F=CZM&gt;G.M98.T%&amp;.D97ZO:8)A4'FT&gt;#ZD&gt;'Q"MU!7!"-+2(6N&lt;8EA5W.B&lt;B*"&lt;G&amp;M&lt;W=A4X6U=(6U)&amp;.D97Y22H6O9X2J&lt;WYA2W6O)&amp;.D97Y347&amp;H&lt;G%A1X6S=G6O&gt;#"49W&amp;O%EVB:WZB)&amp;:P&lt;(2B:W5A5W.B&lt;BB.97&gt;O:82J9S"';76M:#"-97NF=WBP=G5D47&amp;H&lt;G6U;7-A2GFF&lt;'1A4'&amp;L:8.I&lt;X*F)%.P&lt;H2J&lt;H6P&gt;8-647&amp;H&lt;G6U;7-A2GFF&lt;'1A4XBG&lt;X*E)%VB:WZF&gt;'FD)%:J:7RE)%^Y:G^S:#"$&lt;WZU;7ZV&lt;X6T%UVJ9X*P&gt;W&amp;W:3"'=G6R)&amp;.D97Y55(6M=W5A2W6O)%*B=WFD)&amp;.D97Y/5(6M=W5A2W6O)&amp;.D97Y96(*B&lt;H.M982J&lt;WYA5X2B:W5A1W^B=H.F&amp;F2S97ZT&lt;'&amp;U;7^O)&amp;.U97&gt;F)%2V97Q76(*B&lt;H.M982J&lt;WYA5X2B:W5A2GFO:2*898:F&lt;'6O:X2I)%&amp;D&gt;'FW:6A46W&amp;W:7RF&lt;G&gt;U;#"%;7&gt;J;X,W&lt;22898:F&lt;'6O:X2I)&amp;2S;7&amp;Y)$5V-!2/&lt;WZF!"R49W&amp;O&lt;G6S)$)A+(.F9W^O:#"T9W&amp;O)'&amp;Y;8-J!!(+!0(&lt;'%Q3!!!!!B.49W&amp;O)%2S;8:F=CZM&gt;G.M98.T%&amp;.D97ZO:8)A4'FT&gt;#ZD&gt;'Q"H5!7!"-+2(6N&lt;8EA5W.B&lt;B*"&lt;G&amp;M&lt;W=A4X6U=(6U)&amp;.D97Y22H6O9X2J&lt;WYA2W6O)&amp;.D97Y347&amp;H&lt;G%A1X6S=G6O&gt;#"49W&amp;O%EVB:WZB)&amp;:P&lt;(2B:W5A5W.B&lt;BB.97&gt;O:82J9S"';76M:#"-97NF=WBP=G5D47&amp;H&lt;G6U;7-A2GFF&lt;'1A4'&amp;L:8.I&lt;X*F)%.P&lt;H2J&lt;H6P&gt;8-647&amp;H&lt;G6U;7-A2GFF&lt;'1A4XBG&lt;X*E)%VB:WZF&gt;'FD)%:J:7RE)%^Y:G^S:#"$&lt;WZU;7ZV&lt;X6T%UVJ9X*P&gt;W&amp;W:3"'=G6R)&amp;.D97Y55(6M=W5A2W6O)%*B=WFD)&amp;.D97Y/5(6M=W5A2W6O)&amp;.D97Y96(*B&lt;H.M982J&lt;WYA5X2B:W5A1W^B=H.F&amp;F2S97ZT&lt;'&amp;U;7^O)&amp;.U97&gt;F)%2V97Q76(*B&lt;H.M982J&lt;WYA5X2B:W5A2GFO:2*898:F&lt;'6O:X2I)%&amp;D&gt;'FW:6A46W&amp;W:7RF&lt;G&gt;U;#"%;7&gt;J;X,W&lt;22898:F&lt;'6O:X2I)&amp;2S;7&amp;Y)$5V-!2/&lt;WZF!!&gt;49W&amp;O&lt;G6S!!1!!!!51$$`````#HBN&lt;#"T&gt;(*J&lt;G=!!&amp;1!]!!-!!!!!1!#!!-!"!!%!!1!"!!%!!1!"!!&amp;!A!!?!!!#1!!!!E!!!!*!!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!%!"A!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 	</Item>
 	<Item Name="Get Data For Intensity Graph.vi" Type="VI" URL="../Get Data For Intensity Graph.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(V!!!!%1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!+A$RS5+2R1!!!!)15G6B:'&amp;C&lt;'5O&lt;(:D&lt;'&amp;T=Q69,G.U&lt;!!,1!I!!8A!'E"!!!(`````!!1.?#"T9W&amp;O)("P;7ZU=Q!;1%!!!@````]!"!VZ)(.D97YA='^J&lt;H2T!":!1!!"`````Q!%#(IA&gt;G&amp;M&gt;76T!!!E1&amp;!!!Q!&amp;!!9!"R:4:7.P&lt;G2B=HEA:X*B='AA='^J&lt;H2T!!!C1&amp;!!!Q!&amp;!!9!"R21=GFN98*Z)'&gt;S98"I)("P;7ZU=Q!!,E"Q!"Y!!"545W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=Q!05W.B&lt;C"%=GFW:8)A&lt;X6U!!1!!!!71&amp;!!!Q!!!!%!!ABF=H*P=C"J&lt;A!!&amp;U!+!"&amp;4:7.P&lt;G2B=HEA9WBB&lt;GZF&lt;!!61!I!$V"S;7VB=HEA9WBB&lt;GZF&lt;!!O1(!!(A!!&amp;2.49W&amp;O)%2S;8:F=CZM&gt;G.M98.T!!Z49W&amp;O)%2S;8:F=C"J&lt;A!!6!$Q!!Q!!Q!)!!E!#A!,!!M!#Q!,!!Q!$1!/!!]$!!"Y!!!.#!!!#1!!!!E!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!I!!!!+!!!!#A!!!*!!!!!!!1!1!!!!!!</Property>
@@ -268,6 +246,16 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
 	</Item>
+	<Item Name="Reader List.ctl" Type="VI" URL="../Reader List.ctl">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"X!!!!!1"P!0()7]G:!!!!!B.49W&amp;O)%2S;8:F=CZM&gt;G.M98.T$V*F972F=C"-;8.U,G.U&lt;!"$1"9!"!R%16&amp;N?#""&lt;G&amp;M&lt;W=&amp;2(6N&lt;8E-4'^D;WFO)&amp;.3/$-Q$F"I&lt;X2P&lt;C"$&lt;X6O&gt;'6S!!!'5G6B:'6S!!!"!!!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">3145728</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130944</Property>
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 	<Item Name="Reader Name to Reader List Item.vi" Type="VI" URL="../Reader Name to Reader List Item.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%I!!!!"1!@1!9!'&amp;*F972F=C"-;8.U)%FU:7UA37ZU:7&gt;F=A!!R1$RWRB-\!!!!!)45W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=Q^3:7&amp;E:8)A4'FT&gt;#ZD&gt;'Q!G5!7!!A&amp;2(6N&lt;8E51X*Z&lt;X.U981A6'6N='6S982V=G5-2%&amp;2&lt;8AA17ZB&lt;'^H$%RP9WNJ&lt;C"45DAT-""'&lt;(6L:3".&gt;7RU;7VF&gt;'6S&amp;6"I&lt;X2P&lt;C"$&lt;X6O&gt;'6S)&amp;*F972F=AN1&lt;X&gt;F=C".:82F=B.5:7VQ:8*B&gt;(6S:3"$&lt;WZU=G^M!""3:7&amp;E:8)A4'FT&gt;#"*&gt;'6N!!!%!!!!&amp;%!Q`````QN3:7&amp;E:8)A4G&amp;N:1!E!0!!"!!!!!%!!A!$!Q!!+!!!#1!!!!E!!!!!!!!"#A!!!!!"!!1!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -276,16 +264,6 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1350574608</Property>
-	</Item>
-	<Item Name="Scan.vi" Type="VI" URL="../Scan.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%S!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!!R!)1:":W&amp;J&lt;D]!!#Z!=!!?!!!6%V.D97YA2(*J&gt;G6S,GRW9WRB=X-!$V.D97YA2(*J&gt;G6S)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!#Z!=!!?!!!6%V.D97YA2(*J&gt;G6S,GRW9WRB=X-!$F.D97YA2(*J&gt;G6S)'FO!!"B!0!!$!!$!!1!"1!'!!1!"!!%!!1!"Q!%!!1!#!-!!(A!!!U)!!!!!!!!#1!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!!!!%A!!$1!!!!Q!!!!!!!!!!!!!!1!*!!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">262400</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">3</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342972434</Property>
-		<Property Name="NI.LibItem.Scope" Type="Int">3</Property>
 	</Item>
 	<Item Name="Scan Driver (for Setup UI).vi" Type="VI" URL="../Scan Driver (for Setup UI).vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%W!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$:!=!!?!!!6%V.D97YA2(*J&gt;G6S,GRW9WRB=X-!&amp;V.D97YA2(*J&gt;G6S,GRW9WRB=X-A&lt;X6U!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!.E"Q!"Y!!"545W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=Q!75W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=S"J&lt;A!!91$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!9!"!!%!!=$!!"Y!!!.#!!!!!!!!!!!!!!.#Q!!!!!!!!!!!!!!!!!!!!!!!!I!!!!!!!!!!!!!!")!!!U!!!!-!!!!!!!!!!!!!!%!#!!!!!!</Property>
@@ -297,6 +275,36 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 		<Property Name="NI.ClassItem.State" Type="Int">1117782544</Property>
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Scan Graph.ctl" Type="VI" URL="../Scan Graph.ctl">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"=!!!!"A!81!I!%&amp;"S:8.F&lt;H1A5'^T;82J&lt;WY!!!5!#A!!#A"1!!)!!!!"!!Q!1!!"`````Q!#!!A!5!!"!!-!'E"!!!(`````!!1-=(*J&lt;7&amp;S?7&gt;S98"I!!!"!!5!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130944</Property>
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Scan Setup Mode.ctl" Type="VI" URL="../Scan Setup Mode.ctl">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"T!!!!!1"L!0():4#G!!!!!B.49W&amp;O)%2S;8:F=CZM&gt;G.M98.T%V.D97YA5W6U&gt;8!A47^E:3ZD&gt;'Q!/U!8!!-)4G6X)&amp;.D97Y/4'^B:#"-98.U)&amp;.D97Y+4'^B:#"49W&amp;O/A!!#F.D97YA5W6U&gt;8!!!!%!!!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">3145728</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1074266624</Property>
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Scan.vi" Type="VI" URL="../Scan.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%S!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!!R!)1:":W&amp;J&lt;D]!!#Z!=!!?!!!6%V.D97YA2(*J&gt;G6S,GRW9WRB=X-!$V.D97YA2(*J&gt;G6S)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!#Z!=!!?!!!6%V.D97YA2(*J&gt;G6S,GRW9WRB=X-!$F.D97YA2(*J&gt;G6S)'FO!!"B!0!!$!!$!!1!"1!'!!1!"!!%!!1!"Q!%!!1!#!-!!(A!!!U)!!!!!!!!#1!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!!!!%A!!$1!!!!Q!!!!!!!!!!!!!!1!*!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">262400</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">3</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342972434</Property>
+		<Property Name="NI.LibItem.Scope" Type="Int">3</Property>
+	</Item>
 	<Item Name="Scanner List Item to Scanner Name.vi" Type="VI" URL="../Scanner List Item to Scanner Name.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)+!!!!!Q!71$$`````$&amp;.D97ZO:8)A4G&amp;N:1!"V!$RWRB-%A!!!!)45W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=R"49W&amp;O&lt;G6S)%RJ=X1O9X2M!;&gt;!&amp;A!4#E2V&lt;7VZ)&amp;.D97Y317ZB&lt;'^H)%^V&gt;("V&gt;#"49W&amp;O%5:V&lt;G.U;7^O)%&gt;F&lt;C"49W&amp;O%EVB:WZB)%.V=H*F&lt;H1A5W.B&lt;B*.97&gt;O93"7&lt;WRU97&gt;F)&amp;.D97Y947&amp;H&lt;G6U;7-A2GFF&lt;'1A4'&amp;L:8.I&lt;X*F)UVB:WZF&gt;'FD)%:J:7RE)%RB;W6T;'^S:3"$&lt;WZU;7ZV&lt;X6T&amp;5VB:WZF&gt;'FD)%:J:7RE)%^Y:G^S:#".97&gt;O:82J9S"';76M:#"0?':P=G1A1W^O&gt;'FO&gt;7^V=R..;7.S&lt;X&gt;B&gt;G5A2H*F=3"49W&amp;O&amp;&amp;"V&lt;(.F)%&gt;F&lt;C"#98.J9S"49W&amp;O$F"V&lt;(.F)%&gt;F&lt;C"49W&amp;O'&amp;2S97ZT&lt;'&amp;U;7^O)&amp;.U97&gt;F)%.P98*T:2:5=G&amp;O=WRB&gt;'FP&lt;C"4&gt;'&amp;H:3"%&gt;7&amp;M&amp;F2S97ZT&lt;'&amp;U;7^O)&amp;.U97&gt;F)%:J&lt;G536W&amp;W:7RF&lt;G&gt;U;#""9X2J&gt;G69%V&gt;B&gt;G6M:7ZH&gt;'AA2'FH;7NS^GU56W&amp;W:7RF&lt;G&gt;U;#"5=GFB?#!V.4!%4G^O:1!25W.B&lt;GZF=C"-;8.U)%FU:7U!'!$Q!!)!!!!"!Q!!#!!!#1!!!!A!!!!!!1!#!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -305,6 +313,16 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1350574608</Property>
+	</Item>
+	<Item Name="Scanner List.ctl" Type="VI" URL="../Scanner List.ctl">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#[!!!!!1#S!0()7]I+!!!!!B.49W&amp;O)%2S;8:F=CZM&gt;G.M98.T%&amp;.D97ZO:8)A4'FT&gt;#ZD&gt;'Q!B5!7!!=+6W&amp;W:7RF&lt;G&gt;U;".898:F&lt;'6O:X2I)%2J:WFL=P:N$EVB:WZF&gt;'FD)%:J:7RE#E.P&lt;H2J&lt;H6P&gt;8-/5(6M=W5A2W6O)&amp;.D97Y76(*B&lt;H.M982J&lt;WYA5X2B:W5A5W.B&lt;B*798*J97YA47&amp;H&lt;G6U)&amp;.D97Y!"V.D97ZO:8)!!1!!!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">3145728</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130944</Property>
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Scanner Name to Scanner List Item.vi" Type="VI" URL="../Scanner Name to Scanner List Item.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)Z!!!!"1!@1!9!'6.D97ZO:8)A4'FT&gt;#"*&gt;'6N)%FO&gt;'6H:8)"V!$RWRB-%A!!!!)45W.B&lt;C"%=GFW:8)O&lt;(:D&lt;'&amp;T=R"49W&amp;O&lt;G6S)%RJ=X1O9X2M!;&gt;!&amp;A!4#E2V&lt;7VZ)&amp;.D97Y317ZB&lt;'^H)%^V&gt;("V&gt;#"49W&amp;O%5:V&lt;G.U;7^O)%&gt;F&lt;C"49W&amp;O%EVB:WZB)%.V=H*F&lt;H1A5W.B&lt;B*.97&gt;O93"7&lt;WRU97&gt;F)&amp;.D97Y947&amp;H&lt;G6U;7-A2GFF&lt;'1A4'&amp;L:8.I&lt;X*F)UVB:WZF&gt;'FD)%:J:7RE)%RB;W6T;'^S:3"$&lt;WZU;7ZV&lt;X6T&amp;5VB:WZF&gt;'FD)%:J:7RE)%^Y:G^S:#".97&gt;O:82J9S"';76M:#"0?':P=G1A1W^O&gt;'FO&gt;7^V=R..;7.S&lt;X&gt;B&gt;G5A2H*F=3"49W&amp;O&amp;&amp;"V&lt;(.F)%&gt;F&lt;C"#98.J9S"49W&amp;O$F"V&lt;(.F)%&gt;F&lt;C"49W&amp;O'&amp;2S97ZT&lt;'&amp;U;7^O)&amp;.U97&gt;F)%.P98*T:2:5=G&amp;O=WRB&gt;'FP&lt;C"4&gt;'&amp;H:3"%&gt;7&amp;M&amp;F2S97ZT&lt;'&amp;U;7^O)&amp;.U97&gt;F)%:J&lt;G536W&amp;W:7RF&lt;G&gt;U;#""9X2J&gt;G69%V&gt;B&gt;G6M:7ZH&gt;'AA2'FH;7NS^GU56W&amp;W:7RF&lt;G&gt;U;#"5=GFB?#!V.4!%4G^O:1!25W.B&lt;GZF=C"-;8.U)%FU:7U!"!!!!":!-0````]-5W.B&lt;GZF=C"/97VF!!!E!0!!"!!!!!%!!A!$!Q!!+!!!#1!!!!E!!!!!!!!"#A!!!!!"!!1!!!!!</Property>
@@ -342,23 +360,5 @@ File IO is a friend of Scan Driver so that it can access member fields and write
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1342710274</Property>
-	</Item>
-	<Item Name="From Scanreader XML String.vi" Type="VI" URL="../From Scanreader XML String.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!4H!!!!"Q!/1#%)68.F)%R$2$]!!,M!]&gt;M94/Q!!!!#%V.D97YA2(*J&gt;G6S,GRW9WRB=X-05G6B:'6S)%RJ=X1O9X2M!)^!&amp;A!)"52V&lt;7VZ&amp;%.S?7^T&gt;'&amp;U)&amp;2F&lt;8"F=G&amp;U&gt;8*F$%2"57VY)%&amp;O97RP:QR-&lt;W.L;7YA5V)Y-T!12GRV;W5A486M&gt;'FN:82F=B61;'^U&lt;WYA1W^V&lt;H2F=C"3:7&amp;E:8),5'^X:8)A476U:8)46'6N='6S982V=G5A1W^O&gt;(*P&lt;!!'5G6B:'6S!!(A!0(&lt;'%Q3!!!!!B.49W&amp;O)%2S;8:F=CZM&gt;G.M98.T%&amp;.D97ZO:8)A4'FT&gt;#ZD&gt;'Q"MU!7!"-+2(6N&lt;8EA5W.B&lt;B*"&lt;G&amp;M&lt;W=A4X6U=(6U)&amp;.D97Y22H6O9X2J&lt;WYA2W6O)&amp;.D97Y347&amp;H&lt;G%A1X6S=G6O&gt;#"49W&amp;O%EVB:WZB)&amp;:P&lt;(2B:W5A5W.B&lt;BB.97&gt;O:82J9S"';76M:#"-97NF=WBP=G5D47&amp;H&lt;G6U;7-A2GFF&lt;'1A4'&amp;L:8.I&lt;X*F)%.P&lt;H2J&lt;H6P&gt;8-647&amp;H&lt;G6U;7-A2GFF&lt;'1A4XBG&lt;X*E)%VB:WZF&gt;'FD)%:J:7RE)%^Y:G^S:#"$&lt;WZU;7ZV&lt;X6T%UVJ9X*P&gt;W&amp;W:3"'=G6R)&amp;.D97Y55(6M=W5A2W6O)%*B=WFD)&amp;.D97Y/5(6M=W5A2W6O)&amp;.D97Y96(*B&lt;H.M982J&lt;WYA5X2B:W5A1W^B=H.F&amp;F2S97ZT&lt;'&amp;U;7^O)&amp;.U97&gt;F)%2V97Q76(*B&lt;H.M982J&lt;WYA5X2B:W5A2GFO:2*898:F&lt;'6O:X2I)%&amp;D&gt;'FW:6A46W&amp;W:7RF&lt;G&gt;U;#"%;7&gt;J;X,W&lt;22898:F&lt;'6O:X2I)&amp;2S;7&amp;Y)$5V-!2/&lt;WZF!"R49W&amp;O&lt;G6S)$)A+(.F9W^O:#"T9W&amp;O)'&amp;Y;8-J!!(+!0(&lt;'%Q3!!!!!B.49W&amp;O)%2S;8:F=CZM&gt;G.M98.T%&amp;.D97ZO:8)A4'FT&gt;#ZD&gt;'Q"H5!7!"-+2(6N&lt;8EA5W.B&lt;B*"&lt;G&amp;M&lt;W=A4X6U=(6U)&amp;.D97Y22H6O9X2J&lt;WYA2W6O)&amp;.D97Y347&amp;H&lt;G%A1X6S=G6O&gt;#"49W&amp;O%EVB:WZB)&amp;:P&lt;(2B:W5A5W.B&lt;BB.97&gt;O:82J9S"';76M:#"-97NF=WBP=G5D47&amp;H&lt;G6U;7-A2GFF&lt;'1A4'&amp;L:8.I&lt;X*F)%.P&lt;H2J&lt;H6P&gt;8-647&amp;H&lt;G6U;7-A2GFF&lt;'1A4XBG&lt;X*E)%VB:WZF&gt;'FD)%:J:7RE)%^Y:G^S:#"$&lt;WZU;7ZV&lt;X6T%UVJ9X*P&gt;W&amp;W:3"'=G6R)&amp;.D97Y55(6M=W5A2W6O)%*B=WFD)&amp;.D97Y/5(6M=W5A2W6O)&amp;.D97Y96(*B&lt;H.M982J&lt;WYA5X2B:W5A1W^B=H.F&amp;F2S97ZT&lt;'&amp;U;7^O)&amp;.U97&gt;F)%2V97Q76(*B&lt;H.M982J&lt;WYA5X2B:W5A2GFO:2*898:F&lt;'6O:X2I)%&amp;D&gt;'FW:6A46W&amp;W:7RF&lt;G&gt;U;#"%;7&gt;J;X,W&lt;22898:F&lt;'6O:X2I)&amp;2S;7&amp;Y)$5V-!2/&lt;WZF!!&gt;49W&amp;O&lt;G6S!!1!!!!51$$`````#HBN&lt;#"T&gt;(*J&lt;G=!!&amp;1!]!!-!!!!!1!#!!-!"!!%!!1!"!!%!!1!"!!&amp;!A!!?!!!#1!!!!E!!!!*!!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!%!"A!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
-	</Item>
-	<Item Name="Build Settings Box Text.vi" Type="VI" URL="../Build Settings Box Text.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;1!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!"J!-0````]2=W6U&gt;'FO:X-A9G^Y)(2F?(1!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!51$,`````#V"B&gt;'AA&gt;']A7%V-!'M!]&gt;MGXI!!!!!#%V.D97YA2(*J&gt;G6S,GRW9WRB=X-45W.B&lt;C"4:82V=#".&lt;W2F,G.U&lt;!!\1"=!!QB/:8=A5W.B&lt;AZ-&lt;W&amp;E)%RB=X1A5W.B&lt;AJ-&lt;W&amp;E)&amp;.D97Y[!!!+5W.B&lt;C"4:82V=!!!4A$Q!!M!!Q!%!!1!"1!%!!1!"!!'!!1!"Q!)!Q!![!!!$1=!!!!!!!!!!!!!#1!!!!!!!!!!!!!!!!!!!!A!!!!!!!!!#A!!!!A!!!!!!1!*!!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
 	</Item>
 </LVClass>
