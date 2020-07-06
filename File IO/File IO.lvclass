@@ -17,7 +17,6 @@
 </Property>
 	<Property Name="NI.LVClass.IsTransferClass" Type="Bool">false</Property>
 	<Property Name="NI.LVClass.LowestCompatibleVersion" Type="Str">1.0.0.6</Property>
-	<Property Name="NI.SortType" Type="Int">1</Property>
 	<Item Name="File IO.ctl" Type="Class Private Data" URL="File IO.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
