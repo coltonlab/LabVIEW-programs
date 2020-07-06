@@ -14,6 +14,9 @@
 		<Item Name="LabVIEW-programs" Type="Folder" URL="..">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="vi to be examined.vi" Type="VI" URL="../../temp/vi to be examined.vi"/>
+		<Item Name="testing save and load panel functions.vi" Type="VI" URL="../../temp/testing save and load panel functions.vi"/>
+		<Item Name="vi - target for modified controls.vi" Type="VI" URL="../../temp/vi - target for modified controls.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
