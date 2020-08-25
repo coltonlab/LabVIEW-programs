@@ -50,13 +50,13 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1350574608</Property>
 	</Item>
 	<Item Name="Setup UI.vi" Type="VI" URL="../Setup UI.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;&amp;!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$B!=!!?!!!?(&amp;&gt;B&gt;G6M:7ZH&gt;'AA6(*J98AA.45Q,GRW9WRB=X-!!!Z898:F&lt;'6O:X2I)'^V&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!;1#%55W6U)&amp;6*)(2P)'FO=(6U0S!I2CE!!$:!=!!?!!!?(&amp;&gt;B&gt;G6M:7ZH&gt;'AA6(*J98AA.45Q,GRW9WRB=X-!!!V898:F&lt;'6O:X2I)'FO!&amp;1!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"Q!)!Q!!?!!!$1A!!!!!!!!!!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!")!!!#3!!!!!!%!#1!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;&amp;!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$B!=!!?!!!?(&amp;&gt;B&gt;G6M:7ZH&gt;'AA6(*J98AA.45Q,GRW9WRB=X-!!!Z898:F&lt;'6O:X2I)'^V&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!;1#%55W6U)&amp;6*)(2P)'FO=(6U0S!I2CE!!$:!=!!?!!!?(&amp;&gt;B&gt;G6M:7ZH&gt;'AA6(*J98AA.45Q,GRW9WRB=X-!!!V898:F&lt;'6O:X2I)'FO!&amp;1!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"Q!)!Q!!?!!!$1A!!!!!!!!!!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!"!!!!#3!!!!!!%!#1!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">256</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">1073742080</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1350574608</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
 	</Item>
 	<Item Name="Wavelength Triax 550.vi" Type="VI" URL="../Wavelength Triax 550.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'#!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$B!=!!?!!!?(&amp;&gt;B&gt;G6M:7ZH&gt;'AA6(*J98AA.45Q,GRW9WRB=X-!!!Z898:F&lt;'6O:X2I)'^V&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1"+1(!!(A!!)"Z4='6D&gt;(*P&lt;76U:8)A6(*J98AA.45Q,GRW9WRB=X-!!"Z4='6D&gt;(*P&lt;76U:8)A6(*J98AA.45Q,GRW9WRB=X-!!$:!=!!?!!!?(&amp;&gt;B&gt;G6M:7ZH&gt;'AA6(*J98AA.45Q,GRW9WRB=X-!!!V898:F&lt;'6O:X2I)'FO!'%!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"Q!)!Q!!?!!!$1A!!!!!!!!!!!!!$1M!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!")!!!!#!!!.!!!!$!!!!!!!!!!!!!!"!!E!!!!!</Property>
