@@ -20,4 +20,3 @@ MAIN.vi launches the main software suite. Equipment VIs can be accessed from the
 
 CONTACT:
 JOHN S. Colton		john_colton@byu.edu
-
