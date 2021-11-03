@@ -214,3 +214,4 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+/Instruments/Lockin/SR830 query sensitivity (part of class).vi
