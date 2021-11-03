@@ -31,6 +31,11 @@
 		<Item Name="SR830 set time constant.vi" Type="VI" URL="../Public/SR830 set time constant.vi"/>
 		<Item Name="Tau.ctl" Type="VI" URL="../Public/Tau.ctl"/>
 		<Item Name="time constants.ctl" Type="VI" URL="../Public/time constants.ctl"/>
+		<Item Name="Match value to sensitivity.vi" Type="VI" URL="../Public/Match value to sensitivity.vi"/>
+		<Item Name="SR830 query sensitivity.vi" Type="VI" URL="../Public/SR830 query sensitivity.vi"/>
+		<Item Name="SR830 set sensitivity.vi" Type="VI" URL="../Public/SR830 set sensitivity.vi"/>
+		<Item Name="Sensitivity_in_library.ctl" Type="VI" URL="../Public/Sensitivity_in_library.ctl"/>
+		<Item Name="SR830 query input mode.vi" Type="VI" URL="../Public/SR830 query input mode.vi"/>
 	</Item>
 	<Item Name="Private" Type="Folder">
 		<Item Name="Send Query.vi" Type="VI" URL="../Private/Send Query.vi">
