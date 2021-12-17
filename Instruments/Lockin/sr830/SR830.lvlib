@@ -36,6 +36,9 @@
 		<Item Name="SR830 set sensitivity.vi" Type="VI" URL="../Public/SR830 set sensitivity.vi"/>
 		<Item Name="Sensitivity_in_library.ctl" Type="VI" URL="../Public/Sensitivity_in_library.ctl"/>
 		<Item Name="SR830 query input mode.vi" Type="VI" URL="../Public/SR830 query input mode.vi"/>
+		<Item Name="SR830 query XYR.vi" Type="VI" URL="../Public/SR830 query XYR.vi"/>
+		<Item Name="Lock-in query OVLD.vi" Type="VI" URL="../Public/Lock-in query OVLD.vi"/>
+		<Item Name="Match time constant to value.vi" Type="VI" URL="../Public/Match time constant to value.vi"/>
 	</Item>
 	<Item Name="Private" Type="Folder">
 		<Item Name="Send Query.vi" Type="VI" URL="../Private/Send Query.vi">
