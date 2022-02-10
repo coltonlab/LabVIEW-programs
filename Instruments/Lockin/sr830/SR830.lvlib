@@ -6,6 +6,7 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Public" Type="Folder">
+		<Item Name="SR830 Read Channels.vi" Type="VI" URL="../Public/SR830 Read Channels.vi"/>
 		<Item Name="Lockin Initialize.vi" Type="VI" URL="../Public/Lockin Initialize.vi"/>
 		<Item Name="Check for lock-in 2.vi" Type="VI" URL="../Public/Check for lock-in 2.vi"/>
 		<Item Name="Check for lock-in.vi" Type="VI" URL="../Public/Check for lock-in.vi"/>
