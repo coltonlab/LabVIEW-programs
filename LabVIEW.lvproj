@@ -454,8 +454,6 @@
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="FitLorentzian.vi" Type="VI" URL="../../Users/romrellb/Downloads/FitLorentzian/FitLorentzian.vi"/>
-			<Item Name="Lorentzian model function.vi" Type="VI" URL="../../Users/romrellb/Downloads/FitLorentzian/Lorentzian model function.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Driver" Type="EXE">
