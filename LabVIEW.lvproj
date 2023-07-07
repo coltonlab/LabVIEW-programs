@@ -464,7 +464,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="usbdrvd.dll" Type="Document" URL="../Instruments/LCD/Meadowlark/old examples and llbs/usbdrvd.dll"/>
-			<Item Name="Initialize.vi" Type="VI" URL="../Instruments/PEM/Hinds PEM-90/Public/Initialize.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Driver" Type="EXE">
