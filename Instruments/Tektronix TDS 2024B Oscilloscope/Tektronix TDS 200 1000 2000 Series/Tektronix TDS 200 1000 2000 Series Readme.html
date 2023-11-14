@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>  
+  <title>Tektronix TDS 200 1000 2000 Series Instrument Driver Readme</title>
+</head>
+
+<body>
+<h2>Tektronix TDS 200 1000 2000 Series Instrument Driver Readme</h2>
+
+<para>To rate this instrument driver, go to the driver download page on the <a href="http://www.ni.com/idnet">Instrument Driver Network</a>.</para>
+
+<h4>1. Overview</h4>
+
+<para>
+Instrument Driver Technology: LabVIEW Plug and Play (project-style)
+<br>
+
+Manufacturer: Tektronix
+<br>
+
+Supported Language(s): LabVIEW 
+<br>
+
+Supported Model(s):  TDS210, TDS220, TDS224, TDS1001, TDS1002, TDS1012, TDS2002, TDS2004, TDS2012, TDS2014,TDS2022, TDS2024, 
+		TPS2012, TPS2014, TPS2024, TDS1001B, TDS1002B, TDS1012B, TDS2002B, TDS2004B, TDS2012B, TDS2014B, TDS2022B, TDS2024B,
+TDS1001B-SC, TDS1002B-SC, TDS1012B-SC, TDS1001C-EDU, TDS1002C-EDU, TDS1012C-EDU, TPS2012B, TPS2014B, TPS2024B,
+TDS1001CSC, TDS1002CSC, TDS1012CSC, TDS2001C, TDS2002C, TDS2004C, TDS2012C, TDS2014C, TDS2022C, TDS2024C,
+TBS1022, TBS1042, TBS1062, TBS1102, TBS1152, TBS1064, TBS1104, TBS1154,
+TBS1052B-EDU, TBS1072B-EDU, TBS1102B-EDU, TBS1152B-EDU, TBS1202B-EDU, TBS1052B, TBS1072B, TBS1102B, TBS1152B, TBS1202B,
+TBS1032B<br>
+
+Model(s) Tested: TDS2002, TDS210, TDS1002B, TDS2014B, TDS2014C, TBS1064, TBS1104, TBS1154, TBS1022, TBS1042, TBS1062, TBS1102, TBS1152, TBS1152B, TBS1152B-EDU, TBS1202B, TBS1052B, TBS1032B
+<br>
+
+Interface(s): Serial, GPIB, USB
+<br>
+
+Firmware Revision(s) Tested: TDS2002 v2.12, TDS210 v1.00 with TDS2CM v1.04, TDS1002B v21.20, TDS2014B v21.20, TPS2012 v10.21, TDS2014C v24.08, 
+TBS1064 v26.05, TBS1104 v26.05, TBS1154 v26.05, TBS1022 v26.05, TBS1042 v26.05, TBS1062 v26.05, TBS1102 v26.05, TBS1152 v26.05, TBS1152B v1.11, TBS1152B-EDU v1.11, TBS1202B v1.11, TBS1052B v2.42,
+TBS1032B v4.06
+<br>
+
+<br>
+
+Certified: Yes
+<br>
+
+NI Supported: Yes
+<br>
+
+Source Code Available: Yes
+<br>
+
+<br>
+
+Driver Revision: 4.5.1
+<br>
+
+Original Release Date: 9/26/2005
+<br>
+
+Current Revision Date: 1/24/2017
+</para>
+<h4>2. Required Software</h4>
+
+<para>Some software components need to be installed before using this instrument driver. Minimum versions of these components are listed below, and can be downloaded from the Download Site.
+<br>
+
+<br>
+
+VISA 5.0 or later
+<br>
+
+<br>
+
+For more details, refer to the <i>LabVIEW Help</i> under <i>Help &raquo; Search the LabVIEW Help</i>.</para>
+
+<h4>3. Known Issues</h4>
+<para>
+-This driver does not support the Power Analysis functions for the TPS2000 models.
+<br>
+<br>
+-The "Channel" ring controls are not consistent with regards to what integer value they pass for the corresponding text value.
+     This is only an problem if you want to use the same Channel ring control to select the channel for all of the VIs that take a
+     channel input.  This is not being changed in the instrument driver since existing applications are using the VIs without any problems.
+<br>
+<br>
+-Channel values of some VIs are not unified. Channel values of two VIs named "Read Measurement.vi" and "Read Measurement (2 Channels).vi" start with 1, but that of other VIs start with 0. If we unify all channel values, there might be a possibility that users have backwards compatibility issues with their applications. To preserve the backwards compatibility, we decide to keep all channel values unchanged and don't unify them.
+<br>
+To report issues or provide feedback about this instrument driver,  <a href="http://www.ni.com/en-us/support.html">please contact technical support</a>.</para>
+<br>
+
+<para></para>
+<h4>4. Revision History</h4>
+
+<para>The latest version of this and other LabVIEW and LabWindows/CVI instrument drivers can be downloaded at the <a href="http://www.ni.com/idnet">Instrument Driver Network</a>.<br>
+
+<br>
+
+REV 2.0, 9/26/2005<br>
+
+Modified by: Rob Hammond, Austin,TX.<br>
+
+<para>Original release for LabVIEW 8.0. LLB-style drivers are named tktds1k2k and tktds2xx.<br>
+
+<br>
+
+REV 3.0,  9/6/2006  <br>
+
+Modified by: Jaustin Ohueri, Austin, TX<br>
+
+<para>Added support for USB B series oscilloscopes.
+<para>Error query was modified, since ERRLOG command was incorrect and error codes in private Classify Error VI were updated.<br>
+<br>
+</para></para></para></para>
+REV 3.1, 1/14/2009  <br>
+
+Modified by: Edward Zhang<br>
+
+Added support for TDS1001B-SC, TDS1002B-SC and TDS1012B-SC. 
+
+<br><br>
+REV 3.1.1, 1/29/2009  <br>
+
+Modified by: Nathan T.<br>
+
+Changed Tektronix TDS 200 1000 2000 Series Acquire Continuous Waveform.vi so that it calls an Initiate outside of the loop and a Fetch inside of the loop.<br>
+This is to fix an issue that occurred when the timebase was configured to 1 second or more.
+
+<br><br>
+REV 3.1.2, 09/30/2009  <br>
+
+Modified by: Alvin Tang, Austin, TX.<br>
+Configure Channel.vi<br>
+-Changed the documentation for Vertical Range Control from "Pass the value of the input range the oscilloscope uses for the channel" to "Sets the vertical gain of the specified oscilloscope channel"<br>
+-Changed the units for Vertical Range control from V to V/div (volts per division)<br>
+
+<br>
+REV 3.2, 10/07/2009  <br>
+
+Modified by: Alvin Tang, Austin, TX.<br>
+- Added Wait for Triggered Acquisition.vi. This VI is added to address the problem that the instrument is not waiting for the trigger to occur before reading the waveform. <br>
+- Tektronix TDS 200 1000 2000 Series Edge Triggered Acquisition<br>
+Added Wait for Triggered Acquisition.vi before Read (Single Waveform).vi. The example will wait for trigger to occur before reading the waveform.<br>
+
+<br>
+REV 3.3, 10/8/2009  <br>
+
+Modified by: Nathan T., Austin, TX.<br>
+- Added Clear Errors VI to the Serial case of the Initialize VI to compensate for TPS models that do not return a "DCL" after being cleared. <br>
+- Updated to LabVIEW 8.2.1<br>
+
+<br>
+REV 3.4, 10/9/2009  <br>
+
+Modified by: Alvin Tang, Austin, TX.<br>
+- Added Wait for Trigger.vi in Low Level Data Folder. This VI is added to address the problem that the instrument is not waiting for the trigger to occur before reading the waveform. <br>
+Wait for Trigger.vi uses TRIG:STATE? query to correct the behavior during Triggered Acquisition in Single Mode. This VI does not wait during Continuous Acquisition. <br>
+- Read(Single Waveform).vi and Read(Multiple Waveform).vi<br>
+Added Wait for Trigger.vi in between Initiate.vi and Fetch Waveform.vi. The Read.vi will now wait for trigger in single acquisition mode. However, it will not affect the acquisition in Continuous mode.<br>
+- Changes made in Rev. 3.2 are reverted.<br>
+
+<br>
+REV 3.4.1, 04/07/2010  <br>
+
+Modified by: Brandon Sun<br>
+- Revised the documentation of Vertical Offset control in Configure Channel to clarify it only changes the waveform position on the screen.<br>
+<br>
+REV 4.0.0, 10/15/2010  <br>
+
+Modified by: Joe Ju<br>
+- Support new models : TDS1001CSC, TDS1002CSC, TDS1012CSC, TDS2001C, TDS2002C, TDS2004C, TDS2012C, TDS2014C, TDS2022C, TDS2024C<br>
+VIs Added:<br>
+Query Limit Test Resultsi <br>
+Configure Data Logging<br>
+Configure Limit Test Comparison<br>
+Configure Limit Test State<br>
+Configure Limit Test Stop After<br>
+Configure Limit Test Template<br>
+Create Limit Test Template<br>
+Read Measurement (2 Channels)<br>
+<br>
+REV 4.1.0, 6/17/2011<br>
+Modified By: Lei Liu <br>
+- Update the Read Measurement.vi to replace the "Phase" to "Pulse Duty" in the control "Measurement Type". <br>
+- Update the Read Measurement (2 Channels).vi. Add 2s delay to fetch the measurement result.<br>
+
+<br>
+REV 4.1.1, 9/1/2011<br>
+Modified By: Lei Liu <br>
+- Update the Wait for Trigger.vi. Byte count value for VISA Read now is changed to 9. <br>
+
+<br>
+REV 4.2.0, 9/10/2013<br>
+Modified By: Zhen Wang <br>
+- Support new models : TBS1022, TBS1042, TBS1062, TBS1102, TBS1152, TBS1064, TBS1104, TBS1154<br>
+- Update the Configure Channel.vi to replace "20 MHZ" with "MAX Bandwidth" in the Ring "Bandwidth".<br>
+- Update the Configure Channel.vi to fix the following Bugs:<br>
+&nbsp;&nbsp;1. Range Command is done before Attenuation Command. If both values are changed, the results is that the Range is changed by the Attenuation command in the scope.<br>
+&nbsp;&nbsp;2. The Vertical Range is divided by 10. The Vertical Range is 10 times lower than expected after executing the VI.<br>
+
+<br>
+REV 4.3.0, 3/20/2014<br>
+Modified By: Zhen Wang <br>
+- Support new models: TBS1052B-EDU, TBS1072B-EDU, TBS1102B-EDU, TBS1152B-EDU, TBS1202B-EDU, TBS1052B, TBS1072B, TBS1102B, TBS1152B, TBS1202B<br>
+- Added the following VIs:<br>
+&nbsp;&nbsp;- Query Zoom Window Time Scale.vi<br>
+&nbsp;&nbsp;- Query Counter Frequency.vi<br>
+&nbsp;&nbsp;- Configure Counter Frequency.vi<br>
+&nbsp;&nbsp;- Configure FFT.vi<br>
+&nbsp;&nbsp;- Configure Measurement Gating.vi<br>
+&nbsp;&nbsp;- Configure Zoom Window.vi<br>
+&nbsp;&nbsp;- Tektronix TDS 200 1000 2000 Series Acquire FFT Waveform.vi<br>
+- Modified the following VIs:<br>
+&nbsp;&nbsp;- Configure Math.vi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1. Update the VI's description to mention that the FFT in the VI is unavailable and moved to Configure FFT VI.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2. Update Function control to mention the available items (CH1 + CH2, CH1 - CH2, CH2 - CH1) for newly supported models.<br>
+&nbsp;&nbsp;- Configure Data Logging.vi<br>
+&nbsp;&nbsp;- Fetch Waveform.vi<br>
+&nbsp;&nbsp;- Read (Single Waveform).vi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Update Source control to add FFT item.<br>
+&nbsp;&nbsp;- Save Waveform to Reference Channel.vi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Update Channel control to add FFT item.<br>
+&nbsp;&nbsp;- Read Measurement (2 Channels).vi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1. Update the VI's description, because there is no configure measurement (2 channels) VI.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2. Update Measurement Type control to add the following items (DelayRR, DelayRF, DelayFR, DelayFF).<br>
+&nbsp;&nbsp;- Read Measurement.vi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Update Measurement Type control to add the following items (Amplitude, High, Low, Negative Duty, Positive Overshoot, Negative Overshoot, Cursor Mean, Burst Width, Positive Pulse Count, Negative Pulse Count, Rising Edge Count, Falling Edge Count, Area, Cycle Area).<br>
+&nbsp;&nbsp;- Read (Multiple Waveforms).vi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Update Sources control to add FFT item.<br>
+
+<br>
+REV 4.4.0, 8/11/2014<br>
+Modified By: Xudong Yong <br>
+- Add new commands to support models TBS1052B, TBS1072B, TBS1102B, TBS1152B, TBS1202B<br>
+- Added the following VIs:<br>
+&nbsp;&nbsp;- Query Trend Plot Parameters.vi<br>
+&nbsp;&nbsp;- Configure Limit Test Dual Template.vi<br>
+&nbsp;&nbsp;- Save Limit Test Template.vi<br>
+&nbsp;&nbsp;- Configure Measurement Snapshot.vi<br>
+&nbsp;&nbsp;- Configure Trend Plot.vi<br>
+&nbsp;&nbsp;- Is TBS-B Series Model.vi<br>
+&nbsp;&nbsp;- Tektronix TDS 200 1000 2000 Series Acquire Trend Plot.vi<br>
+- Modified the following VIs:<br>
+&nbsp;&nbsp;- Configure Limit Test Comparison.vi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Add a case structure by judging the model type.<br>
+&nbsp;&nbsp;- Configure Limit Test Template.vi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Added a case structure to determine Limit Template destination by the model type and updated VI description to specify single template.<br>
+&nbsp;&nbsp;- Configure Limit Test Stop After.vi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Add a case structure by judging the value of mode control.<br>
+
+
+<br>
+REV 4.5.0, 10/20/2015<br>
+Modified By: Chenchen Zhou <br>
+- Add a new model TBS 1032B.<br>
+
+
+<br>
+REV 4.5.1, 1/24/2017<br>
+Modified By: Ilan Buzzetti <br>
+- Added a control to Configure Edge (Trigger)
+</body>
+</html>
