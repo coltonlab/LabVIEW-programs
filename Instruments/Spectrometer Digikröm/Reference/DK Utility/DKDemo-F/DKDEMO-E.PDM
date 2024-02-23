@@ -1,0 +1,125 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+[Package|Standard Setup Package 1|DKDEMO-E]
+Icon1=DKDEMO-E.exe
+Title1=DKDEMO-E
+StartIn1=$(AppPath)
+Key1=Icon1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=e:\SP1\VB6\DK\VerE-VB6\install
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+DK.HLP=E:\SP1\VB6\DK\VerE-VB6\DK.HLP
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\WINNT\system32\comdlg32.ocx=
+C:\WINDOWS\system32\Msflxgrd.ocx=
+C:\WINDOWS\system32\comdlg32.ocx=
+
+[Package|Standard Setup Package 1|Files Added]
+dk.hlp=
+
+[Package|Standard Setup Package 1|Files Removed]
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\WINDOWS\system32\MSCOMM32.OCX=Yes
+C:\WINDOWS\system32\comdlg32.ocx=Yes
+C:\WINDOWS\system32\Msflxgrd.ocx=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+E:\SP1\VB6\DK\VerE-VB6\DKDEMO-E.exe=Yes
+E:\SP1\VB6\DK\VerE-VB6\DK.HLP=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+C:\H\VB6\VB6Dk\VerE-VB6-Filter\DKDEMO-E.exe=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\MSCOMM32.OCX=$(WinSysPath)
+C:\WINNT\system32\comdlg32.ocx=$(WinSysPath)
+C:\WINNT\system32\MSFLXGRD.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\H\VB6\VB6Dk\VerE-VB6-Filter\DK.HLP=$(AppPath)
+Z:\ReadyForWebsite\Nic\Spectral CD\CDSoftware\MONCHROMATORS\Visual Basic\Source\DkVbSource\DKDEMO-E.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSCOMM32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\Msflxgrd.ocx=$(WinSysPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+Z:\ReadyForWebsite\Nic\Spectral CD\CDSoftware\MONCHROMATORS\Visual Basic\Source\DkVbSource\DK.HLP=$(AppPath)
+E:\SP1\VB6\DK\VerE-VB6\DKDEMO-E.exe=$(AppPath)
+E:\SP1\VB6\DK\VerE-VB6\DK.HLP=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+C:\H\VB6\VB6Dk\VerE-VB6-Filter\DKDEMO-E.exe=No
+C:\H\VB6\VB6Dk\VerE-VB6-Filter\DK.HLP=No
+Z:\ReadyForWebsite\Nic\Spectral CD\CDSoftware\MONCHROMATORS\Visual Basic\Source\DkVbSource\DKDEMO-E.exe=No
+Z:\ReadyForWebsite\Nic\Spectral CD\CDSoftware\MONCHROMATORS\Visual Basic\Source\DkVbSource\DK.HLP=No
+E:\SP1\VB6\DK\VerE-VB6\DKDEMO-E.exe=Yes
+E:\SP1\VB6\DK\VerE-VB6\DK.HLP=Yes
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=DKDEMO-E
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=DKseries
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|DKseries]
+Icon1=DKDEMO-E.exe
+Title1=DKDEMO-E
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=e:\SP1\VB6\DK\VerE-VB6\install
+ProjectFolder=E:\SP1\VB6\DK\VerE-VB6
+ServerSideCab=
+File1=e:\SP1\VB6\DK\VerE-VB6\install\setup.exe
+File2=e:\SP1\VB6\DK\VerE-VB6\install\Setup.Lst
+File3=e:\SP1\VB6\DK\VerE-VB6\install\DKDEMO-E.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
