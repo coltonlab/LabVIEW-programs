@@ -1,33 +1,25 @@
 import numpy as np
-from scipy.signal import savgol_filter
-import matplotlib.pyplot as plt
+from scipy.optimize import minimize
 
-def savitzky_golay_smoothing(y, window_length=15, polyorder=3):
-    """
-    Apply Savitzky-Golay smoothing to the given data.
+# Define your data sets
+data1 = np.array([1, 2, 3, 4, 5])
+data2 = np.array([6, 7, 8, 9, 10])
+data3 = np.array([7, 10, 13, 16, 19])  # The resulting data3
 
-    Parameters:
-        y (array-like): Dependent variable (e.g., measured values).
-        window_length (int): Length of the window over which the polynomial is fit.
-        polyorder (int): Order of the polynomial that is fit to the data within each window.
+# Define the function to minimize
+def objective(x):
+    a, b = x
+    return np.sum((a * data1 + b * data2 - data3) ** 2)
 
-    Returns:
-        array-like: Smoothed data.
-    """
-    smoothed_y = savgol_filter(y, window_length, polyorder)
-    return smoothed_y
+# Initial guess for the coefficients
+initial_guess = [1, 1]
 
-# Example usage:
-x = np.linspace(0, 10, 100)  # Independent variable (e.g., time)
-y = np.sin(x) + np.random.normal(0, 0.1, size=x.shape)  # Dependent variable (e.g., measured values)
+# Use SciPy's minimize function to find the best fit coefficients
+result = minimize(objective, initial_guess)
 
-smoothed_data = savitzky_golay_smoothing(y)
+# Extract the optimal coefficients
+a_optimal, b_optimal = result.x
 
-# Plot original and smoothed data
-plt.plot(x, y, label='Original Data')
-plt.plot(x, smoothed_data, label='Smoothed Data')
-plt.legend()
-plt.xlabel('X-axis')
-plt.ylabel('Y-axis')
-plt.title('Savitzky-Golay Smoothing')
-plt.show()
+print("Optimal coefficients:")
+print("a =", a_optimal)
+print("b =", b_optimal)
