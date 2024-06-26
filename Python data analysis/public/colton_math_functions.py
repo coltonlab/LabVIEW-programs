@@ -126,22 +126,22 @@ def phase_data(data, x_name='X (V)', y_name='Y (V)'):
     factor = 1e-6 # This helps since the numbers are so small - change to mean(X)?
 
 
-    # # Fixes any offsets that occur - I don't know if this can be used
-    # def offset(guess):
-    #     X_new = X - guess[0]*factor
-    #     Y_new = Y - guess[1]*factor
+    # Fixes any offsets that occur - I don't know if this can be used
+    def offset(guess):
+        X_new = X - guess[0]*factor
+        Y_new = Y - guess[1]*factor
 
-    #     y_rotated = X_new * np.sin(min_angle) + Y_new * np.cos(min_angle)
-    #     return np.sum(abs(y_rotated))
+        y_rotated = X_new * np.sin(min_angle) + Y_new * np.cos(min_angle)
+        return np.sum(abs(y_rotated))
     
 
-    # # Initial guess for the coefficients
-    # offset_guess = [np.mean(X)/factor,np.mean(Y)/factor]
+    # Initial guess for the coefficients
+    offset_guess = [np.mean(X)/factor,np.mean(Y)/factor]
 
-    # # Use SciPy's minimize function to find the best fit coefficients
-    # result_offset = minimize(offset, offset_guess)#, bounds=[(0, None)])
-    # X_offset, Y_offset = result_offset.x
-    # # print(result_offset)
+    # Use SciPy's minimize function to find the best fit coefficients
+    result_offset = minimize(offset, offset_guess)#, bounds=[(0, None)])
+    X_offset, Y_offset = result_offset.x
+    # print(result_offset)
 
 
     X = X - X_offset*factor
@@ -201,6 +201,7 @@ def FK_fit(d_1, d_2, data_to_fit):
 
 
 
-
+def difference_to_sum_ratio(A,B):
+    return (A-B)/(A+B)
 
 

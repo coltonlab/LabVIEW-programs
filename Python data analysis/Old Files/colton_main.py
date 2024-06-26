@@ -1,5 +1,5 @@
-import plot_colton_graphs as pcg
-import read_colton_files as rcf
+import public.plot_colton_graphs as pcg
+import public.read_colton_files as rcf
 import matplotlib.pyplot as plt
 import numpy as np
 

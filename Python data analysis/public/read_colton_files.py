@@ -8,7 +8,7 @@ data and return back a dataframe with the raw data and the phased data.
 
 import pandas as pd
 import numpy as np
-from colton_math_functions import phase_data
+from public.colton_math_functions import phase_data
 
 
 ''' 
@@ -18,14 +18,14 @@ def get_filename(excel_file_row):
     offset = -2
     excel_file_row += offset
 
-    excel_filename = '//2.coltonlab.byu.edu/C$/Data/All Scan Notes.xlsx'
-    # excel_filename = 'C:/Data/All Scan Notes.xlsx'
+    # excel_filename = '//2.coltonlab.byu.edu/C$/Data/All Scan Notes.xlsx'
+    excel_filename = 'C:/Data/All Scan Notes.xlsx'
     all_scan_notes = pd.read_excel(excel_filename)
 
     date = str(all_scan_notes['Date'][excel_file_row])[:10]
     sample = str(all_scan_notes['Sample'][excel_file_row])
     # scan_type = str(all_scan_notes['Type of Scan'][excel_file_row])
-    # temperature = str(all_scan_notes['Temp (K)'][excel_file_row])
+    temperature = str(all_scan_notes['Temp (K)'][excel_file_row])
     file = str(all_scan_notes['File'][excel_file_row])
 
     if date[:4] != '2024':
@@ -34,10 +34,10 @@ def get_filename(excel_file_row):
         subfolder = 'Data'
 
 
-    file_path  = f'//2.coltonlab.byu.edu/C$/{subfolder}/{date}/{file}'
-    # file_path = f"C:/{subfolder}/{date}/{file}"
+    # file_path  = f'//2.coltonlab.byu.edu/C$/{subfolder}/{date}/{file}'
+    file_path = f"C:/{subfolder}/{date}/{file}"
 
-    return file_path, sample
+    return file_path, sample, temperature    
 
 
 
@@ -57,7 +57,7 @@ def delete_line(filename, line):
 read_trans_data reads in the data and phases in accordance to the way the data is outputted.
 '''
 def read_trans_data(excel_row, sample = False):
-    filename, sample_name = get_filename(excel_row)
+    filename, sample_name, temperature = get_filename(excel_row)
 
     # read in the data and skip the starting lines and ending lines
     row_skip = range(0,14) # The number of rows to skip is different for the data
@@ -81,7 +81,7 @@ read_voltage_series_data reads in the data and phases all off the voltages at on
 and outputs them all in a dictionary with the voltage as the dictionary keys.
 '''
 def read_voltage_series_data(excel_row, sample = False):
-    filename, sample_name = get_filename(excel_row)
+    filename, sample_name, temperature = get_filename(excel_row)
     
     # Removes the error by having the "Check Status.vi" be replaced
     delete_line(filename, 5)
@@ -118,7 +118,7 @@ def read_voltage_series_data(excel_row, sample = False):
 read_lockin_Fluke_data reads in the data and phases in accordance to the way the data is outputted.
 '''
 def read_lockin_fluke_data(excel_row, sample = False):
-    filename, sample_name = get_filename(excel_row)
+    filename, sample_name, temperature = get_filename(excel_row)
 
     # read in the data and skip the starting lines and ending lines
     row_skip = range(0,14) # The number of rows to skip is different for the data
@@ -140,7 +140,7 @@ def read_lockin_fluke_data(excel_row, sample = False):
 read_lockin_keithley_data reads in the data and phases in accordance to the way the data is outputted.
 '''
 def read_lockin_keithley_data(excel_row, sample = False):
-    filename, sample_name = get_filename(excel_row)
+    filename, sample_name, temperature = get_filename(excel_row)
 
     # read in the data and skip the starting lines and ending lines
     row_skip = range(0,16) # The number of rows to skip is different for the data
@@ -158,7 +158,64 @@ def read_lockin_keithley_data(excel_row, sample = False):
 
 
 
+'''
+read_CCD data reads in the data which is to be understood as a raser scan.
+'''
+def read_CCD_data(excel_row, sample = False):
+    filename, sample_name, temperature = get_filename(excel_row)
 
+    # read in the data and skip the starting lines and ending lines
+    row_skip = range(0,10) # The number of rows to skip is different for the data
+    data = pd.read_csv(filename, engine='python' ,skiprows=row_skip, skipfooter=3, sep='\t', dtype=float)
+
+    if sample:
+        # Gives the same_name of the data 
+        return data, sample_name
+    
+    print(filename)
+
+    return data, sample_name, temperature
+
+
+
+'''
+read_CCD data reads in the data which is to be understood as a raster scan.
+'''
+def read_PMT_data(excel_row, sample = False):
+    filename, sample_name, temperature = get_filename(excel_row)
+
+    # read in the data and skip the starting lines and ending lines
+    row_skip = range(0,9) # The number of rows to skip is different for the data
+    data = pd.read_csv(filename, engine='python' ,skiprows=row_skip, skipfooter=3, sep='\t', dtype=float)
+
+
+    if sample:
+        # Gives the same_name of the data 
+        return data, sample_name
+    
+    print(filename)
+
+    return data, sample_name, temperature
+
+
+
+'''
+read_CCD data reads in the data which the Etch-A-Sketch program spits out
+'''
+def read_etch_a_sketch_data(excel_row, sample = False):
+    filename, sample_name, temperature = get_filename(excel_row)
+
+    # read in the data and skip the starting lines and ending lines
+    data = pd.read_csv(filename, engine='python' ,sep='\t', dtype=float)
+
+
+    if sample:
+        # Gives the same_name of the data 
+        return data, sample_name
+    
+    print(filename)
+
+    return data
 
 
 
