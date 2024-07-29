@@ -9,20 +9,20 @@ import numpy as np
 def derivative_template():
     data = {}
 
-    data['blank'] = rcf.read_trans_data(78)
-    data['trans'] = rcf.read_trans_data(79)
+    data['blank'] = rcf.read_trans_data(1041)
+    data['trans'] = rcf.read_trans_data(1044)
 
 
     # plots the ABS
     fig, ax1 = plt.subplots()
-    pcg.plot_absorption(data, ax=ax1, smooth=True)
+    pcg.plot_absorption(data, ax=ax1, smooth=True, energy=False)
 
 
     # Plots the Derivatives 
     ax2 = ax1.twinx()
     right_color = 'green'
-    pcg.plot_deriv_absorption(data, ax=ax2, smooth=True, color=right_color)
-    pcg.plot_deriv_absorption(data, ax=ax2, smooth=True, color='red', order=2)
+    pcg.plot_deriv_absorption(data, ax=ax2, smooth=True, color=right_color, energy=False)
+    pcg.plot_deriv_absorption(data, ax=ax2, smooth=True, color='red', order=2, energy=False)
 
 
 
@@ -36,8 +36,8 @@ def derivative_template():
 
     plt.show()
 
-    
 derivative_template()
+
 
 '''Still a working progress'''
 def fit_template():

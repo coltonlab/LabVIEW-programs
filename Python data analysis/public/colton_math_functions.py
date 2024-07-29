@@ -4,7 +4,7 @@ This is a conveniant spot to put all of the mathematical functions that the colt
 import numpy as np
 from scipy.signal import savgol_filter
 import scipy.special as sps
-from scipy.optimize import minimize
+from scipy.optimize import minimize, curve_fit
 
 
 '''Calculates the EA signal with the input ea data and transmission data '''
@@ -37,7 +37,15 @@ def absorption_smooth(trans, blank):
 
 '''Calculate CD in millidegrees'''
 def circular_dichrosim(AC,DC):
-    return (-32982/(np.log(10)*sps.j1(np.pi/2)))*(AC/DC)
+    return (-32982/(np.log(10)*sps.j1(0.587*np.pi)))*(AC/DC)*(2**0.5)
+
+
+
+'''Calculates the absorption given a blank and transmission data '''
+def circular_dichrosim_smooth(AC,DC):
+    AC = savitzky_golay_smoothing(AC)
+    DC = savitzky_golay_smoothing(DC)
+    return (-32982/(np.log(10)*sps.j1(0.587*np.pi)))*(AC/DC)*(2**0.5)
 
 
 
@@ -48,7 +56,7 @@ def wavelength_to_energy(wavelength):
 
 
 '''Apply Savitzky-Golay smoothing to the given data.'''
-def savitzky_golay_smoothing(y, window_length=11, polyorder=3):
+def savitzky_golay_smoothing(y, window_length=20, polyorder=3):
     """
     Parameters:
         y (array-like): Dependent variable (e.g., measured values).
@@ -64,7 +72,7 @@ def savitzky_golay_smoothing(y, window_length=11, polyorder=3):
 
 
 ''' This program uses a for loop and finds the min value for Y in 10 iterations, it then does another 10 at a smaller step size '''
-def phase_data_old(data, x_name='X (V)', y_name='Y (V)'):
+def phase_data(data, x_name='X (V)', y_name='Y (V)'):
     
     X = data[x_name]
     Y = data[y_name]
@@ -79,7 +87,7 @@ def phase_data_old(data, x_name='X (V)', y_name='Y (V)'):
     BC = 3.15/2 # boundry conditions
 
     # This double four loop allows us to go through 60 values of Y to get an accuracy within 1.8e-4 degrees.
-    for i in range(5): # Increase this number to increase your tolerance. Change this number if you want 1.8e-(n-2) order of accuracy
+    for i in range(3): # Increase this number to increase your tolerance. Change this number if you want 1.8e-(n-2) order of accuracy
         angles = np.linspace(min_angle - BC , min_angle + BC, 10)  # Range from -pi/2 to pi/2 radians
 
         # Looking for the smallest abs value of Y with in 10 data points 
@@ -103,7 +111,7 @@ def phase_data_old(data, x_name='X (V)', y_name='Y (V)'):
 
 
 ''' This program uses a for loop and finds the min value for Y in 10 iterations, it then does another 10 at a smaller step size '''
-def phase_data(data, x_name='X (V)', y_name='Y (V)'):
+def phase_data_experiemnt(data, x_name='X (V)', y_name='Y (V)'):
     X = data[x_name]
     Y = data[y_name]
 
@@ -205,3 +213,59 @@ def difference_to_sum_ratio(A,B):
     return (A-B)/(A+B)
 
 
+
+
+def FWHM(x,y):
+    # Find the maximum value of the peak
+    max_y = np.max(y)
+
+    # Calculate half maximum
+    half_max = max_y / 2
+
+    # Find the indices where the y-values are closest to the half maximum
+    indices = np.where(y >= half_max)[0]
+
+    # Get the x-values at those indices
+    x1 = x[indices[0]]
+    x2 = x[indices[-1]]
+
+    # Calculate FWHM
+    fwhm = x2 - x1
+    return fwhm
+
+
+
+
+def TCSPC_decay_rate(time,intensity):
+    # Define the exponential decay function
+    def exponential_decay(t, I1, I2, tau, tau2):
+        return I1 * np.exp(-t / tau) + I2 * np.exp(-t / tau2)
+
+    index = np.argmax(intensity)+6
+    time = time[index:]
+    intensity = intensity[index:]#-min(intensity)
+                
+
+    # Perform the curve fit
+    popt, pcov = curve_fit(exponential_decay, time, intensity, p0=(intensity.max()*2/3, intensity.max()/3, 1.0, 0.5))
+
+    # Extract the fitted parameters
+    I0_fit1, I0_fit2, tau_fit, tau_fit_2 = popt
+    # print(y0-min(intensity))
+
+    # Calculate the decay rate
+    decay_rate = tau_fit
+    decay_rate2 = tau_fit_2
+
+    # print(f'{I0_fit1} exp(-t / {tau_fit})    +     {I0_fit2} * exp(-t / {tau_fit_2})')
+    # print(decay_rate+decay_rate2)
+
+    import matplotlib.pyplot as plt
+    # Plot the data and the fit
+    fig = plt.figure(6)
+    plt.plot(time, intensity, label='Fit',linewidth=2 ,color='blue')
+    plt.plot(time, exponential_decay(time, *popt), label='Fit', color='red')
+    plt.xlabel('Time (t)')
+    plt.ylabel('Intensity (I)')
+    plt.legend()
+    return decay_rate, decay_rate2

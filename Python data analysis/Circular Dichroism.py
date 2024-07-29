@@ -5,14 +5,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-
 def CD_template_new():
     data = {}
 
-    trans_files = [] # insert row number in excel
-    blank_files =[] # insert row number in excel
-
-    name_color = ['red', 'blue', 'green','black','orange'] # This doesn't have to change unless you have more than 5 plots
+    trans_files = range(1271,1278) # insert row number in excel
+    blank_files =range(1278,1285) # insert row number in excel
     
     fig, ax = plt.subplots()
     for i in range(len(trans_files)):
@@ -25,30 +22,75 @@ def CD_template_new():
 
 
 
+
 def CD_template(): # Needs to be updated
-    data = rcf.read_CD_data()
-    data2 = rcf.read_CD_data()
-    
+    data = rcf.read_lockin_fluke_data(784)
+
+    fig1, ax1 = plt.subplots()
+    CD_data = pcg.plot_CD(data, ax=ax1, energy=False, Phased=False)
+
+    # legend name
+    legend = 'Absorption'
+
+    # plt.show()
+    return CD_data
+
+# fluke = CD_template()
+
+
+
+
+
+def CD_carter():
+    data = {}
 
     fig, ax = plt.subplots()
-    # plot data
-    pcg.plot_CD(data, ax=ax)
-    
 
-    # Temporary stuff
+    data['DC'] = rcf.read_trans_data(984)
+    data['AC'] = rcf.read_trans_data(983)
+    data['AC']['X (V)'] = data['AC']['X (V)'] + rcf.read_trans_data(986)['X (V)'] # subtract ac signal from windows
+    
+    # for k in range(0,20):
+    #     data['AC']['X (V)'] += -0.1e-12
+    pcg.plot_CD_Carter(data, ax=ax, energy=False, smoothed=True)
+
+    # data['DC'] = rcf.read_trans_data(985)
+    # data['AC'] = rcf.read_trans_data(986)
+
+    # x,Cd2 = pcg.plot_CD_Carter(data, ax=ax, energy=False, smoothed=True)
+
+    # CD_diff=Cd2-Cd1
+
+    plt.plot([280,620],[0,0],'k-')
+    # plt.plot(x,CD_diff,'r-')
+    plt.xlim(290,610)
+        
+
+    # data['AC offset'] = rcf.read_trans_data(986)
+
+    # pcg.plot_CD_Carter(data, ax=ax, energy=False, smoothed=False)
+    plt.show()
+
+
+# CD_carter()
+
+def CD_RMBA_Temp():
+    data = {}
+
+    trans_files = range(1271,1275) # insert row number in excel
+    blank_files =range(1278,1282) # insert row number in excel
+
+    name_color = ['red','blue','green','purple','orange','cyan','black']
+    
     fig, ax = plt.subplots()
-    
+    for i in range(len(trans_files)):
+        data['AC'] = rcf.read_trans_data(trans_files[i])
+        data['DC'] = rcf.read_trans_data(blank_files[i])
 
-
-    # Calculate the absorption signal
-    ABS_data = cmf.absorption(data['Keithley (V)'], data2['Keithley (V)'])    
-     
-    # legend name 
-    legend = 'Absorption'    
-
-    ax.plot(data['Digikrom Spectr.:0 (?)'],ABS_data, label=legend)
-    # ax.legend()
-    ax.set_xlabel('Wavelength')
-    ax.set_ylabel('Absorption (OD)')
+        # plot data
+        pcg.plot_CD_Carter(data, ax=ax, smooth=False, color=name_color[i])
+        ax.legend(trans_files)
 
     plt.show()
+
+CD_RMBA_Temp()

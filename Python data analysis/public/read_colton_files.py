@@ -19,7 +19,7 @@ def get_filename(excel_file_row):
     excel_file_row += offset
 
     # excel_filename = '//2.coltonlab.byu.edu/C$/Data/All Scan Notes.xlsx'
-    excel_filename = 'C:/Data/All Scan Notes.xlsx'
+    excel_filename = 'C:/Data/All Scan Notes New.xlsx'
     all_scan_notes = pd.read_excel(excel_filename)
 
     date = str(all_scan_notes['Date'][excel_file_row])[:10]
@@ -59,6 +59,7 @@ read_trans_data reads in the data and phases in accordance to the way the data i
 def read_trans_data(excel_row, sample = False):
     filename, sample_name, temperature = get_filename(excel_row)
 
+    print(filename)
     # read in the data and skip the starting lines and ending lines
     row_skip = range(0,14) # The number of rows to skip is different for the data
     data = pd.read_csv(filename, engine='python' ,skiprows=row_skip, skipfooter=3, sep='\t', dtype=float)
@@ -66,13 +67,43 @@ def read_trans_data(excel_row, sample = False):
     # Phases the data and makes another column with the phased data 
     data = phase_data(data)
 
-    
+    data[temperature] = temperature
 
     if sample:
         # Gives the same_name of the data 
         return data, sample_name
 
     return data
+
+
+'''
+read_trans_data reads in the data and phases in accordance to the way the data is outputted.
+'''
+def read_double_lockin_data(excel_row, sample = False):
+    filename, sample_name, temperature = get_filename(excel_row)
+
+    print(filename)
+    # read in the data and skip the starting lines and ending lines
+    row_skip = range(0,17) # The number of rows to skip is different for the data
+    data = pd.read_csv(filename, engine='python' ,skiprows=row_skip, skipfooter=3, sep='\t', dtype=float)
+
+    data830 = {}
+    data810 = {}
+
+    data830['Digikrom Spectr.:0 (?)'], data830['X (V)'], data830['Y (V)'], data830['R (V)'] = data['Digikrom Spectr.:0 (?)'], data['X830 (V)'], data['Y830 (V)'], data['R830 (V)']
+    data810['Digikrom Spectr.:0 (?)'], data810['X (V)'], data810['Y (V)'], data810['R (V)'] = data['Digikrom Spectr.:0 (?)'], data['X810 (V)'], data['Y810 (V)'], data['R810 (V)']
+
+
+    # Phases the data and makes another column with the phased data 
+    data830 = phase_data(data830)
+    data810 = phase_data(data810)
+    
+
+    if sample:
+        # Gives the same_name of the data 
+        return data, sample_name
+
+    return data830, data810
 
 
 
@@ -157,20 +188,32 @@ def read_lockin_keithley_data(excel_row, sample = False):
     return data
 
 
+'''
+read_CCD data reads in the data which is to be understood as a raser scan.
+'''
+def read_CCD_raw_data(excel_row, row=0):
+    filename, sample_name, temperature = get_filename(excel_row)
+
+    # read in the data and skip the starting lines and ending lines
+    row_skip = range(0,7) # The number of rows to skip is different for the data
+    data = pd.read_csv(filename, engine='python' ,skiprows=row_skip, skipfooter=2, sep='\t', dtype=float)
+
+    
+    print(filename)
+
+    return data, sample_name, temperature, data['Processed Data'][row]
+
 
 '''
 read_CCD data reads in the data which is to be understood as a raser scan.
 '''
-def read_CCD_data(excel_row, sample = False):
+def read_CCD_data(excel_row):
     filename, sample_name, temperature = get_filename(excel_row)
 
     # read in the data and skip the starting lines and ending lines
     row_skip = range(0,10) # The number of rows to skip is different for the data
-    data = pd.read_csv(filename, engine='python' ,skiprows=row_skip, skipfooter=3, sep='\t', dtype=float)
+    data = pd.read_csv(filename, engine='python' ,skiprows=row_skip, skipfooter=2, sep='\t', dtype=float)
 
-    if sample:
-        # Gives the same_name of the data 
-        return data, sample_name
     
     print(filename)
 
@@ -219,6 +262,35 @@ def read_etch_a_sketch_data(excel_row, sample = False):
 
 
 
+'''
+This reads in the data from TimeHarp 360 (.dat) makes an X axis for time, and reads in the counts.
+'''
+def read_TCSPC_data(excel_row):
+    filename, sample_name, temperature = get_filename(excel_row)
+
+    # get the numerical values of the .dat file
+    data = np.loadtxt(filename)
+
+    # Grab the step size used in ns/bin 
+    step_size = data[3]
+
+    # Slice the array to remove unnessesary info then remove all zeros and last 8 points
+    data = data[4:]
+    data = data[data != 0]
+    data = data[:-20]
+
+    # get the time array
+    time = np.arange(len(data))*step_size
+
+    # make data into a dataframe 
+    data = {
+        'Time': time,
+        'Counts': data
+    }
+
+
+    # print(filename)
+    return data, sample_name, int(temperature)
 
 
 
