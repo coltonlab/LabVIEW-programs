@@ -166,7 +166,7 @@ def read_CCD_data(excel_row, sample = False):
 
     # read in the data and skip the starting lines and ending lines
     row_skip = range(0,10) # The number of rows to skip is different for the data
-    data = pd.read_csv(filename, engine='python' ,skiprows=row_skip, skipfooter=3, sep='\t', dtype=float)
+    data = pd.read_csv(filename, engine='python' ,skiprows=row_skip, skipfooter=2, sep='\t', dtype=float)
 
     if sample:
         # Gives the same_name of the data 

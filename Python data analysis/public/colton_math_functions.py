@@ -41,6 +41,14 @@ def circular_dichrosim(AC,DC):
 
 
 
+'''Calculates the absorption given a blank and transmission data '''
+def circular_dichrosim_smooth(AC,DC):
+    # AC = savitzky_golay_smoothing(AC)
+    # DC = savitzky_golay_smoothing(DC)
+    return (-32982/(np.log(10)*sps.j1(np.pi/2)))*(AC/DC)
+
+
+
 '''Converts wavelength to energy'''
 def wavelength_to_energy(wavelength): 
     return 1239.84193/wavelength.values
@@ -64,7 +72,7 @@ def savitzky_golay_smoothing(y, window_length=11, polyorder=3):
 
 
 ''' This program uses a for loop and finds the min value for Y in 10 iterations, it then does another 10 at a smaller step size '''
-def phase_data_old(data, x_name='X (V)', y_name='Y (V)'):
+def phase_data(data, x_name='X (V)', y_name='Y (V)'):
     
     X = data[x_name]
     Y = data[y_name]
@@ -103,7 +111,7 @@ def phase_data_old(data, x_name='X (V)', y_name='Y (V)'):
 
 
 ''' This program uses a for loop and finds the min value for Y in 10 iterations, it then does another 10 at a smaller step size '''
-def phase_data(data, x_name='X (V)', y_name='Y (V)'):
+def phase_data_experiemnt(data, x_name='X (V)', y_name='Y (V)'):
     X = data[x_name]
     Y = data[y_name]
 

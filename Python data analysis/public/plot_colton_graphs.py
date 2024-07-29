@@ -98,11 +98,13 @@ def plot_EA_temp_series(data, ax, colorbar=True, color_map_name='autumn_r', line
 
 def plot_ABS_temp_series(data, ax, colorbar=True, color_map_name='autumn_r', linewidth = 1, energy=True, smooth=False):
     # Get wavelength
-    X = data['blank']['Digikrom Spectr.:0 (?)']
+    X1 = data['blank1']['Digikrom Spectr.:0 (?)']
+    # X2 = data['blank2']['Digikrom Spectr.:0 (?)']
     ax.set_xlabel('Wavelength (nm)')    
     
     if energy:
-        X = cmf.wavelength_to_energy(X)
+        X1 = cmf.wavelength_to_energy(X1)
+        # X2 = cmf.wavelength_to_energy(X2)
         ax.set_xlabel('Energy (eV)')
 
 
@@ -128,12 +130,23 @@ def plot_ABS_temp_series(data, ax, colorbar=True, color_map_name='autumn_r', lin
 
         # Calculate the EA signal
         if smooth:
-            ABS_data = cmf.absorption_smooth(data['trans'][temp]['R (V)'], data['blank']['R (V)'])
+            ABS_data1 = cmf.absorption_smooth(data['trans'][temp]['R (V)'], data['blank1']['R (V)'])
         else:
-            ABS_data = cmf.absorption(data['trans'][temp]['R (V)'], data['blank']['R (V)'])
+            ABS_data1 = cmf.absorption(data['trans'][temp]['R (V)'], data['blank1']['R (V)'])
         
-        ax.plot(X,ABS_data, linewidth=linewidth, color=colors[i])
+        ax.plot(X1,ABS_data1, linewidth=linewidth, color=colors[i])
         i += 1
+
+    # for temp in [200,250,300]:
+
+        # Calculate the EA signal
+        # if smooth:
+        #     ABS_data2 = cmf.absorption_smooth(data['trans'][temp]['R (V)'], data['blank2']['R (V)'])
+        # else:
+        #     ABS_data2 = cmf.absorption(data['trans'][temp]['R (V)'], data['blank2']['R (V)'])
+        
+        # ax.plot(X2,ABS_data2, linewidth=linewidth, color=colors[i])
+        # i += 1
     
     ax.set_ylabel('Absorption (OD)')
 
@@ -290,6 +303,7 @@ def plot_data(data, ax, smooth = False, energy=True):
   
     # Gets all of the keys except the wavelength 
     data_keys = list(data.keys())[1:]
+    data_keys = ['X (V)']
     
     # Plot the data
     if smooth:
@@ -304,7 +318,7 @@ def plot_data(data, ax, smooth = False, energy=True):
 
 
 
-def plot_CD(data, ax, energy=True):
+def plot_CD(data, ax, energy=True, Phased=True):
     # Get wavelength
     X = data['Digikrom Spectr.:0 (?)']
     ax.set_xlabel('Wavelength (nm)')      
@@ -315,11 +329,42 @@ def plot_CD(data, ax, energy=True):
 
 
     # Calculate the EA signal
-    CD_data = cmf.circular_dichrosim(data['X (V) Phased'], data['Keithley (V)'])
-    
+    if Phased:
+        CD_data = cmf.circular_dichrosim(data['X (V) Phased'], data['Fluke (V)'])
+    else:
+        CD_data = cmf.circular_dichrosim(data['X830 (V)'], data['Fluke (V)'])
+
+
     ax.plot(X,CD_data)
     ax.set_ylabel('Circular Dichrosim (mdeg)')
 
+
+
+def plot_CD_Carter(data, ax, energy=True, Phased=False, smooth=False):
+    # Get wavelength
+    X = data['DC']['Digikrom Spectr.:0 (?)']
+    ax.set_xlabel('Wavelength (nm)')      
+    
+    if energy:
+        X = cmf.wavelength_to_energy(X)
+        ax.set_xlabel('Energy (eV)')
+
+   
+
+
+
+    # Calculate the EA signal
+    if Phased:
+        CD_data = cmf.circular_dichrosim_smooth(-data['AC']['X (V) Phased'], data['DC']['X (V) Phased'])
+    else:
+        # CD_data = cmf.circular_dichrosim_smooth(-data['AC']['X (V)'], data['DC']['X (V)'])
+        CD_data = cmf.circular_dichrosim_smooth(cmf.savitzky_golay_smoothing(-data['AC']['X (V)']), cmf.savitzky_golay_smoothing(data['DC']['X (V)']))
+
+    Y = np.zeros_like(X)
+
+    ax.plot(X,CD_data)
+    ax.plot(X,Y)
+    ax.set_ylabel('Circular Dichrosim (mdeg)')
 
 
 
@@ -334,7 +379,7 @@ def plot_PL(data, ax, energy=True, normalize=False):
 
     max_value = 1
     if normalize:
-            max_value = max(data['Processed Data'])
+            max_value = data['Processed Data'][50]
     
     ax.plot(X, data['Processed Data']/max_value)
     # ax.semilogy(X, data['Processed Data'])

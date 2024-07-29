@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-
 def CD_template_new():
     data = {}
 
@@ -24,31 +23,43 @@ def CD_template_new():
         ax.legend(trans_files)
 
 
-
 def CD_template(): # Needs to be updated
-    data = rcf.read_CD_data()
-    data2 = rcf.read_CD_data()
-    
+    data = rcf.read_lockin_fluke_data(662)
 
     fig, ax = plt.subplots()
-    # plot data
-    pcg.plot_CD(data, ax=ax)
-    
+    pcg.plot_CD(data, ax=ax, energy=False, Phased=True)
 
-    # Temporary stuff
-    fig, ax = plt.subplots()
-    
-
-
-    # Calculate the absorption signal
-    ABS_data = cmf.absorption(data['Keithley (V)'], data2['Keithley (V)'])    
-     
-    # legend name 
-    legend = 'Absorption'    
-
-    ax.plot(data['Digikrom Spectr.:0 (?)'],ABS_data, label=legend)
-    # ax.legend()
-    ax.set_xlabel('Wavelength')
-    ax.set_ylabel('Absorption (OD)')
+    # legend name
+    legend = 'Absorption'
 
     plt.show()
+
+# CD_template()
+
+
+
+
+
+def CD_carter():
+    data = {}
+
+    fig, ax = plt.subplots()
+
+    data['DC'] = rcf.read_trans_data(745)
+    data['AC'] = rcf.read_trans_data(746)
+    pcg.plot_CD_Carter(data, ax=ax, energy=False, Phased=False)
+
+
+    data['AC'] = rcf.read_trans_data(746)-6e-12
+    pcg.plot_CD_Carter(data, ax=ax, energy=False, Phased=False)
+
+
+    data['AC'] = rcf.read_trans_data(746)-7e-12
+    pcg.plot_CD_Carter(data, ax=ax, energy=False, Phased=False)
+
+    data['AC'] = rcf.read_trans_data(746)-8e-12
+    pcg.plot_CD_Carter(data, ax=ax, energy=False, Phased=False)
+
+    plt.show()
+
+CD_carter()
