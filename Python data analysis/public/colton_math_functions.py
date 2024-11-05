@@ -49,6 +49,14 @@ def circular_dichrosim_smooth(AC,DC):
 
 
 
+'''Calculates the absorption given a blank and transmission data '''
+def circular_dichrosim_smooth(AC,DC):
+    # AC = savitzky_golay_smoothing(AC)
+    # DC = savitzky_golay_smoothing(DC)
+    return (-32982/(np.log(10)*sps.j1(np.pi/2)))*(AC/DC)
+
+
+
 '''Converts wavelength to energy'''
 def wavelength_to_energy(wavelength): 
     return 1239.84193/wavelength.values
