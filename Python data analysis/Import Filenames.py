@@ -61,15 +61,15 @@ def append_to_excel(file_path, sheet_name, entries):
     wb.save(file_path)
 
 def update_excel_file(values_to_append):
-    file_path = r'C:/Data/All Scan Notes.xlsx'
+    file_path = r'C:/Data/All Scan Notes New.xlsx'
     sheet_name = 'Sheet1'
-    file_name = 'All Scan Notes.xlsx'  # Title of the Excel window
+    file_name = 'All Scan Notes New.xlsx'  # Title of the Excel window
 
     """Handles the entire process of saving, closing, writing to, and reopening the Excel file."""
     try:
-        save_and_close_excel(file_name)
+        # save_and_close_excel(file_name)
         append_to_excel(file_path, sheet_name, values_to_append)
-        open_excel(file_path)
+        # open_excel(file_path)
     except Exception as e:
         print(f"Error updating Excel file: {e}")
 
@@ -90,7 +90,7 @@ def list_folder_contents(folder_path):
             date = f"{os.path.basename(folder_path)}"
             created = f"{time.strftime('%I:%M %p', time.localtime(info.st_birthtime))}"
             
-            if name[-4:] == ".dat":            
+            if name[-4:] == ".xls":            
                 values = [date,created,"","","",name]
                 entries.append(values)
 

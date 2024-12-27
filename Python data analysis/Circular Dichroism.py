@@ -45,15 +45,22 @@ def CD_carter():
     data = {}
 
     fig, ax = plt.subplots()
-
-    data['DC'] = rcf.read_trans_data(984)
-    data['AC'] = rcf.read_trans_data(983)
-    data['AC']['X (V)'] = data['AC']['X (V)'] + rcf.read_trans_data(986)['X (V)'] # subtract ac signal from windows
+    data['DC'] = rcf.read_trans_data(1383)
+    data['AC'] = rcf.read_trans_data(1384)
     
-    # for k in range(0,20):
-    #     data['AC']['X (V)'] += -0.1e-12
-    pcg.plot_CD_Carter(data, ax=ax, energy=False, smoothed=True)
+    CD_data1 = pcg.plot_CD_Carter(data, ax=ax, energy=False, smoothed=False, color='green')
 
+
+    data['DC'] = rcf.read_trans_data(1387)
+    data['AC'] = rcf.read_trans_data(1385)
+    
+    CD_data1 = pcg.plot_CD_Carter(data, ax=ax, energy=False, smoothed=False)
+
+    data['AC'] = rcf.read_trans_data(1386)
+    
+    CD_data2 = pcg.plot_CD_Carter(data, ax=ax, energy=False, smoothed=False)
+
+    CD_data = (CD_data1+CD_data2)/2
     # data['DC'] = rcf.read_trans_data(985)
     # data['AC'] = rcf.read_trans_data(986)
 
@@ -62,7 +69,7 @@ def CD_carter():
     # CD_diff=Cd2-Cd1
 
     plt.plot([280,620],[0,0],'k-')
-    # plt.plot(x,CD_diff,'r-')
+    plt.plot(data['DC']['Digikrom Spectr.:0 (?)'],CD_data,'r-')
     plt.xlim(290,610)
         
 
@@ -72,7 +79,7 @@ def CD_carter():
     plt.show()
 
 
-# CD_carter()
+CD_carter()
 
 def CD_RMBA_Temp():
     data = {}
@@ -93,4 +100,4 @@ def CD_RMBA_Temp():
 
     plt.show()
 
-CD_RMBA_Temp()
+# CD_RMBA_Temp()

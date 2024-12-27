@@ -78,7 +78,7 @@ def plot_EA_series(data, ax, colorbar=True, smooth=False, color_map_name='autumn
 
 def plot_EA_temp_series(data, ax, colorbar=True, color_map_name='autumn_r', linewidth = 1, energy=True,smooth=False,text_size=14):
     # Get wavelength
-    X = data['trans'][295]['Digikrom Spectr.:0 (?)']
+    X = data['blank']['Digikrom Spectr.:0 (?)']
     ax.set_xlabel('Wavelength (nm)')    
     
     if energy:
@@ -197,14 +197,14 @@ def plot_ABS_temp_series(data, ax, colorbar=True, color_map_name='autumn_r', lin
 
 
 
-def plot_EA_voltage(data, ax, voltage, smooth=False, color='blue', energy=True,legend=None,phased=True):
+def plot_EA_voltage(data, ax, voltage, smooth=False, color='blue', energy=True,legend=None,phased=True,text_size=14):
     # Get wavelength
     X = data['trans']['Digikrom Spectr.:0 (?)']
-    ax.set_xlabel('Wavelength (nm)')    
+    ax.set_xlabel('Wavelength (nm)',fontsize = text_size)    
     
     if energy:
         X = cmf.wavelength_to_energy(X)
-        ax.set_xlabel('Energy (eV)')
+        ax.set_xlabel('Energy (eV)',fontsize = text_size)
 
     if phased:
         data['voltages'][voltage]['X (V)'] = data['voltages'][voltage]['X (V) Phased']
@@ -222,8 +222,8 @@ def plot_EA_voltage(data, ax, voltage, smooth=False, color='blue', energy=True,l
 
     ax.plot(X,EA_data*1000, label=legend, color=color)
     ax.axhline(y=0,color='k',linewidth=0.8)
-    plt.legend(loc='upper left')
-    ax.set_ylabel('Electroabsorption (mOD)')
+    plt.legend(loc='upper right')
+    ax.set_ylabel('Electroabsorption (mOD)',fontsize = text_size)
 
 
 
@@ -347,21 +347,21 @@ def plot_data(data, ax, smooth = False, energy=True):
   
     # Gets all of the keys except the wavelength 
     # data_keys = list(data.keys())[1:]
-    data_keys = list(data.keys())[2:]
+    data_keys = list(data.keys())[4:6]
     # data_keys = ['X (V) Phased']
     
     # Plot the data
     if smooth:
-        # for data_key in data_keys:
-        #     ax.plot(X, cmf.savitzky_golay_smoothing(data[data_key]) ,label=data_key)    
-        #     # ax.semilogy(X, cmf.savitzky_golay_smoothing(data[data_key]) ,label=data_key)  
-        ax.plot(X,data['X (V)'],label = 'X (V)')
-        ax.plot(X,data['R (V)'],label = 'R (V)')
+        for data_key in data_keys:
+            ax.plot(X, cmf.savitzky_golay_smoothing(data[data_key]) ,label=data_key)    
+            # ax.semilogy(X, cmf.savitzky_golay_smoothing(data[data_key]) ,label=data_key)  
+        # ax.plot(X,data['X (V)'],label = 'X (V)')
+        # ax.plot(X,data['R (V)'],label = 'R (V)')
     else:
-        # for data_key in data_keys:
-        #     ax.plot(X, data[data_key] ,label=data_key)
-        ax.plot(X,data['X (V)'],label = 'X (V)')
-        ax.plot(X,data['R (V)'],label = 'R (V)')
+        for data_key in data_keys:
+            ax.plot(X, data[data_key] ,label=data_key)
+        # ax.plot(X,data['X (V)'],label = 'X (V)')
+        # ax.plot(X,data['R (V)'],label = 'R (V)')
 
     
     ax.legend()
@@ -419,7 +419,7 @@ def plot_CD_Carter(data, ax, energy=True, smoothed=False, smooth=False,color='bl
     ax.axhline(0,color='black',linewidth=1)
     # ax.plot(X,Y)
     ax.set_ylabel('Circular Dichrosim (mdeg)')
-    # return X,CD_data
+    return CD_data
 
 
 
@@ -428,6 +428,7 @@ This plots the data for Photoluminescense, it gives the option to also plot it o
 '''
 def plot_PL(data, ax, energy=True, normalize=False):
     # Get wavelength
+
     X = data['Wavelength']
     ax.set_xlabel('Wavelength (nm)')    
     
@@ -437,16 +438,104 @@ def plot_PL(data, ax, energy=True, normalize=False):
 
     max_value = 1
     if normalize:
-            max_value = np.array(data['Processed Data'])[6]
+            max_value = np.max(np.array(data['Processed Data']))
 
     # Y = (data['Processed Data']-max_value)/(data['Processed Data'][85]-max_value)
-    Y =data['Processed Data']+30
+    Y =data['Processed Data']/max_value
     # print(cmf.FWHM(X,data['Processed Data']))
     ax.plot(X, Y)
     # ax.semilogy(X, Y)
     ax.set_ylabel('PL Intensity A.U.')
 
 
+'''
+This plots the data for Photoluminescense, it gives the option to also plot it on a log plot
+'''
+# def plot_EA_series(data, ax, colorbar=True, smooth=False, color_map_name='autumn_r', linewidth = 1, energy=True, phased=True,text_size=14):
+# # def plot_PL_test(data, ax, energy=True, normalize=False):
+#     # Get wavelength
+#     X = data['trans']['Digikrom Spectr.:0 (?)']
+#     ax.set_xlabel('Wavelength (nm)',fontsize=text_size)    
+
+    
+#     if energy:
+#         X = cmf.wavelength_to_energy(X)
+#         ax.set_xlabel('Energy (eV)',fontsize=text_size)
+
+#     # Getting the different voltage values
+#     voltages = np.array(list(data['voltages'].keys()))
+#     # Adds a color bar if true, otherwise defines colors for each plot item
+#     if colorbar == True:
+#         colors = color_bar(voltages, ax, color_map_name, temp=False, pad=0.10)
+#     else:
+#         color_map_func = getattr(plt.cm, color_map_name)
+#         colors = color_map_func(np.linspace(0, 1, len(voltages)))
+#     # # Create a custom colormap for the voltages 
+#     # color_map_func = getattr(plt.cm, color_map_name)
+#     # colors = color_map_func(np.linspace(0, 1, len(voltages))) # <------------ Change plt.cm.__color id__ to get a different color
+#     # colors = colors[::-1]
+#     # custom_cmap = ListedColormap(colors)
+
+#     # if colorbar == True:
+#     #     # Add a color bar next to the plot
+#     #     voltage_diff = abs(voltages[0]-voltages[1])/2
+#     #     cbar = plt.colorbar(plt.cm.ScalarMappable(cmap=custom_cmap, 
+#     #         norm=plt.Normalize(vmin=np.min(voltages)-voltage_diff, vmax=np.max(voltages)+voltage_diff)), 
+#     #         ax=ax, pad=0.15, orientation='vertical')
+#     #     cbar.set_label('Voltage')
+#     #     cbar.set_ticks(voltages)       # Example tick positions
+#     #     cbar_labels  = ['{}V'.format(V) for V in voltages]
+#     #     cbar.set_ticklabels(cbar_labels)  # Corresponding labels
+
+
+#     if phased:
+#         for voltage in voltages:            
+#             data['voltages'][voltage]['X (V)'] = data['voltages'][voltage]['X (V) Phased']
+
+
+#     # Plot the data
+#     i = 0
+#     for voltage in voltages:
+#         # Calculate the EA signal
+#         if smooth:
+#             EA_data = cmf.EA_smooth(data['voltages'][voltage]['X (V)'], data['trans']['R (V)'])
+#             # EA_data = EA_data + 1e-4
+#         else:
+#             EA_data = cmf.EA(data['voltages'][voltage]['X (V)'], data['trans']['R (V)'])
+        
+
+#         ax.plot(X,EA_data*1000, linewidth=linewidth, color=colors[i])
+#         i += 1
+
+#     ax.tick_params(axis='both',which='major', labelsize=12)
+#     ax.axhline(y=0,color='k',linewidth=0.8)
+#     ax.set_ylabel('Electroabsorption (mOD)',fontsize=text_size)
+#     # ax.set_ylabel('Electroreflection (mOD)',fontsize=text_size)
+
+
+
+#     #############################################################################################################################
+
+
+#     # Get wavelength
+#     X = data['Wavelength']
+#     ax.set_xlabel('Wavelength (nm)')    
+
+#     voltages = np.array(list(data['voltages'].keys()))    
+#     if energy:
+#         X = cmf.wavelength_to_energy(X)
+#         ax.set_xlabel('Energy (eV)')    
+
+#     max_value = 1
+#     if normalize:
+#             max_value = np.max(np.array(data['Processed Data']))
+
+#     # Y = (data['Processed Data']-max_value)/(data['Processed Data'][85]-max_value)
+#     Y =data['Processed Data']/max_value
+#     # print(cmf.FWHM(X,data['Processed Data']))
+#     ax.plot(X, Y)
+#     # ax.semilogy(X, Y)
+#     ax.set_ylabel('PL Intensity A.U.')
 
 def plot_CPL(data, ax1, ax2, smooth = False, energy=True):
     # Get wavelength

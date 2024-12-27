@@ -233,5 +233,42 @@ def AMPY4_temp_series_590_700(): # Needs to be updated
 # AMPY4_temp_series_590_700()
 
 
+def PESI2F_temp_series(): # Needs to be updated
+    # date where the data is stored
+    # file_path = 'C:/Data/2024-09-23/'
+
+    data = {}
+    data['trans'] = {}
+    data['voltages'] = {}
+    export = 'C:/Data/Compiled Data/Kentcky Henry/Temp Series' # Folder location to export the data
+
+
+    # blank_file = file_path + 'Blank 2-MePESI 300-700nm 295K.xls'
+    data['blank'] = rcf.read_trans_data(1414, export_folder=export)
+    
+    # go through the temperatures
+    temperatures = [16,50,100,150,200,250,300]
+    
+    volt_file_list = [1417, 1418, 1421, 1422, 1425, 1426,1429]
+    trans_file_list = [1416, 1419, 1420, 1423, 1424, 1427,1428]
+
+    for i in range(len(temperatures)):
+        data['trans'][temperatures[i]] = rcf.read_trans_data(trans_file_list[i], export_folder=export)
+        data['voltages'][temperatures[i]] = rcf.read_trans_data(volt_file_list[i], export_folder=export)
+        # data['voltages'][temperatures[i]]['X (V) Phased'] *= -1
+
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots()
+    pcg.plot_EA_temp_series(data, ax=ax1, smooth=False, color_map_name='rainbow')
+
+
+    fig2, ax2 = plt.subplots()
+    pcg.plot_ABS_temp_series(data, ax=ax2, color_map_name='rainbow')
+
+
+    # plt.savefig(fig_name, format='png', dpi=300)
+
+    plt.show()
+PESI2F_temp_series()
 
 

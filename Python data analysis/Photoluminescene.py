@@ -347,22 +347,40 @@ def PL_4_AMPY_excitation():
     ax.set_title("Nilave 50-50")
 
     plt.show()
-PL_4_AMPY_excitation()
+# PL_4_AMPY_excitation()
+
+
+def PL_template():
+    data = {}
+    legend_names = []
+    fig, ax = plt.subplots()
+    # for i in range(522,530):
+    for i in range(1400-1,1406+2):
+        data, sample_name, temperature = rcf.read_CCD_data(i)
+        pcg.plot_PL(data,ax=ax,energy=False, normalize=True)
+        legend_names.append(sample_name)#temperature + 'K')
+    ax.legend(legend_names)
+    ax.set_title("1:2 PM6Y6 Electroluminescence")
+
+    plt.show()
+# PL_template()
 
 
 
+def PL_template():
+    data = {}
+    legend_names = []
+    fig, ax = plt.subplots()
+    # for i in range(522,530):
+    for i in [1455,1456,1457,1458]:
+        data, sample_name = rcf.read_CCD_data(i, sample=True)
+        print(sample_name)
+        print(list(data.keys()))
+        pcg.plot_PL(data,ax=ax,energy=False, normalize=False)
+        legend_names.append(sample_name)#temperature + 'K')
+    ax.legend(legend_names)
+    ax.set_title("All APO Ferritin plots")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    plt.show()
+PL_template()
 

@@ -628,8 +628,8 @@ def AMPY4_295K():
     plt.show()
 # AMPY4_295K()
 
-fig, ax1 = plt.subplots()
-ax2=ax1.twinx()
+# fig, ax1 = plt.subplots()
+# ax2=ax1.twinx()
 
 # The shift between the two separate scans is not going away, and there isn't an easy way to correct it.
 # The biggest issue is that the zero point does not fall at the same spot for both scans. So, 
@@ -743,10 +743,6 @@ def AMPY4_16K_590_700():
     plt.show()
 # AMPY4_16K_590_700()
 
-
-
-
-
 """ PM6 """
 def PM6_EA():
     # Dictionary that holds all of the data with input voltages
@@ -833,7 +829,6 @@ def PM6_ER():
     # plt.title('PM6 Electroreflection Spectra')
     # plt.show()
 # PM6_ER()
-
 
 """ 2-1 PM6Y6 """
 def PM6Y6_21_ER():
@@ -1242,8 +1237,166 @@ def Y6_EA():
     plt.show()
 # Y6_EA()
 
-
 """ 4-F PESI Kentucky """
+def PESI4F_or_normal():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(1395)
+    data['trans'] = rcf.read_trans_data(1396)
+
+
+    data['voltages'][100] = rcf.read_trans_data(1388) # voltage_file
+    data['voltages'][150] = rcf.read_trans_data(1389) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(1390) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(1391) # voltage_file
+    data['voltages'][300] = rcf.read_trans_data(1392) # voltage_file
+    data['voltages'][350] = rcf.read_trans_data(1393) # voltage_file
+    data['voltages'][400] = rcf.read_trans_data(1394) # voltage_file
+
+    value = -1
+    data['voltages'][100]['X (V) Phased'] *= value
+    data['voltages'][150]['X (V) Phased'] *= value 
+    data['voltages'][200]['X (V) Phased'] *= value 
+    data['voltages'][250]['X (V) Phased'] *= value
+    data['voltages'][300]['X (V) Phased'] *= value 
+    data['voltages'][350]['X (V) Phased'] *= value 
+    data['voltages'][400]['X (V) Phased'] *= value 
+    
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    # ax1.set_ylim(0,0.15)
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=True, energy=True, phased=True)
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # pcg.plot_EA_voltage(data=data, ax=ax1, voltage=300, smooth=True,color='red',energy=True,legend='4-F PESI 300V')
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    ax2.set_ylim(0,2)
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=True, energy=True,legend='Abs')
+
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+
+    plt.title('PESI Electroabsorption Spectra')
+    plt.show()
+# PESI4F_or_normal()
+
+def PESI4F_or_normal2():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(1405)
+    data['trans'] = rcf.read_trans_data(1404)
+
+
+    data['voltages'][100] = rcf.read_trans_data(1397) # voltage_file
+    data['voltages'][150] = rcf.read_trans_data(1398) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(1399) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(1400) # voltage_file
+    data['voltages'][300] = rcf.read_trans_data(1401) # voltage_file
+    data['voltages'][350] = rcf.read_trans_data(1402) # voltage_file
+    data['voltages'][400] = rcf.read_trans_data(1403) # voltage_file
+
+    value = -1
+    data['voltages'][100]['X (V) Phased'] *= value
+    data['voltages'][150]['X (V) Phased'] *= value 
+    data['voltages'][200]['X (V) Phased'] *= value 
+    data['voltages'][250]['X (V) Phased'] *= value
+    data['voltages'][300]['X (V) Phased'] *= value 
+    data['voltages'][350]['X (V) Phased'] *= value 
+    data['voltages'][400]['X (V) Phased'] *= value 
+    
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    # ax1.set_ylim(0,0.15)
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=True, energy=True, phased=True)
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # pcg.plot_EA_voltage(data=data, ax=ax1, voltage=300, smooth=True,color='red',energy=True,legend='4-F PESI 300V')
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    ax2.set_ylim(0,2)
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=True, energy=True,legend='Abs')
+
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+
+    plt.title('PESI Electroabsorption Spectra')
+    plt.show()
+# PESI4F_or_normal2()
+
+def PESI2CF3():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(154)
+    data['trans'] = rcf.read_trans_data(155)
+
+
+    data['voltages'][100] = rcf.read_trans_data(159) # voltage_file
+    data['voltages'][150] = rcf.read_trans_data(158) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(157) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(156) # voltage_file
+    # data['voltages'][275] = rcf.read_trans_data(245) # voltage_file
+    data['voltages'][300] = rcf.read_trans_data(160) # voltage_file
+
+    value = -1
+    data['voltages'][100]['X (V) Phased'] *= value
+    data['voltages'][150]['X (V) Phased'] *= value 
+    data['voltages'][200]['X (V) Phased'] *= value 
+    data['voltages'][250]['X (V) Phased'] *= value
+    data['voltages'][300]['X (V) Phased'] *= value 
+    
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    # ax1.set_ylim(0,0.15)
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=True, energy=True, phased=True)
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # pcg.plot_EA_voltage(data=data, ax=ax1, voltage=300, smooth=True,color='red',energy=True,legend='4-F PESI 300V')
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    ax2.set_ylim(0,2)
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=True, energy=True,legend='Abs')
+
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+
+    plt.title('2-CF3 PESI Electroabsorption Spectra')
+    plt.show()
+# PESI2CF3()
+
 def PESI4F():
     # Dictionary that holds all of the data with input voltages
     data = {}
@@ -1254,20 +1407,20 @@ def PESI4F():
     data['trans'] = rcf.read_trans_data(238)
 
 
-    data['voltages'][100] = rcf.read_trans_data(1101) # voltage_file
-    data['voltages'][150] = rcf.read_trans_data(1102) # voltage_file
-    data['voltages'][200] = rcf.read_trans_data(1103) # voltage_file
-    data['voltages'][250] = rcf.read_trans_data(1104) # voltage_file
-    data['voltages'][275] = rcf.read_trans_data(1105) # voltage_file
-    data['voltages'][300] = rcf.read_trans_data(1106) # voltage_file
+    data['voltages'][100] = rcf.read_trans_data(244) # voltage_file
+    data['voltages'][150] = rcf.read_trans_data(243) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(242) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(241) # voltage_file
+    data['voltages'][275] = rcf.read_trans_data(245) # voltage_file
+    data['voltages'][300] = rcf.read_trans_data(240) # voltage_file
     
     # plots the EA
     fig, ax1 = plt.subplots()
     # ax1.set_ylim(0,0.15)
-    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma', smooth=True, energy=True, phased=False)
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=True, energy=True, phased=True)
     ax1.set_ylabel('Electroabsorption (mOD)')
 
-    # pcg.plot_EA_voltage(data=data, ax=ax1, voltage=500, smooth=True,color='red',energy=True,legend='Y6')
+    # pcg.plot_EA_voltage(data=data, ax=ax1, voltage=300, smooth=True,color='red',energy=True,legend='4-F PESI 300V')
 
     # Plots the Absorption
     ax2 = ax1.twinx()
@@ -1474,6 +1627,7 @@ def EACHDMAPESI400600():
 
     plt.show()
 # EACHDMAPESI400600()
+
 def EACHDMAPESI580700():
     # Dictionary that holds all of the data with input voltages
     data = {}
@@ -1637,8 +1791,6 @@ def EA2CF3PESI():
     plt.show()
 # EA2CF3PESI()
 
-
-
 """ 4-F PESI Kentucky """
 def PESI4F_new():
     # Dictionary that holds all of the data with input voltages
@@ -1682,3 +1834,182 @@ def PESI4F_new():
     plt.title('4-F PESI Electroabsorption Spectra')
     # plt.show()
 # PESI4F_new()
+
+""" 2-F PESI Kentucky """
+def PESI_2F_295K():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+    export = 'C:/Data/Compiled Data/Kentcky Henry/Room temp' # Folder location to export the data
+
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(1399, export_folder=export)
+    data['trans'] = rcf.read_trans_data(1400, export_folder=export)
+
+
+    data['voltages'][100] = rcf.read_trans_data(1401, export_folder=export) # voltage_file
+    data['voltages'][150] = rcf.read_trans_data(1402, export_folder=export) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(1403, export_folder=export) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(1404, export_folder=export) # voltage_file
+
+    
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    # ax1.set_ylim(0,0.15)
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=False, energy=True, phased=True)
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # pcg.plot_EA_voltage(data=data, ax=ax1, voltage=500, smooth=True,color='red',energy=True,legend='Y6')
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    # ax2.set_ylim(0,2)
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=False, energy=True,legend='Abs')
+
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+
+    plt.title('2-F PESI Electroabsorption Spectra')
+    plt.show()
+PESI_2F_295K()
+
+def PESI_2F_17K():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+    export = 'C:/Data/Compiled Data/Kentcky Henry/Low temp' # Folder location to export the data
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(1405, export_folder=export)
+    data['trans'] = rcf.read_trans_data(1406, export_folder=export)
+
+
+    data['voltages'][100] = rcf.read_trans_data(1407, export_folder=export) # voltage_file
+    data['voltages'][150] = rcf.read_trans_data(1408, export_folder=export) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(1409, export_folder=export) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(1410, export_folder=export) # voltage_file
+
+    
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    # ax1.set_ylim(0,0.15)
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=False, energy=True, phased=True)
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # pcg.plot_EA_voltage(data=data, ax=ax1, voltage=200, smooth=True,color='red',energy=True)
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    # ax2.set_ylim(0,2)
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=False, energy=True,legend='Abs')
+
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+
+    plt.title('2-F PESI Electroabsorption Spectra')
+    plt.show()
+PESI_2F_17K()
+
+def PESI_2F_17K_570_640():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(1411)
+    data['trans'] = rcf.read_trans_data(1412)
+
+
+    # data['voltages'][100] = rcf.read_trans_data(1407) # voltage_file
+    # data['voltages'][150] = rcf.read_trans_data(1408) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(1413) # voltage_file
+    # data['voltages'][250] = rcf.read_trans_data(1404) # voltage_file
+
+    
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    # ax1.set_ylim(0,0.15)
+    # pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=False, energy=False, phased=True)
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    pcg.plot_EA_voltage(data=data, ax=ax1, voltage=200, smooth=False,color='red',energy=True)
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    # ax2.set_ylim(0,2)
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=False, energy=True,legend='Abs')
+
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+
+    plt.title('2-F PESI Electroabsorption Spectra')
+    plt.show()
+# PESI_2F_17K_570_640()
+
+"""4-AMP Kentucky"""
+
+def Kevin4AMP_295K():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(1431)
+    data['trans'] = rcf.read_trans_data(1432)
+
+
+    data['voltages'][100] = rcf.read_trans_data(1433) # voltage_file
+    data['voltages'][150] = rcf.read_trans_data(1434) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(1435) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(1436) # voltage_file
+    data['voltages'][300] = rcf.read_trans_data(1437) # voltage_file
+    data['voltages'][201] = rcf.read_trans_data(1438) # voltage_file
+    
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    # ax1.set_ylim(0,0.15)
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=False, energy=True, phased=True)
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # pcg.plot_EA_voltage(data=data, ax=ax1, voltage=200, smooth=True,color='red',energy=True)
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    # ax2.set_ylim(0,2)
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=False, energy=True,legend='Abs')
+
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+
+    plt.title('2-F PESI Electroabsorption Spectra')
+    plt.show()
+# Kevin4AMP_295K()

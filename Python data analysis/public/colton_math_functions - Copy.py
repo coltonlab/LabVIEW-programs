@@ -25,7 +25,7 @@ def EA_smooth(voltage_X, trans):
 def absorption(trans, blank):
     return -np.log10(trans.values/blank.values)
 
- 
+
 
 '''Calculates the absorption given a blank and transmission data '''
 def absorption_smooth(trans, blank):
@@ -95,7 +95,7 @@ def phase_data(data, x_name='X (V)', y_name='Y (V)'):
     BC = 3.15/2 # boundry conditions
 
     # This double four loop allows us to go through 60 values of Y to get an accuracy within 1.8e-4 degrees.
-    for i in range(4): # Increase this number to increase your tolerance. Change this number if you want 1.8e-(n-2) order of accuracy
+    for i in range(3): # Increase this number to increase your tolerance. Change this number if you want 1.8e-(n-2) order of accuracy
         angles = np.linspace(min_angle - BC , min_angle + BC, 10)  # Range from -pi/2 to pi/2 radians
 
         # Looking for the smallest abs value of Y with in 10 data points 
@@ -111,106 +111,29 @@ def phase_data(data, x_name='X (V)', y_name='Y (V)'):
         # Makes BC smaller for a better step size
         BC = BC/10
 
-    min_angle = -97.8540506127646*np.pi/180
-    # min_angle = 99.83940792614993*np.pi/180
-    print(f'Phased Angle: {min_angle*180/3.1415}')
-
     data['X (V) Phased'] = X * np.cos(min_angle) - Y * np.sin(min_angle)
     data['Y (V) Phased'] = X * np.sin(min_angle) + Y * np.cos(min_angle)
 
     return data
+
 
 
 ''' This program uses a for loop and finds the min value for Y in 10 iterations, it then does another 10 at a smaller step size '''
 def phase_data_experiemnt(data, x_name='X (V)', y_name='Y (V)'):
-    
-    X = data[x_name].values
-    Y = data[y_name].values
-
-    # Fixes any offsets
-    # X -= np.mean(X)
-    # Y -= np.mean(Y)
-
-
-    # Calculate Y values for each angle
-    min_y = float('inf')
-    min_angle = 0
-    BC = 3.15/2 # boundry conditions
-
-    # This double four loop allows us to go through 60 values of Y to get an accuracy within 1.8e-4 degrees.
-    for i in range(4): # Increase this number to increase your tolerance. Change this number if you want 1.8e-(n-2) order of accuracy
-        angles = np.linspace(min_angle - BC , min_angle + BC, 10)  # Range from -pi/2 to pi/2 radians
-
-        # Looking for the smallest abs value of Y with in 10 data points 
-        for angle in angles:
-            x_rotated = X * np.cos(angle) - Y * np.sin(angle)
-            y_rotated = X * np.sin(angle) + Y * np.cos(angle)
-            min_y_angle = np.std(x_rotated - y_rotated)
-
-            # Keeps the smallest angle
-            if min_y_angle < min_y:
-                min_y = min_y_angle
-                min_angle = angle #+ 3.14/180*45
-
-        # Makes BC smaller for a better step size
-        BC = BC/10
-    print(min_angle*180/3.1415)
-    print(np.average(x_rotated-y_rotated))
-    # X -= x_rotated-y_rotated
-    Y += x_rotated-y_rotated
-
-
-    # Calculate Y values for each angle
-    min_y = float('inf')
-    min_angle = 0
-    BC = 3.15/2 # boundry conditions
-
-    # This double four loop allows us to go through 60 values of Y to get an accuracy within 1.8e-4 degrees.
-    for i in range(4): # Increase this number to increase your tolerance. Change this number if you want 1.8e-(n-2) order of accuracy
-        angles = np.linspace(min_angle - BC , min_angle + BC, 10)  # Range from -pi/2 to pi/2 radians
-
-        # Looking for the smallest abs value of Y with in 10 data points 
-        for angle in angles:
-            x_rotated = X * np.cos(angle) - Y * np.sin(angle)
-            y_rotated = X * np.sin(angle) + Y * np.cos(angle)
-            min_y_angle = np.std(y_rotated)
-
-            # Keeps the smallest angle
-            if min_y_angle < min_y:
-                min_y = min_y_angle
-                min_angle = angle #+ 3.14/180*45
-
-        # Makes BC smaller for a better step size
-        BC = BC/10
-    print(min_angle)
-    print(np.average(x_rotated-y_rotated))
-    # X += x_rotated-y_rotated
-    # Y += x_rotated-y_rotated
-
-    data['X (V) Phased'] = X * np.cos(min_angle) - Y * np.sin(min_angle)
-    data['Y (V) Phased'] = X * np.sin(min_angle) + Y * np.cos(min_angle)
-
-    return data
-
-
-''' This program uses a for loop and finds the min value for Y in 10 iterations, it then does another 10 at a smaller step size '''
-def phase_data_experiemnt_bad(data, x_name='X (V)', y_name='Y (V)'):
     X = data[x_name]
     Y = data[y_name]
 
-    def std_phase(guess, offset):
+    def std_phase(guess):
         angle = guess
-        x_rotated = X * np.cos(angle) - Y * np.sin(angle)
+
         y_rotated = X * np.sin(angle) + Y * np.cos(angle)
-        return np.std(x_rotated - (y_rotated + offset))
-    
+        return np.std(y_rotated)*1e13
 
     # Initial guess for the coefficients
-    std_guess = 2*np.pi/360*55
-    offset = 0
+    std_guess = 0
+
     # Use SciPy's minimize function to find the best fit coefficients
-    result_phase = minimize(std_phase, std_guess, args=(offset))
-    print(result_phase)
+    result_phase = minimize(std_phase, std_guess)
     min_angle = result_phase.x
     # print(result_phase)
 
@@ -219,22 +142,22 @@ def phase_data_experiemnt_bad(data, x_name='X (V)', y_name='Y (V)'):
     factor = 1e-6 # This helps since the numbers are so small - change to mean(X)?
 
 
-    # # Fixes any offsets that occur - I don't know if this can be used
-    # def offset(guess):
-    #     X_new = X - guess[0]*factor
-    #     Y_new = Y - guess[1]*factor
+    # Fixes any offsets that occur - I don't know if this can be used
+    def offset(guess):
+        X_new = X - guess[0]*factor
+        Y_new = Y - guess[1]*factor
 
-    #     y_rotated = X_new * np.sin(min_angle) + Y_new * np.cos(min_angle)
-    #     return np.sum(abs(y_rotated))
+        y_rotated = X_new * np.sin(min_angle) + Y_new * np.cos(min_angle)
+        return np.sum(abs(y_rotated))
     
 
-    # # Initial guess for the coefficients
-    # offset_guess = [np.mean(X)/factor,np.mean(Y)/factor]
+    # Initial guess for the coefficients
+    offset_guess = [np.mean(X)/factor,np.mean(Y)/factor]
 
-    # # Use SciPy's minimize function to find the best fit coefficients
-    # result_offset = minimize(offset, offset_guess)#, bounds=[(0, None)])
-    # X_offset, Y_offset = result_offset.x
-    # # print(result_offset)
+    # Use SciPy's minimize function to find the best fit coefficients
+    result_offset = minimize(offset, offset_guess)#, bounds=[(0, None)])
+    X_offset, Y_offset = result_offset.x
+    # print(result_offset)
 
 
     X = X - X_offset*factor
@@ -317,6 +240,8 @@ def FWHM(x,y):
     # Calculate FWHM
     fwhm = x2 - x1
     return fwhm
+
+
 
 
 def TCSPC_decay_rate(time,intensity):
