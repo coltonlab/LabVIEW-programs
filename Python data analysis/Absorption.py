@@ -528,8 +528,30 @@ def PESI2F():
     # pcg.plot_absorption(data, ax=ax, smooth=False,energy=False,color='red')
 
     plt.show()
-PESI2F()
+# PESI2F()
 
+
+
+def FMBA():
+    fig, ax = plt.subplots()
+    data = {}
+
+    # data
+    data['blank'] = rcf.read_trans_data(1553)
+    data['trans'] = rcf.read_trans_data(1554)
+
+    # plot data
+    pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+    # room temp data
+    # data['blank'] = rcf.read_trans_data(1221)
+    # data['trans'] = rcf.read_trans_data(1222)
+
+    # # plot data
+    # pcg.plot_absorption(data, ax=ax, smooth=False,energy=False,color='red')
+
+    plt.show()
+FMBA()
 
 
 

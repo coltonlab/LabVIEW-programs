@@ -94,30 +94,34 @@ def phase_data(data, x_name='X (V)', y_name='Y (V)'):
     min_angle = 0
     BC = 3.15/2 # boundry conditions
 
-    # This double four loop allows us to go through 60 values of Y to get an accuracy within 1.8e-4 degrees.
-    for i in range(4): # Increase this number to increase your tolerance. Change this number if you want 1.8e-(n-2) order of accuracy
-        angles = np.linspace(min_angle - BC , min_angle + BC, 10)  # Range from -pi/2 to pi/2 radians
+    # # This double four loop allows us to go through 60 values of Y to get an accuracy within 1.8e-4 degrees.
+    # for i in range(4): # Increase this number to increase your tolerance. Change this number if you want 1.8e-(n-2) order of accuracy
+    #     angles = np.linspace(min_angle - BC , min_angle + BC, 10)  # Range from -pi/2 to pi/2 radians
 
-        # Looking for the smallest abs value of Y with in 10 data points 
-        for angle in angles:
-            y_rotated = X * np.sin(angle) + Y * np.cos(angle)
-            min_y_angle = np.std(y_rotated)
+    #     # Looking for the smallest abs value of Y with in 10 data points 
+    #     for angle in angles:
+    #         y_rotated = X * np.sin(angle) + Y * np.cos(angle)
+    #         min_y_angle = np.std(y_rotated)
 
-            # Keeps the smallest angle
-            if min_y_angle < min_y:
-                min_y = min_y_angle
-                min_angle = angle
+    #         # Keeps the smallest angle
+    #         if min_y_angle < min_y:
+    #             min_y = min_y_angle
+    #             min_angle = angle
 
-        # Makes BC smaller for a better step size
-        BC = BC/10
+    #     # Makes BC smaller for a better step size
+    #     BC = BC/10
 
-    min_angle = -97.8540506127646*np.pi/180
-    # min_angle = 99.83940792614993*np.pi/180
-    print(f'Phased Angle: {min_angle*180/3.1415}')
+    # min_angle = -97.8540506127646*np.pi/180
+    # min_angle = -105.206*np.pi/180
+    # min_angle = np.pi
+    min_angle = 99.83940792614993
+    print(f'Phased Angle: {min_angle}')
 
     data['X (V) Phased'] = X * np.cos(min_angle) - Y * np.sin(min_angle)
     data['Y (V) Phased'] = X * np.sin(min_angle) + Y * np.cos(min_angle)
 
+    # print(-
+    # data['X (V) Phased'] += 2.02e-13
     return data
 
 
