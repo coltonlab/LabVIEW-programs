@@ -28,7 +28,7 @@ def get_filename(excel_file_row):
     # temperature = str(all_scan_notes['Temp (K)'][excel_file_row])
     file = str(all_scan_notes['File'][excel_file_row])
 
-    if date[:4] != '2024':
+    if date[:4] != '2025':
         subfolder = f'Data/{date[:4]}'
     else:
         subfolder = 'Data'
@@ -58,9 +58,9 @@ read_trans_data reads in the data and phases in accordance to the way the data i
 '''
 def read_trans_data(excel_row, sample = False):
     filename, sample_name = get_filename(excel_row)
-
+    print(filename)
     # read in the data and skip the starting lines and ending lines
-    row_skip = range(0,14) # The number of rows to skip is different for the data
+    row_skip = range(0,15) # The number of rows to skip is different for the data
     data = pd.read_csv(filename, engine='python' ,skiprows=row_skip, skipfooter=3, sep='\t', dtype=float)
 
     # Phases the data and makes another column with the phased data 
@@ -87,14 +87,15 @@ def read_voltage_series_data(excel_row, sample = False):
     delete_line(filename, 5)
 
     # read in the data and skip the starting lines and ending lines
-    row_skip = range(0,13)
+    row_skip = range(0,14)
     
     # reads in the actual data into a dataframe
     data = pd.read_csv(filename, engine='python' ,skiprows=row_skip, skipfooter=3, sep='\t')
 
+    
     # Phases the data and makes another column with the phased data 
     data = phase_data(data)
-
+    
     # Finds all of the voltages that were scanned over in the data
     voltages = np.int16(np.unique(data['O-scope 2024B:0 (?)']))
 
@@ -105,6 +106,7 @@ def read_voltage_series_data(excel_row, sample = False):
     for voltage in voltages:
         data_by_voltage[voltage] = data[data['O-scope 2024B:0 (?)'].isin([voltage])]
 
+    print(data_by_voltage)
     if sample:
         # Gives the same_name of the data 
         return data_by_voltage, sample_name
@@ -200,10 +202,41 @@ def read_PMT_data(excel_row, sample = False):
 
 
 
+'''
+read_PMT data reads in the data that the photon counter reads out.
+'''
+def read_PMT_data(excel_row, sample = False):
+    filename, sample_name = get_filename(excel_row)
+
+    # read in the data and skip the starting lines and ending lines
+    row_skip = range(0,9) # The number of rows to skip is different for the data
+    data = pd.read_csv(filename, engine='python' ,skiprows=row_skip, skipfooter=3, sep='\t', dtype=float)
+
+
+    if sample:
+        # Gives the same_name of the data 
+        return data, sample_name
+    
+    print(filename)
+
+    return data
 
 
 
+'''
+read_PMT data reads in the data that the photon counter reads out.
+'''
+def read_impedance_data(excel_row, headers):
+    filename, sample_name = get_filename(excel_row)
 
+    # read in the data and skip the starting lines and ending lines
+    row_skip = range(0,3) # The number of rows to skip is different for the data
+    data = pd.read_csv(filename, engine='python' ,skiprows=row_skip, skipfooter=0, dtype=float, names=headers)
+    # data['sample'] = sample_name
+    
+    print(filename)
+
+    return data
 
 
 

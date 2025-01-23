@@ -14,7 +14,8 @@ from matplotlib.colors import BoundaryNorm
 import numpy as np
 
 
-def plot_EA_series(data, ax, colorbar=True, smooth=False, color_map_name='autumn_r', linewidth = 1, energy=True, phased=True,text_size=14):
+def plot_EA_series(data, ax, colorbar=True, smooth=False, color_map_name='autumn_r'
+                   , linewidth = 1, energy=True, phased=True,text_size=14, export=False):
     # Get wavelength
     X = data['trans']['Digikrom Spectr.:0 (?)']
     ax.set_xlabel('Wavelength (nm)',fontsize=text_size)    
@@ -74,7 +75,17 @@ def plot_EA_series(data, ax, colorbar=True, smooth=False, color_map_name='autumn
     ax.set_ylabel('Electroabsorption (mOD)',fontsize=text_size)
     # ax.set_ylabel('Electroreflection (mOD)',fontsize=text_size)
 
+    # from pandas import DataFrame
+    # if export:
+    #     EA_calculations = {}
+    #     EA_calculations['Energy (eV)'] = X
+    #     for voltage in voltages:
+    #         EA_calculations[f'EA {voltage} (mOD)'] = cmf.EA(data['voltages'][voltage]['X (V)'], data['trans']['R (V)'])
 
+    #     df = DataFrame(data)
+
+    #     # Export to CSV
+    #     df.to_csv("output.csv", index=False)  # index=False removes the row index
 
 def plot_EA_temp_series(data, ax, colorbar=True, color_map_name='autumn_r', linewidth = 1, energy=True,smooth=False,text_size=14):
     # Get wavelength
@@ -348,7 +359,7 @@ def plot_data(data, ax, smooth = False, energy=True):
     # Gets all of the keys except the wavelength 
     # data_keys = list(data.keys())[1:]
     data_keys = list(data.keys())[4:6]
-    # data_keys = ['X (V) Phased']
+    data_keys = ['X (V) Phased']
     
     # Plot the data
     if smooth:
@@ -359,7 +370,7 @@ def plot_data(data, ax, smooth = False, energy=True):
         # ax.plot(X,data['R (V)'],label = 'R (V)')
     else:
         for data_key in data_keys:
-            ax.plot(X, data[data_key] ,label=data_key)
+            ax.plot(X, -data[data_key] ,label=data_key)
         # ax.plot(X,data['X (V)'],label = 'X (V)')
         # ax.plot(X,data['R (V)'],label = 'R (V)')
 
@@ -841,4 +852,42 @@ def plot_TCSPC_PL_time(data, ax, colorbar=False, color_map_name='nipy_spectral')
     #     i += 1
     
     # ax.set_ylabel('Decay Rate $(ns^{-1})$')
+
+
+
+'''
+This plots the data for Photoluminescense, it gives the option to also plot it on a log plot
+'''
+def plot_impedance_spectroscopy(data, headers):
+    files = list(data.keys())
+    
+    n_subplots = len(headers) - 1
+    # Get wavelength
+    fig, ax = plt.subplots(1, n_subplots, sharex=True, sharey=False)
+    i = 0
+
+    for header in headers[1:]:
+        
+        ax[i].set_title(header)
+
+        for file in files:
+            # print(data[file]['sample'][0])
+            X = data[file][headers[0]]
+            Y = data[file][header]
+            ax[i].loglog(X, Y, label=file)
+
+
+        i += 1
+    plt.legend()
+    plt.show()
+
+                
+
+
+
+
+
+
+
+
 

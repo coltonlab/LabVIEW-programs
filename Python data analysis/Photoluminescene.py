@@ -382,5 +382,74 @@ def PL_template():
     ax.set_title("All APO Ferritin plots")
 
     plt.show()
-PL_template()
+# PL_template()
 
+
+
+
+
+
+def PL_template():
+    data = {}
+    legend_names = []
+    fig, ax = plt.subplots()
+    # for i in range(522,530):
+
+
+    def PL_average(data, keys):
+        sum = 0
+        for i in keys:
+            sum += np.log10(data[i]['Processed Data'])
+        average = sum/len(keys)
+        return 10**average
+
+
+    files_APO = [1497, 1498, 1499]
+    for i in files_APO:
+        data[i], sample_name = rcf.read_CCD_data(i, sample=True)
+
+    data['APO_average'] = data[i].copy()
+    data["APO_average"]['Processed Data'] = PL_average(data, files_APO)
+
+    files_ZnO = [1500, 1501, 1502, 1503]
+    for i in files_ZnO:
+        data[i], sample_name = rcf.read_CCD_data(i, sample=True)
+
+    data["ZnO_average"] = data[i].copy()
+    data["ZnO_average"]['Processed Data'] = PL_average(data, files_ZnO)
+
+    factor_point = 42
+    print(data["APO_average"]['Wavelength'][factor_point])
+    factor = data["APO_average"]['Processed Data'][factor_point]/data["ZnO_average"]['Processed Data'][factor_point]
+
+    data["ZnO_average"]['Processed Data']*=factor
+
+    data["Diff"] = data[i].copy()
+    data["Diff"]['Processed Data'] = (data["ZnO_average"]['Processed Data'] -  data["APO_average"]['Processed Data'])*5
+
+    pcg.plot_PL(data["APO_average"],ax=ax,energy=False, normalize=False)
+    pcg.plot_PL(data["ZnO_average"],ax=ax,energy=False, normalize=False)
+    pcg.plot_PL(data["Diff"],ax=ax,energy=False, normalize=False)
+
+# for i in [1497, 1498, 1499]:
+#         data, sample_name = rcf.read_CCD_data(i, sample=True)
+#         print(data)
+#         # print(sample_name)
+#         # print(list(data.keys()))
+#         pcg.plot_PL(data,ax=ax,energy=False, normalize=False)
+#         legend_names.append(sample_name)#temperature + 'K')
+    ax.legend(['APO Average', 'ZnO Average Scaled', 'Differance x 5'])
+#     ax.set_title("All APO Ferritin plots")
+
+
+
+
+
+
+
+
+
+
+
+    plt.show()
+PL_template()
