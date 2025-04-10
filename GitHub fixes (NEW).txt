@@ -17,5 +17,6 @@ repository specific, and the bottom option is for any login attempt).
 
 8. Copy the personal access token on the next page.
 
-9. Now, go to Git Push. After pressing okay, the dialog box will open and request a username (use your
-GitHub username) and password (use the personal access token). Then, it will push correctly.
+9. Now, go to Git Push. After pressing okay, the dialog box will open. It will request a passphrase ("physics"),
+then request a username (use your GitHub username) and password (use the personal access token). Then, 
+it will push correctly.
