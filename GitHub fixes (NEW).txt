@@ -1,0 +1,21 @@
+**GitHub issues with John and Trigg, fixed
+
+1. You'll have to sign into your GitHub account (online).
+
+2. Click on your profile picture in the top right, then click on settings.
+
+3. On the left (at the very bottom), click on <> Developer Settings.
+
+4. Click on Personal Access Token
+
+5. Click on Generate Personal Access Token (there will be two options in the drop-down box. The top option is 
+repository specific, and the bottom option is for any login attempt).
+
+6. Name the token, determine the amount of time you want it to be used for, and check all the boxes below.
+
+7. When done, press submit at the bottom.
+
+8. Copy the personal access token on the next page.
+
+9. Now, go to Git Push. After pressing okay, the dialog box will open and request a username (use your
+GitHub username) and password (use the personal access token). Then, it will push correctly.
