@@ -1,22 +1,38 @@
-import matplotlib.pyplot as plt
+from scipy.signal import savgol_filter
 import numpy as np
-import matplotlib.colors as mcolors
+import matplotlib.pyplot as plt
 
-# Example data
-data = np.random.rand(10, 10) * 10  # Random data scaled to 0-10
-levels = np.linspace(0, 10, 11)  # Define boundaries for colors
-midpoints = (levels[:-1] + levels[1:]) / 2  # Midpoints for centered ticks
+# Generate some noisy data
+x = np.linspace(0, 10, 100)
+y = np.sin(x) + 0.0051 * np.random.normal(size=len(x))
 
-# Create colormap and normalize based on the levels
-cmap = plt.cm.viridis
-norm = mcolors.BoundaryNorm(levels, cmap.N)
+# Apply Savitzky-Golay filter
+window_size = 11  # Must be odd
+poly_order = 3
 
-# Plot the data
-fig, ax = plt.subplots()
-cax = ax.imshow(data, cmap=cmap, norm=norm)
+smoothed_y = savgol_filter(y, window_size, poly_order)
+first_derivative = savgol_filter(y, window_size, poly_order, deriv=1)
+second_derivative = savgol_filter(y, window_size+4, poly_order, deriv=2)
+third_derivative = savgol_filter(y, window_size+8, poly_order, deriv=3)
 
-# Add color bar with centered ticks
-cbar = fig.colorbar(cax, ax=ax, ticks=midpoints)
-cbar.set_ticklabels([f"{v:.1f}" for v in midpoints])  # Optional: format tick labels
-
+# Plot results
+plt.figure(figsize=(10, 6))
+plt.plot(x, y, label="Noisy Data", linestyle='dashed', alpha=0.5)
+plt.plot(x, smoothed_y, label="Smoothed Data")
+plt.plot(x, first_derivative/np.max(first_derivative), label="1st Derivative")
+plt.plot(x, second_derivative/np.max(second_derivative), label="2nd Derivative")
+plt.plot(x, third_derivative/np.max(third_derivative), label="3rd Derivative")
+plt.legend()
 plt.show()
+
+
+# # Plot results
+# plt.figure(figsize=(10, 6))
+# plt.plot(x, y, label="Noisy Data", linestyle='dashed', alpha=0.5)
+
+# for i in range(0,12,4):
+#     print(window_size+i)
+#     derivative = savgol_filter(y, window_size+i+2, poly_order, deriv=3)
+#     plt.plot(x, derivative/np.max(derivative), label=f"Window {window_size+i}")
+# plt.legend()
+# plt.show()

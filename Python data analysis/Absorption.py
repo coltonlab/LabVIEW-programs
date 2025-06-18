@@ -82,6 +82,55 @@ def absorption_reflection_template():
 # absorption_reflection_template()
 
 
+def racNPB295K():
+    fig, ax = plt.subplots()
+    data = {} 
+
+    # data
+    data['blank'] = rcf.read_trans_data_old(1707)
+    data['trans'] = rcf.read_trans_data_old(1708)
+
+    # plot data
+    pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+    plt.show()
+racNPB295K()
+
+def R_NEAPbI295K():
+    fig, ax = plt.subplots()
+    data = {} 
+
+    # data
+    data['blank'] = rcf.read_trans_data_old(1612)
+    data['trans'] = rcf.read_trans_data_old(1613)
+
+    # plot data
+    pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+    # # data 2
+    data['blank'] = rcf.read_trans_data_old(1616)
+    data['trans'] = rcf.read_trans_data_old(1617)
+
+    # # plot data 2
+    pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+
+    plt.show()
+# R_NEAPbI295K()
+
+def R_NEAPbI15K():
+    fig, ax = plt.subplots()
+    data = {} 
+
+    # data
+    data['blank'] = rcf.read_trans_data_old(1649)
+    data['trans'] = rcf.read_trans_data_old(1650)
+
+    # plot data
+    pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+    plt.show()
+# R_NEAPbI15K()
 
 def Nilave50_50_abs():
     fig, ax = plt.subplots()
@@ -551,7 +600,26 @@ def FMBA():
     # pcg.plot_absorption(data, ax=ax, smooth=False,energy=False,color='red')
 
     plt.show()
-FMBA()
+# FMBA()
+
+
+
+
+def FMBA():
+    fig, ax = plt.subplots()
+    data = {}
+
+    # data
+    data['blank'] = rcf.read_trans_data(1578)
+    data['trans'] = rcf.read_trans_data(1579)
+
+    # plot data
+    pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+
+    plt.show()
+# FMBA()
+
 
 
 

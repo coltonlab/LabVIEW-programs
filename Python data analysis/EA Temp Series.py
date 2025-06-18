@@ -45,6 +45,113 @@ def EA_temperature_series_template(): # Needs to be updated
     # plt.savefig(fig_name, format='png', dpi=300)
 
     plt.show()
+"""NEAPbBr samples"""
+def rac_1_1_NPB_temp_series(): 
+    data = {}
+    data['trans'] = {}
+    data['voltages'] = {}
+
+    # blank_file = file_path + 'Blank 2-MePESI 300-700nm 295K.xls'
+    data['blank'] = rcf.read_trans_data_old(1735) 
+    
+    # go through the temperatures
+    temperatures = [300,250,200,150,100,50,17]
+    
+    trans_file_list = [1736,1739,1740,1743,1745,1747,1749]
+    volt_file_list = [1737,1738,1741,1742,1744,1746,1748]
+
+    for i, temp in enumerate(temperatures):
+        print(temp,i)
+        data['trans'][temp] = rcf.read_trans_data_old(trans_file_list[i])
+        data['voltages'][temp] = rcf.read_trans_data_old(volt_file_list[i])
+    
+
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots()
+    pcg.plot_EA_temp_series(data, ax=ax1, color_map_name='rainbow',smooth=False,energy=False, phased=False)
+
+    fig2, ax2 = plt.subplots()
+    pcg.plot_ABS_temp_series(data, ax=ax2, color_map_name='rainbow',smooth=False,energy=False)
+
+
+    # plt.savefig(fig_name, format='png', dpi=300)
+
+    plt.show()
+rac_1_1_NPB_temp_series()
+
+"""NEAPbBr samples"""
+def S_1_1_NPB_temp_series(): 
+    data = {}
+    data['trans'] = {}
+    data['voltages'] = {}
+
+    # blank_file = file_path + 'Blank 2-MePESI 300-700nm 295K.xls'
+    data['blank'] = rcf.read_trans_data_old(1692) 
+    
+    # go through the temperatures
+    temperatures = [16,50,100,150,200,250,300]
+    
+    trans_file_list = [1693,1694,1695,1696,1697,1698,1699]
+    volt_file_list = [1700,1701,1702,1703,1704,1705,1706]
+
+    for i, temp in enumerate(temperatures):
+        print(temp,i)
+        data['trans'][temp] = rcf.read_trans_data_old(trans_file_list[i])
+        data['voltages'][temp] = rcf.read_trans_data_old(volt_file_list[i])
+    
+
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots()
+    pcg.plot_EA_temp_series(data, ax=ax1, color_map_name='rainbow',smooth=False,energy=False, phased=False)
+
+    fig2, ax2 = plt.subplots()
+    pcg.plot_ABS_temp_series(data, ax=ax2, color_map_name='rainbow',smooth=False,energy=False)
+
+
+    # plt.savefig(fig_name, format='png', dpi=300)
+
+    plt.show()
+
+"""NEAPbBr samples"""
+def NEAPbBr(): # Needs to be updated
+    # date where the data is stored
+    # file_path = 'C:/Data/2024-09-23/'
+
+    data = {}
+    data['trans'] = {}
+    data['voltages'] = {}
+
+    # blank_file = file_path + 'Blank 2-MePESI 300-700nm 295K.xls'
+    data['blank'] = rcf.read_trans_data_old(1649) 
+    
+    # go through the temperatures
+    temperatures = [16,50,100,150,200,250,300]
+    
+    volt_file_list = [1652,1653,1656,1657,1660,1661,1664]
+    trans_file_list = [1651,1654,1655,1658,1659,1662,1663]
+
+    for i in range(len(temperatures)):
+        data['trans'][temperatures[i]] = rcf.read_trans_data_old(trans_file_list[i])
+        data['voltages'][temperatures[i]] = rcf.read_trans_data_old(volt_file_list[i])
+    
+    X = data['blank']['Digikrom Spectr.:0 (?)'].to_numpy()
+    
+    # data['voltages'][16]['X (V) Phased'][:50] += 1e-12*np.exp(-X[:50]/100) + 1e-12
+    # data['voltages'][16]['X (V) Phased'][:50] += 8.726390E-13
+
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots()
+    pcg.plot_EA_temp_series(data, ax=ax1, color_map_name='rainbow',smooth=False,energy=False)
+
+
+    fig2, ax2 = plt.subplots()
+    pcg.plot_ABS_temp_series(data, ax=ax2, color_map_name='rainbow',smooth=False,energy=False)
+
+
+    # plt.savefig(fig_name, format='png', dpi=300)
+
+    plt.show()
+# NEAPbBr()
 
 """Kentucky samples (CHDA, CHMDA, 4-AMP, 4-AMPY)"""
 def CHDA_temp_series(): # Needs to be updated
@@ -269,6 +376,6 @@ def PESI2F_temp_series(): # Needs to be updated
     # plt.savefig(fig_name, format='png', dpi=300)
 
     plt.show()
-PESI2F_temp_series()
+# PESI2F_temp_series()
 
 

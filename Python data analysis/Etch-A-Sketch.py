@@ -22,11 +22,11 @@ def etch_a_sketch_temperature():
     fig, ax = plt.subplots()
 
 
-    data = rcf.read_etch_a_sketch_data(519)
+    data = rcf.read_etch_a_sketch_data(1734)
     pcg.plot_etch_a_sketch(data, ax=ax)
 
-    data = rcf.read_etch_a_sketch_data(520)
-    pcg.plot_etch_a_sketch(data, ax=ax)
+    # data = rcf.read_etch_a_sketch_data(520)
+    # pcg.plot_etch_a_sketch(data, ax=ax)
 
 
 

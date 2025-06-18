@@ -452,4 +452,141 @@ def PL_template():
 
 
     plt.show()
-PL_template()
+# PL_template()
+
+
+
+def PL_template():
+    data = {}
+    legend_names = []
+    fig, ax = plt.subplots()
+    # for i in range(1600,1606):
+    for i in [1775]:
+        data, sample_name = rcf.read_CCD_data(i, sample=True)
+    
+        pcg.plot_PL(data,ax=ax,energy=False, normalize=False)
+        pcg.plot_PL_FWHM(data, ax, 300, energy=False)
+        # legend_names.append(sample_name)#temperature + 'K')
+    
+    # ax.legend(['Excited @ 295nm','3 Photon Absorption PL'])
+    # ax.set_xlim(350,600)
+    # ax.set_title("3 Photon Counting ZnO Ferritin")
+
+    plt.show()
+# PL_template()
+
+
+
+
+
+
+
+
+
+'''
+
+
+
+
+
+'''
+
+
+def PL_template():
+    data = {}
+    legend_names = []
+    fig, ax = plt.subplots()
+    # for i in range(1600,1606):
+    for i in range(1781,1786):
+        data, sample_name = rcf.read_CCD_data(i, sample=True)
+    
+        pcg.plot_PL(data,ax=ax,energy=False, normalize=False)
+        # pcg.plot_PL_FWHM(data, ax, 300, energy=False)
+        # legend_names.append(sample_name + 'K')
+    
+    # ax.legend(['Excited @ 295nm','3 Photon Absorption PL'])
+    # ax.set_xlim(350,600)
+    # ax.set_title("3 Photon Counting ZnO Ferritin")
+
+    plt.show()
+# PL_template()
+
+
+
+"""NEAPbBr samples"""
+def s_1_1_NPB_temp_series(): 
+    data = {}
+    # temperatures = [300, 250, 200, 150, 100, 50, 17]
+    temperatures = [15, 50, 100, 150, 200, 250, 300]
+    PL_files = [1781, 1782, 1783, 1784, 1785, 1786, 1787]
+
+    for i, temp in enumerate(temperatures):
+        data[temp] = rcf.read_CCD_data(PL_files[i])
+    
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots()
+    pcg.plot_PL_temp_series(data, ax1, colorbar=True, color_map_name='Greens_r', energy=False, smooth=False, log=False)
+    
+    plt.show()
+# s_1_1_NPB_temp_series()
+
+
+
+"""NEAPbBr samples"""
+def rac_1_1_NPB_temp_series(): 
+    data = {}
+    temperatures = [300,275,250,225,200,175,150,125,100,75]#,50,25,15]
+
+    # temperatures = [15, 50, 100, 150, 200, 250, 300]
+    PL_files = range(1788,1801)
+
+    for i, temp in enumerate(temperatures):
+        data[temp] = rcf.read_CCD_data(PL_files[i])
+    
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots() 
+    pcg.plot_PL_temp_series(data, ax1, colorbar=True, color_map_name='Greens', energy=False, smooth=False, log=False)
+    
+    plt.show()
+# rac_1_1_NPB_temp_series()
+
+
+
+
+"""NEAPbBr samples"""
+def R_1_1_NPB_ND_series(): 
+    data = {}
+    temperatures = [] #[300,275,250,225,200,175,150,125,100,75]#,50,25,15]
+
+    temperatures = [8, 14, 24, 34, 44]#
+    PL_files = range(1801,1806)
+
+    for i, temp in enumerate(temperatures):
+        data[temp] = rcf.read_CCD_data(PL_files[i])
+    
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots() 
+    pcg.plot_PL_temp_series(data, ax1, colorbar=True, color_map_name='Greens', energy=False, smooth=False, log=True)
+    
+    plt.show()
+# R_1_1_NPB_ND_series()
+
+
+
+"""NEAPbBr samples"""
+def R_1_1_NPB_temp_series(): 
+    data = {}
+    temperatures = [] #[300,275,250,225,200,175,150,125,100,75]#,50,25,15]
+
+    temperatures = [15, 50, 100, 150, 200, 250]#, 300
+    PL_files = range(1806, 1813)
+
+    for i, temp in enumerate(temperatures):
+        data[temp] = rcf.read_CCD_data(PL_files[i])
+    
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots() 
+    pcg.plot_PL_temp_series(data, ax1, colorbar=True, color_map_name='Greens', energy=False, smooth=False, log=False)
+    
+    plt.show()
+R_1_1_NPB_temp_series()
