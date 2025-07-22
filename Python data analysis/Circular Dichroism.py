@@ -4,6 +4,174 @@ import public.colton_math_functions as cmf
 import matplotlib.pyplot as plt
 import numpy as np
 
+global_remote=False
+
+def L_Ala_PbI_3_295K():
+    data = {}
+    data['trans'] = {}
+    data['CD'] = {}
+
+    data['blank'] = rcf.read_trans_data(2101, remote=global_remote)
+    
+    # go through the temperatures
+    temperatures = [295]                # [300,250,200,150,100,50,17] #     ]#
+    trans_file_list = [2102]#range(1909,1916) [1736,1739,1740,1743,1745,1747,1749]
+    CD_file_list = [2103]#range(1902,1909) [1737,1738,1741,1742,1744,1746,1748]
+
+    for i, temp in enumerate(temperatures):
+        print(temp,i)
+        data['trans'][temp] = rcf.read_trans_data(trans_file_list[i], remote=global_remote)
+        data['CD'][temp] = rcf.read_trans_data(CD_file_list[i], remote=global_remote)
+
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots()
+    pcg.plot_CD_temp_series(data, ax=ax1, color_map_name='rainbow',smooth=False,energy=True, phased=False, flip=True)
+    ax1.set_title('S-1-1 NPB')
+    ax1.set_ylim(-200,2000)
+
+    fig2, ax2 = plt.subplots()
+    pcg.plot_ABS_temp_series(data, ax=ax2, color_map_name='rainbow',smooth=False,energy=True)
+    ax2.set_title('S-1-1 NPB')
+L_Ala_PbI_3_295K()
+
+def S_3F_MBA_2PBI4_Temp():
+    data = {}
+    data['trans'] = {}
+    data['CD'] = {}
+
+    data['blank'] = rcf.read_trans_data(2078, remote=global_remote)
+    
+    # go through the temperatures
+    temperatures = [15]                # [300,250,200,150,100,50,17] #     ]#
+    trans_file_list = [2077]#range(1909,1916) [1736,1739,1740,1743,1745,1747,1749]
+    CD_file_list = [2079]#range(1902,1909) [1737,1738,1741,1742,1744,1746,1748]
+
+    for i, temp in enumerate(temperatures):
+        print(temp,i)
+        data['trans'][temp] = rcf.read_trans_data(trans_file_list[i], remote=global_remote)
+        data['CD'][temp] = rcf.read_trans_data(CD_file_list[i], remote=global_remote)
+
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots()
+    pcg.plot_CD_temp_series(data, ax=ax1, color_map_name='rainbow',smooth=False,energy=True, phased=False, flip=True)
+    ax1.set_title('S-1-1 NPB')
+    ax1.set_ylim(-200,2000)
+
+    fig2, ax2 = plt.subplots()
+    pcg.plot_ABS_temp_series(data, ax=ax2, color_map_name='rainbow',smooth=False,energy=True)
+    ax2.set_title('S-1-1 NPB')
+# S_3F_MBA_2PBI4_Temp()
+
+def S_3Br_MBA_2PBI4_Temp():
+    data = {}
+    data['trans'] = {}
+    data['CD'] = {}
+
+    data['blank'] = rcf.read_trans_data(1997, remote=global_remote)
+    
+    # go through the temperatures
+    temperatures = [15,50,100,150,200,250,300]                # [300,250,200,150,100,50,17] #     ]#
+    trans_file_list = [1998, 2009, 2010,2015, 2016, 2021,2022]#range(1909,1916) [1736,1739,1740,1743,1745,1747,1749]
+    CD_file_list = [2006,2007,2012,2013, 2018,2019,2024 ]#range(1902,1909) [1737,1738,1741,1742,1744,1746,1748]
+
+    for i, temp in enumerate(temperatures):
+        print(temp,i)
+        data['trans'][temp] = rcf.read_trans_data(trans_file_list[i], remote=global_remote)
+        data['CD'][temp] = rcf.read_trans_data(CD_file_list[i], remote=global_remote)
+
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots()
+    pcg.plot_CD_temp_series(data, ax=ax1, color_map_name='rainbow',smooth=False,energy=True, phased=False, flip=True)
+    ax1.set_title('S-1-1 NPB')
+    ax1.set_ylim(-200,2000)
+
+    fig2, ax2 = plt.subplots()
+    pcg.plot_ABS_temp_series(data, ax=ax2, color_map_name='rainbow',smooth=False,energy=True)
+    ax2.set_title('S-1-1 NPB')
+# S_3Br_MBA_2PBI4_Temp()
+
+def R_S_rac():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data_blank = {}
+    fig, ax1 = plt.subplots()
+
+    # S-1-1
+    data['DC'] = rcf.read_trans_data(1909, remote=global_remote) # S
+    data['AC'] = rcf.read_trans_data(1902, remote=global_remote)
+    pcg.plot_CD_Carter(data, ax=ax1, energy=True, smoothed=True, color='blue', flip=True)
+    
+    # R-1-1
+    data['DC'] = rcf.read_trans_data(1894, remote=global_remote) # S 
+    data['AC'] = rcf.read_trans_data(1887, remote=global_remote)
+    pcg.plot_CD_Carter(data, ax=ax1, energy=True, smoothed=True, color='red', flip=True)
+
+    # rac-1-1
+    data['DC'] = rcf.read_trans_data(1917, remote=global_remote) # S
+    data['AC'] = rcf.read_trans_data(1916, remote=global_remote)
+    pcg.plot_CD_Carter(data, ax=ax1, energy=True, smoothed=True, color='black', flip=True)
+
+
+    plt.title('Difference in CD at 15K')
+    ax1.legend(['S-1-1', 'Rac-1-1', 'R-1-1']) 
+# R_S_rac()
+
+
+def S_1_1_NPB_Temp():
+    data = {}
+    data['trans'] = {}
+    data['CD'] = {}
+
+    data['blank'] = rcf.read_trans_data(1901, remote=global_remote)
+    
+    # go through the temperatures
+    temperatures = [15,50,100,150,200,250,300]                # [300,250,200,150,100,50,17] #     ]#
+    trans_file_list = range(1909,1916) #[1736,1739,1740,1743,1745,1747,1749]
+    CD_file_list = range(1902,1909) #[1737,1738,1741,1742,1744,1746,1748]
+
+    for i, temp in enumerate(temperatures):
+        print(temp,i)
+        data['trans'][temp] = rcf.read_trans_data(trans_file_list[i], remote=global_remote)
+        data['CD'][temp] = rcf.read_trans_data(CD_file_list[i], remote=global_remote)
+
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots()
+    pcg.plot_CD_temp_series(data, ax=ax1, color_map_name='rainbow',smooth=True,energy=True, phased=False, flip=True)
+    ax1.set_title('S-1-1 NPB')
+    ax1.set_ylim(-1000,900)
+
+    fig2, ax2 = plt.subplots()
+    pcg.plot_ABS_temp_series(data, ax=ax2, color_map_name='rainbow',smooth=False,energy=True)
+    ax2.set_title('S-1-1 NPB')
+# S_1_1_NPB_Temp()
+
+
+def R_1_1_NPB_Temp():
+    data = {}
+    data['trans'] = {}
+    data['CD'] = {}
+
+    data['blank'] = rcf.read_trans_data(1886, remote=global_remote)
+    
+    # go through the temperatures
+    temperatures = [15,50,100,150,200,250,300]                # [300,250,200,150,100,50,17] #     ]#
+    trans_file_list = range(1894,1901) #[1736,1739,1740,1743,1745,1747,1749]
+    CD_file_list = range(1887,1894) #[1737,1738,1741,1742,1744,1746,1748]
+
+    for i, temp in enumerate(temperatures):
+        print(temp,i)
+        data['trans'][temp] = rcf.read_trans_data(trans_file_list[i], remote=global_remote)
+        data['CD'][temp] = rcf.read_trans_data(CD_file_list[i], remote=global_remote)
+
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots()
+    pcg.plot_CD_temp_series(data, ax=ax1, color_map_name='rainbow',smooth=True,energy=True, phased=False, flip=True)
+    ax1.set_title('R-1-1 NPB')
+
+    fig2, ax2 = plt.subplots()
+    pcg.plot_ABS_temp_series(data, ax=ax2, color_map_name='rainbow',smooth=False,energy=True)
+    ax2.set_title('R-1-1 NPB')
+# R_1_1_NPB_Temp()
 
 def CD_template_new():
     data = {}
@@ -21,7 +189,7 @@ def CD_template_new():
         ax.legend(trans_files)
 
     return
-# 
+# CD_template_new() 
 
 def CD_template(): # Needs to be updated
     data = rcf.read_lockin_fluke_data(784)
@@ -34,12 +202,7 @@ def CD_template(): # Needs to be updated
 
     # plt.show()
     return CD_data
-
 # fluke = CD_template()
-
-
-
-
 
 def CD_s_1_1():
     data = {}
@@ -57,7 +220,6 @@ def CD_s_1_1():
 
     plt.title('Rough CD of S-1-1-NPB')
 # CD_s_1_1()
-
 
 def CD_r_1_1():
     data = {}
@@ -78,8 +240,6 @@ def CD_r_1_1():
     plt.title('Rough CD of R-1-1-NPB')
 # CD_r_1_1()
 
-
-
 def CD_RMBA_Temp():
     data = {}
 
@@ -98,13 +258,7 @@ def CD_RMBA_Temp():
         ax.legend(trans_files)
 
     plt.show()
-
 # CD_RMBA_Temp()
-
-
-
-# plt.show()
-
 
 def R_1_1_NPB_S1_300K():
     # Dictionary that holds all of the data with input voltages
@@ -147,7 +301,6 @@ def R_1_1_NPB_S1_300K():
     ax1.set_title('R-1-1 NPB')
 # R_1_1_NPB_S1_300K()
 
-
 def S_1_1_NPB_S1_300K():
     # Dictionary that holds all of the data with input voltages
     data = {}
@@ -181,8 +334,7 @@ def S_1_1_NPB_S1_300K():
         label.set_color(right_color)
 
     ax1.set_title('S-1-1 NPB')
-S_1_1_NPB_S1_300K()
-
+# S_1_1_NPB_S1_300K()
 
 def S_1_1_NPB_300K_No_Windows():
     # Dictionary that holds all of the data with input voltages
@@ -224,7 +376,6 @@ def S_1_1_NPB_300K_No_Windows():
 
     ax1.set_title('S-1-1 NPB')
 # S_1_1_NPB_300K_No_Windows()
-
 
 def S_1_1_NPB_300K_No_Windows_2():
     # Dictionary that holds all of the data with input voltages
@@ -400,7 +551,6 @@ def Air_Inhibit():
     plt.title('0 degree')
 # Air_Inhibit()
 
-
 def History():
     # Dictionary that holds all of the data with input voltages
     data = {}
@@ -427,10 +577,5 @@ def History():
     # CD = pcg.plot_CD_Carter(data, ax=ax1, energy=False, smoothed=False, color='green')
     plt.title('Vit. B12 and Background Offset (Low light)')
 # History()
-
-
-
-
-
 
 plt.show()

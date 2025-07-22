@@ -213,28 +213,63 @@ def data_template_No_cryo():
 
 
 
-def data_template_No_cryo():
+def difference_quarter_subtract():
+    import public.colton_math_functions as cmf
     data = {}
     
     fig, ax = plt.subplots()
     legend = []
 
-    data['blank'] = rcf.read_trans_data_old(1852+3)
-    data['trans'] = rcf.read_trans_data_old(1853+3)
+    data['blank'] = rcf.read_trans_data_old(1977)
+    data['trans'] = rcf.read_trans_data_old(1978)
     # data['blank'] = rcf.read_trans_data_old(1761)
     # data['trans'] = rcf.read_trans_data_old(1763)
-    # corrected_df = (data['blank'] - data['trans'])
-    # corrected_df['Digikrom Spectr.:0 (?)'] = data['blank']['Digikrom Spectr.:0 (?)']
+
+    corrected_df = (data['blank']/min(data['blank']['X (V)']) - data['trans']/min(data['trans']['X (V)']))
+    corrected_df['Digikrom Spectr.:0 (?)'] = data['blank']['Digikrom Spectr.:0 (?)']
 
     pcg.plot_data(data['blank'],ax=ax, energy=False, smooth=False)
     pcg.plot_data(data['trans'],ax=ax, energy=False, smooth=False)
 
-    data['trans'] = rcf.read_trans_data_old(1854+3)
-    pcg.plot_data(data['trans'],ax=ax, energy=False, smooth=False)
+
+    pcg.plot_data(corrected_df,ax=ax, energy=False, smooth=False)
 
     ax.axhline(y=0,color='k',linewidth=0.8) 
 
-    ax.legend(['0','+2','-2'])
-    ax.set_title('No cryostat windows')
+    ax.legend(['Right','left','diff'])
     plt.show()
-data_template_No_cryo()
+difference_quarter_subtract()
+
+def difference_quarter():
+    import public.colton_math_functions as cmf
+    data = {}
+    
+    fig, ax = plt.subplots()
+    legend = []
+
+    data['blank'] = rcf.read_trans_data_old(1977)
+    data['trans'] = rcf.read_trans_data_old(1978)
+    # data['blank'] = rcf.read_trans_data_old(1761)
+    # data['trans'] = rcf.read_trans_data_old(1763)
+
+    # corrected_df = (data['blank'] - data['trans'])
+    # corrected_df['Digikrom Spectr.:0 (?)'] = data['blank']['Digikrom Spectr.:0 (?)']
+
+    # pcg.plot_data(data['blank'],ax=ax, energy=False, smooth=False)
+    # pcg.plot_data(data['trans'],ax=ax, energy=False, smooth=False)
+    
+    # transR = cmf.transmition(data['trans']['R (V)'], data['blank']['R (V)'])
+    transX = cmf.transmition(data['trans']['X (V)'], data['blank']['X (V)'])
+    # transY = cmf.transmition(data['trans']['Y (V)'], data['blank']['Y (V)'])
+    X = data['blank']['Digikrom Spectr.:0 (?)']
+    # pcg.plot_data(transX,ax=ax, energy=False, smooth=False)
+    # pcg.plot_data(transY,ax=ax, energy=False, smooth=False)
+    # pcg.plot_data(transR,ax=ax, energy=False, smooth=False)
+    ax.plot(X, transX)
+    # ax.plot(X, transY)
+    # ax.plot(X, transR)
+    ax.axhline(y=0,color='k',linewidth=0.8) 
+
+    ax.legend(['X','Y','R'])
+    plt.show()
+# difference_quarter()

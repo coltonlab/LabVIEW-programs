@@ -84,7 +84,7 @@ def read_trans_data(excel_row, sample = False, remote=False):
     else:
         filename, sample_name = get_filename(excel_row, excel_filename='C:/Data/All Scan Notes New.xlsx', remote=False)
 
-    print(filename)
+    print(filename, end='\t-> ')
     # read in the data and skip the starting lines and ending lines
     data = read_data_with_dynamic_header(filename, header='Digikrom Spectr.:0 (?)	X (V)	Y (V)	R (V)')
 

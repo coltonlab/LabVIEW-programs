@@ -4,6 +4,39 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
+
+def AMP4_SnI4_Thin_3s_temp_series(): 
+    data = {}
+    data['trans'] = {}
+    data['voltages'] = {}
+
+    # blank_file = file_path + 'Blank 2-MePESI 300-700nm 295K.xls'
+    data['blank'] = rcf.read_trans_data_old(1943) 
+    
+    # go through the temperatures
+    temperatures = [15,50,100,150,200,250,300]                # [300,250,200,150,100,50,17] #     ]#
+    trans_file_list = range(1944,1951) #[1736,1739,1740,1743,1745,1747,1749]
+    volt_file_list =  range(1951,1958) #[1737,1738,1741,1742,1744,1746,1748]
+
+    for i, temp in enumerate(temperatures):
+        print(temp,i)
+        data['trans'][temp] = rcf.read_trans_data_old(trans_file_list[i])
+        data['voltages'][temp] = rcf.read_trans_data_old(volt_file_list[i])
+    
+
+    # Create the first plot with the first y-axis
+    fig1, ax1 = plt.subplots()
+    pcg.plot_EA_temp_series(data, ax=ax1, color_map_name='rainbow',smooth=True,energy=True, phased=True)
+
+    fig2, ax2 = plt.subplots()
+    pcg.plot_ABS_temp_series(data, ax=ax2, color_map_name='rainbow',smooth=False,energy=True)
+
+
+    # plt.savefig(fig_name, format='png', dpi=300)
+
+    plt.show()
+AMP4_SnI4_Thin_3s_temp_series()
+
 def EA_temperature_series_template(): # Needs to be updated
     # date where the data is stored
     # file_path = 'C:/Data/2024-09-23/'
@@ -46,6 +79,8 @@ def EA_temperature_series_template(): # Needs to be updated
 
     plt.show()
 """NEAPbBr samples"""
+
+
 def rac_1_1_NPB_temp_series(): 
     data = {}
     data['trans'] = {}
@@ -77,7 +112,7 @@ def rac_1_1_NPB_temp_series():
     # plt.savefig(fig_name, format='png', dpi=300)
 
     plt.show()
-rac_1_1_NPB_temp_series()
+# rac_1_1_NPB_temp_series()
 
 """NEAPbBr samples"""
 def S_1_1_NPB_temp_series(): 

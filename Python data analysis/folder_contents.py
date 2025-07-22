@@ -41,13 +41,15 @@ def select_folder():
 def list_folder_contents(folder_path):
     entries = []
     with os.scandir(folder_path) as it:
+        i = 1
         for entry in it:
             info = entry.stat()
             name = f"{entry.name}"
             date = f"{os.path.basename(folder_path)}"
             created_timestamp = info.st_birthtime  # Raw timestamp for sorting
             created_formatted = f"{time.strftime('%I:%M %p', time.localtime(created_timestamp))}"
-            
+            # print(time.localtime(created_timestamp))
+            i += 1  # Increment to ensure unique timestamps for sorting
             if name.lower().endswith(".xls"):
                 values = [date, created_formatted, "", "", "", name]
                 entries.append((created_timestamp, values))  # Store tuple (timestamp, values)

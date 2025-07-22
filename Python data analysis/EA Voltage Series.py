@@ -77,12 +77,331 @@ class Old_calculations(): # Just tab the function to archive it
         plt.show()
     # EA_template()
 
+"""AFRL samples """
+def L_Ala_PbI_3_16K():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+    
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(2094)
+    data['trans'] = rcf.read_trans_data(2093)
+
+    # # data['voltages'] = rcf.read_voltage_series_data(80) # voltage_series_file
+    data['voltages'][100] = rcf.read_trans_data(2084) # voltage_file
+    data['voltages'][150] = rcf.read_trans_data(2086) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(2087) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(2088) # voltage_file
+    data['voltages'][300] = rcf.read_trans_data(2089) # voltage_file
+    data['voltages'][350] = rcf.read_trans_data(2090) # voltage_file
+    data['voltages'][400] = rcf.read_trans_data(2091) # voltage_file
 
 
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=False, energy=False, phased=False)
+    # ax1.set_ylabel('Electroreflection (mOD)')
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=False, energy=False)
+    ax2.axhline
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+L_Ala_PbI_3_16K()
+def S_3F_MBA_2PBI4_16K():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+    
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(2078)
+    data['trans'] = rcf.read_trans_data(2077)
+
+    # # data['voltages'] = rcf.read_voltage_series_data(80) # voltage_series_file
+    data['voltages'][100] = rcf.read_trans_data(2075) # voltage_file
+    data['voltages'][400] = rcf.read_trans_data(2076) # voltage_file
 
 
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=False, energy=True, phased=False)
+    # ax1.set_ylabel('Electroreflection (mOD)')
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=False, energy=True)
+    ax2.axhline
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+# S_3F_MBA_2PBI4_16K()
+def S_3Cl_MBA_2PBI4_16K():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+    
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(2045)
+    data['trans'] = rcf.read_trans_data(2046)
+
+    # # data['voltages'] = rcf.read_voltage_series_data(80) # voltage_series_file
+    data['voltages'][100] = rcf.read_trans_data(2048) # voltage_file
+    data['voltages'][150] = rcf.read_trans_data(2049) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(2050) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(2051) # voltage_file
+    data['voltages'][300] = rcf.read_trans_data(2052) # voltage_file
+    data['voltages'][350] = rcf.read_trans_data(2053) # voltage_file
+    data['voltages'][400] = rcf.read_trans_data(2054) # voltage_file
 
 
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=False, energy=False, phased=False)
+    # ax1.set_ylabel('Electroreflection (mOD)')
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=False, energy=False)
+    ax2.axhline
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+#S_3Cl_MBA_2PBI4_16K()
+
+def S_3Cl_MBA_2PBI4_300K():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+    
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(2044)
+    data['trans'] = rcf.read_trans_data(2043)
+
+    # # data['voltages'] = rcf.read_voltage_series_data(80) # voltage_series_file
+    data['voltages'][100] = rcf.read_trans_data(2042) # voltage_file
+    data['voltages'][150] = rcf.read_trans_data(2041) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(2040) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(2035) # voltage_file
+    data['voltages'][300] = rcf.read_trans_data(2039) # voltage_file
+    data['voltages'][350] = rcf.read_trans_data(2038) # voltage_file
+    data['voltages'][400] = rcf.read_trans_data(2037) # voltage_file
+
+
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=False, energy=True, phased=False)
+    # ax1.set_ylabel('Electroreflection (mOD)')
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=False, energy=True)
+    ax2.axhline
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+# S_3Cl_MBA_2PBI4_300K()
+
+def S_3I_MBA_2PBI4_18K():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+    
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(1960)
+    data['trans'] = rcf.read_trans_data(1976)
+
+    # # data['voltages'] = rcf.read_voltage_series_data(80) # voltage_series_file
+    data['voltages'][100] = rcf.read_trans_data(1969) # voltage_file
+    data['voltages'][150] = rcf.read_trans_data(1970) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(1971) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(1972) # voltage_file
+    data['voltages'][300] = rcf.read_trans_data(1973) # voltage_file
+    data['voltages'][350] = rcf.read_trans_data(1974) # voltage_file
+    data['voltages'][400] = rcf.read_trans_data(1975) # voltage_file
+
+
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=False, energy=True, phased=False)
+    # ax1.set_ylabel('Electroreflection (mOD)')
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=False, energy=True)
+    ax2.axhline
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+# S_3I_MBA_2PBI4_18K()
+
+def S_3I_MBA_2PBI4_290K():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+    
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(1960)
+    data['trans'] = rcf.read_trans_data(1961)
+
+    # # data['voltages'] = rcf.read_voltage_series_data(80) # voltage_series_file
+    data['voltages'][100] = rcf.read_trans_data(1962) # voltage_file
+    data['voltages'][150] = rcf.read_trans_data(1963) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(1964) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(1965) # voltage_file
+    data['voltages'][300] = rcf.read_trans_data(1966) # voltage_file
+    data['voltages'][350] = rcf.read_trans_data(1967) # voltage_file
+    data['voltages'][400] = rcf.read_trans_data(1968) # voltage_file
+
+
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=False, energy=True, phased=False)
+    # ax1.set_ylabel('Electroreflection (mOD)')
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=False, energy=True)
+    ax2.axhline
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+# S_3I_MBA_2PBI4_290K()
+
+"""Kentucky Plots, Kevin (CHDA, CHDMA, 4-AMP, 4-AMPY)"""
+
+"""4-AMP_SnI4 6-11-25"""
+def AMP4_SnI4_15K_Thin_3s():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+    
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(1934)
+    data['trans'] = rcf.read_trans_data(1935)
+
+    # # data['voltages'] = rcf.read_voltage_series_data(80) # voltage_series_file
+    data['voltages'][150] = rcf.read_trans_data(1937) # voltage_file
+    data['voltages'][200] = rcf.read_trans_data(1938) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(1939) # voltage_file
+    data['voltages'][300] = rcf.read_trans_data(1940) # voltage_file
+    data['voltages'][350] = rcf.read_trans_data(1941) # voltage_file
+    data['voltages'][400] = rcf.read_trans_data(1942) # voltage_file
+
+
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=True, energy=True, phased=False)
+    # ax1.set_ylabel('Electroreflection (mOD)')
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=False, energy=True)
+    ax2.axhline
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+# AMP4_SnI4_15K_Thin_3s()
+
+
+def AMP4_SnI4_15K_Thin():
+    # Dictionary that holds all of the data with input voltages
+    data = {}
+    data['voltages'] = {}
+    
+
+    # trans and blank will have strings as their voltage value, but each voltage will be an integer
+    data['blank'] = rcf.read_trans_data(1923)
+    data['trans'] = rcf.read_trans_data(1924)
+
+    # # data['voltages'] = rcf.read_voltage_series_data(80) # voltage_series_file
+    # data['voltages'][100] = rcf.read_trans_data(1833) # voltage_file
+    # data['voltages'][150] = -rcf.read_trans_data(1834) # voltage_file
+    # data['voltages'][150]['Digikrom Spectr.:0 (?)'] *= -1
+    data['voltages'][200] = rcf.read_trans_data(1925) # voltage_file
+    data['voltages'][250] = rcf.read_trans_data(1926) # voltage_file
+    data['voltages'][300] = rcf.read_trans_data(1927) # voltage_file
+    data['voltages'][350] = rcf.read_trans_data(1928) # voltage_file
+    data['voltages'][400] = rcf.read_trans_data(1929) # voltage_file
+
+
+    # plots the EA
+    fig, ax1 = plt.subplots()
+    pcg.plot_EA_series(data, ax=ax1, color_map_name='plasma_r', smooth=True, energy=False, phased=False)
+    # ax1.set_ylabel('Electroreflection (mOD)')
+    ax1.set_ylabel('Electroabsorption (mOD)')
+
+    # Plots the Absorption
+    ax2 = ax1.twinx()
+    right_color = 'green'
+    pcg.plot_absorption(data, ax=ax2, color=right_color, smooth=False, energy=False)
+    ax2.axhline
+
+    # make the right axis ABS color
+    # ax2.set_ylabel('Reflection (OD)', color=right_color)
+    ax2.set_ylabel('Absorption (OD)', color=right_color)
+    ax2.spines['right'].set_color(right_color)
+    ax2.yaxis.set_tick_params(color=right_color)
+    for label in ax2.get_yticklabels():
+        label.set_color(right_color)
+# AMP4_SnI4_15K_Thin()
 """NPB Samples"""
 def S_1_1_NPB_S2_16K():
         # Dictionary that holds all of the data with input voltages
@@ -3120,3 +3439,4 @@ def Duke_R_4_FMBA_15D_15K():
     # Export_data(data, 'Duke\\Duke_R_4_FMBA_15D_2_18_15K_smoothed_with_absorption.csv', smooth=True)
 # Duke_R_4_FMBA_15D_15K()
 
+plt.show()

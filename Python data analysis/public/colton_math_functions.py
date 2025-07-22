@@ -68,7 +68,7 @@ def circular_dichrosim(AC,DC):
 def circular_dichrosim_smooth(AC,DC):
     AC = savitzky_golay_smoothing(AC)
     DC = savitzky_golay_smoothing(DC)
-    CD = (AC/DC) * (1/sps.j1(0.5236)) * (180*1000/np.pi)
+    CD = (AC/DC) * (1/0.5191) * (180*1000/np.pi)
     return CD
 
 
@@ -77,7 +77,7 @@ def circular_dichrosim_smooth(AC,DC):
 def circular_dichrosim(AC,DC):
     # AC = savitzky_golay_smoothing(AC)
     # DC = savitzky_golay_smoothing(DC)
-    CD = (AC/DC) * (1/sps.j1(0.5236)) * (180*1000/np.pi)
+    CD = (-1*AC/DC) * (1/0.5191) * (180*1000/np.pi)
     return CD
 
 
@@ -111,10 +111,6 @@ def phase_data(dataAll, x_name='X (V)', y_name='Y (V)'):
     X = data[x_name]
     Y = data[y_name]
 
-    # Fixes any offsets
-    # X -= np.mean(X)
-    # Y -= np.mean(Y)
-
     # Calculate Y values for each angle
     min_y = float('inf')
     min_angle = 0
@@ -137,8 +133,7 @@ def phase_data(dataAll, x_name='X (V)', y_name='Y (V)'):
         # Makes BC smaller for a better step size
         BC = BC/10
 
-    # min_angle = -97.8540506127646*np.pi/180
-    print('Phased Angle: {:.2f} degrees'.format(min_angle * 180 / np.pi))
+    print('Phased Angle: {:>7.2f} degrees'.format(min_angle * 180 / np.pi))
 
     data['X (V) Phased'] = X * np.cos(min_angle) - Y * np.sin(min_angle)
     data['Y (V) Phased'] = X * np.sin(min_angle) + Y * np.cos(min_angle)

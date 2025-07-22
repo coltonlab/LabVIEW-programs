@@ -19,7 +19,7 @@ def plot_EA_series(data, ax, colorbar=True, smooth=False, color_map_name='autumn
     # Getting the different voltage values
     voltages = np.array(sorted(list(data['voltages'].keys())))
     electric_field = cmf.electric_field_kV_per_cm(voltages)
-    print(electric_field)
+    # print(electric_field)
     # Adds a color bar if true, otherwise defines colors for each plot item
     if colorbar == True:
         colors = color_bar(electric_field, ax, color_map_name, temp=False, pad=0.10)
@@ -52,7 +52,6 @@ def plot_EA_series(data, ax, colorbar=True, smooth=False, color_map_name='autumn
         else:
             EA_data = cmf.EA(data['voltages'][voltage]['X (V)'], data['trans']['R (V)'])
         
-
         ax.plot(X,EA_data, linewidth=linewidth, color=colors[i], label=f'{cmf.electric_field_kV_per_cm(voltage):.0f} kV/cm')
 
 
@@ -105,7 +104,7 @@ def plot_ER_series(data, ax, colorbar=True, smooth=False, color_map_name='autumn
     ax.axhline(y=0,color='k',linewidth=0.8)
 
 
-def plot_EA_temp_series(data, ax, colorbar=True, color_map_name='autumn_r', linewidth = 1, energy=True,smooth=False,text_size=14, phased=True):
+def plot_EA_temp_series(data, ax, colorbar=True, color_map_name='autumn_r', linewidth = 1, energy=True,smooth=False,text_size=14, phased=True, flip=False):
     # Get wavelength
     X = data['blank']['Digikrom Spectr.:0 (?)']
     ax.set_xlabel('Wavelength (nm)')    
@@ -130,6 +129,9 @@ def plot_EA_temp_series(data, ax, colorbar=True, color_map_name='autumn_r', line
         if phased:      
             data['voltages'][temp]['X (V)'] = data['voltages'][temp]['X (V) Phased']
 
+        if flip:      
+            data['voltages'][temp]['X (V)'] = -data['voltages'][temp]['X (V)']
+
         # Calculate the EA signal
         if smooth:
             EA_data = cmf.EA_smooth(data['voltages'][temp]['X (V)'], data['trans'][temp]['R (V)'])
@@ -142,6 +144,49 @@ def plot_EA_temp_series(data, ax, colorbar=True, color_map_name='autumn_r', line
     ax.tick_params(axis='both',which='major', labelsize=12)
     ax.axhline(y=0,color='k',linewidth=0.8)
     ax.set_ylabel('Electroabsorption (mOD)',fontsize=text_size)
+
+
+def plot_CD_temp_series(data, ax, colorbar=True, color_map_name='autumn_r', linewidth = 1, energy=True,smooth=False,text_size=14, phased=True, flip=False):
+    # Get wavelength
+    X = data['blank']['Digikrom Spectr.:0 (?)']
+    ax.set_xlabel('Wavelength (nm)')    
+    
+    if energy:
+        X = cmf.wavelength_to_energy(X)
+        ax.set_xlabel('Energy (eV)',fontsize=text_size)
+
+    # Create a color bar
+    temperatures = np.array(list(data['CD'].keys()))
+    # colors = color_bar(temperatures, ax, color_map_name, temp=True)
+    if colorbar == True:
+        colors = color_bar(temperatures, ax, color_map_name, temp=True)
+    else:
+        color_map_func = getattr(plt.cm, color_map_name)
+        colors = color_map_func(np.linspace(0, 1, len(temperatures)))
+
+    # Plot the data
+    i = 0
+    for temp in temperatures:
+            # Use phase data if true
+        if phased:      
+            data['CD'][temp]['X (V)'] = data['CD'][temp]['X (V) Phased']
+
+        if flip:      
+            data['CD'][temp]['X (V)'] = -data['CD'][temp]['X (V)']
+
+
+        # Calculate the EA signal
+        if smooth:
+            EA_data = cmf.circular_dichrosim_smooth(data['CD'][temp]['X (V)'], data['trans'][temp]['R (V)'])
+        else:
+            EA_data = cmf.circular_dichrosim(data['CD'][temp]['X (V)'], data['trans'][temp]['R (V)'])
+        
+        ax.plot(X,EA_data, linewidth=linewidth, color=colors[i])
+        i += 1
+    
+    ax.tick_params(axis='both',which='major', labelsize=12)
+    ax.axhline(y=0,color='k',linewidth=0.8)
+    ax.set_ylabel('Circular Dichroism (mdeg)',fontsize=text_size)
 
 
 def color_bar(temperatures, ax, color_map_name, temp=True, pad = 0):
@@ -213,18 +258,7 @@ def plot_ABS_temp_series(data, ax, colorbar=True, color_map_name='autumn_r', lin
         
         ax.plot(X1,ABS_data1, linewidth=linewidth, color=colors[i])
         i += 1
-
-    # for temp in [200,250,300]:
-
-        # Calculate the EA signal
-        # if smooth:
-        #     ABS_data2 = cmf.absorption_smooth(data['trans'][temp]['R (V)'], data['blank2']['R (V)'])
-        # else:
-        #     ABS_data2 = cmf.absorption(data['trans'][temp]['R (V)'], data['blank2']['R (V)'])
-        
-        # ax.plot(X2,ABS_data2, linewidth=linewidth, color=colors[i])
-        # i += 1
-    
+  
     ax.tick_params(axis='both',which='major', labelsize=12)
     ax.set_ylabel('Absorption (OD)',fontsize = text_size)
 
@@ -275,7 +309,7 @@ def plot_absorption(data, ax, smooth = False, color='blue', energy=True,legend=N
 
     ABS_data = ABS_data/value
 
-    ax.plot(X,ABS_data, color, label=legend, linestyle='dashed', alpha=0.5)
+    ax.plot(X[15:],ABS_data[15:], color, label=legend, linestyle='dashed', alpha=0.5)
     # ax.axhline(y=0,color=color,linewidth=0.8)
     # ax.semilogy(X,ABS_data, color, label=legend)
     # ax.legend(loc='upper right')
@@ -306,6 +340,30 @@ def plot_reflection(data, ax, smooth = False, color='blue', energy=True,legend=N
     # ax.legend(loc='upper right')
     ax.tick_params(axis='both',which='major', labelsize=12)
 
+
+
+def plot_transmittance(data, ax, smooth = False, color='blue', energy=True,legend=None,value=1,text_size=14):
+    # Get wavelength
+    X = data['blank']['Digikrom Spectr.:0 (?)']
+    ax.set_xlabel('Wavelength (nm)',fontsize = text_size)    
+    
+    if energy:
+        X = cmf.wavelength_to_energy(X)
+        ax.set_xlabel('Energy (eV)',fontsize = text_size)
+    
+    # Calculate the absorption signal
+    if smooth:
+        ABS_data = cmf.reflection_smooth(data['trans']['R (V)'], data['blank']['R (V)'])    
+    else:
+        ABS_data = cmf.reflection(data['trans']['R (V)'], data['blank']['R (V)'])
+
+    ABS_data = ABS_data/value
+
+    ax.plot(X,ABS_data, color, label=legend, linestyle='dashed', alpha=0.5)
+    # ax.axhline(y=0,color=color,linewidth=0.8)
+    # ax.semilogy(X,ABS_data, color, label=legend)
+    # ax.legend(loc='upper right')
+    ax.tick_params(axis='both',which='major', labelsize=12)
 
 def plot_ref_trans_abs(dataT, dataR, ax_all, smooth = False, energy=True,):
     ((ax1, ax2), (ax3, ax4)) = ax_all
@@ -511,7 +569,7 @@ def plot_data(data, ax, smooth = False, energy=True, legend=0):
     # Gets all of the keys except the wavelength 
     data_keys = list(data.keys())[4:]
     # data_keys = list(data.keys())[1:6]
-    # data_keys = ['X (V)']
+    data_keys = ['X (V)']
     
     # Plot the data
     if smooth:
@@ -554,7 +612,7 @@ def plot_CD(data, ax, energy=True, Phased=True):
     return CD_data
 
 
-def plot_CD_Carter(data, ax, energy=True, smoothed=False, smooth=False,color='blue'):
+def plot_CD_Carter(data, ax, energy=True, smoothed=False, smooth=False,color='blue', flip=False):
     # Get wavelength
     X = data['DC']['Digikrom Spectr.:0 (?)']
     ax.set_xlabel('Wavelength (nm)')      
@@ -573,6 +631,11 @@ def plot_CD_Carter(data, ax, energy=True, smoothed=False, smooth=False,color='bl
         CD_data = cmf.circular_dichrosim(data['AC']['X (V)'], data['DC']['R (V)'])
 
     # print('phased')
+
+
+    if flip:      
+        CD_data = -CD_data
+
 
     Y = np.zeros_like(X)
 
@@ -1115,7 +1178,6 @@ def plot_EA_amplitude_all(data, ax, colorbar=True, smooth=False, color_map_name=
     return data
 
 
-
 def plot_PL_temp_series(data, ax, colorbar=True, color_map_name='cool', energy=True, smooth=False, log=False):
     # Create a color bar
     temperatures = np.array(list(data.keys()))
@@ -1170,16 +1232,6 @@ def plot_PL_temp_series(data, ax, colorbar=True, color_map_name='cool', energy=T
         
 
     ax.set_ylabel('PL Intensity A.U.')
-
-
-
-
-
-
-
-
-
-
 
 
 

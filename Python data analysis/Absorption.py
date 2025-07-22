@@ -62,6 +62,73 @@ def absorption_template():
 
 
 
+
+
+def test():
+    fig, ax = plt.subplots()
+    data = {} 
+
+    # data
+    data['blank'] = rcf.read_trans_data(1959)
+    data['trans'] = rcf.read_trans_data(1958)
+
+    # plot data
+    pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+    # # # data 2
+    # data['blank'] = rcf.read_trans_data(1253)
+    # data['trans'] = rcf.read_trans_data(1252)
+
+    # # # plot data 2
+    # pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+
+    plt.show()
+test()
+
+def thin_4_AMP():
+    fig, ax = plt.subplots()
+    data = {} 
+
+    # data
+    data['blank'] = rcf.read_trans_data(1931)
+    data['trans'] = rcf.read_trans_data(1933)
+
+    # plot data
+    pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+    # # # data 2
+    # data['blank'] = rcf.read_trans_data(1253)
+    # data['trans'] = rcf.read_trans_data(1252)
+
+    # # # plot data 2
+    # pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+
+    plt.show()
+# thin_4_AMP()
+
+def Characterize_Polarizers():
+    fig, ax = plt.subplots()
+    data = {} 
+
+    # data
+    data['blank'] = rcf.read_trans_data(1916)
+    data['trans'] = rcf.read_trans_data(1917)
+
+    # plot data
+    pcg.plot_transmittance(data, ax=ax, smooth=False,energy=False)
+
+    # # # data 2
+    data['trans'] = rcf.read_trans_data(1918)
+
+    # # plot data 2
+    pcg.plot_transmittance(data, ax=ax, smooth=False,energy=False)
+
+
+    plt.show()
+# Characterize_Polarizers()
+
 def absorption_reflection_template():
     fig, ax = plt.subplots()
     data_T = {}
@@ -94,7 +161,7 @@ def racNPB295K():
     pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
 
     plt.show()
-racNPB295K()
+# racNPB295K()
 
 def R_NEAPbI295K():
     fig, ax = plt.subplots()
