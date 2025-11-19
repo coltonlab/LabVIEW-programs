@@ -10,6 +10,7 @@
 	<Item Name="Public" Type="Folder">
 		<Item Name="Set Averaging.vi" Type="VI" URL="../Public/Set Averaging.vi"/>
 		<Item Name="Set Display A.vi" Type="VI" URL="../Public/Set Display A.vi"/>
+		<Item Name="Set Display B.vi" Type="VI" URL="../Public/Set Display B.vi"/>
 		<Item Name="Set Frequency.vi" Type="VI" URL="../Public/Set Frequency.vi"/>
 	</Item>
 </Library>

@@ -694,6 +694,42 @@ def FMBA():
 
 
 
+def absorption_template():
+    fig, ax = plt.subplots()
+    data = {} 
+
+    # data I
+    data['blank'] = rcf.read_trans_data(2288)
+    data['trans'] = rcf.read_trans_data(2285)
+
+    # plot data
+    pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+    # # # data 2 Br
+    # data['blank'] = rcf.read_trans_data(1253)
+    data['trans'] = rcf.read_trans_data(2286)
+
+    # # # plot data 2
+    pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+    # # # data 2 Cl
+    # data['blank'] = rcf.read_trans_data(1253)
+    data['trans'] = rcf.read_trans_data(2287)
+
+    # # # plot data 2
+    pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+    # # # data 2 F
+    data['blank'] = rcf.read_trans_data(2289)
+    data['trans'] = rcf.read_trans_data(2290)
+
+    # # # plot data 2
+    pcg.plot_absorption(data, ax=ax, smooth=False,energy=False)
+
+    plt.legend(['I', 'Br', 'Cl', 'F'])
+    plt.show()
+absorption_template()
+
 
 
 

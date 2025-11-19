@@ -14,7 +14,7 @@ def impedance_spectroscopy_template():
     data = {}
 
     # headers=['F (Hz)','Z','R','L','C']
-    headers=['F (Hz)','Z','R','C']
+    headers=['F (Hz)','Z','Phi','R','L','C']
     # files = range(1482, 1490)
     files = [1505,1506]
     files = range(1507,1511)
