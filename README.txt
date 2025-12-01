@@ -10,7 +10,7 @@
 
 COLTON LABVIEW PROGAM SUITE
 OWNER: John S. Colton
-CONTRIBUTERS:  Dr. Colton’s research group
+CONTRIBUTERS:  Dr. Coltonâ€™s research group
 
 SUMMARY:
 These are the LabVIEW programs and drivers for all of the equipment that we use in our lab.
@@ -20,5 +20,3 @@ MAIN.vi launches the main software suite. Equipment VIs can be accessed from the
 
 CONTACT:
 JOHN S. Colton		john_colton@byu.edu
-
-Hello from Trigg
